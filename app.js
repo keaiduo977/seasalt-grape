@@ -311,12 +311,12 @@ const Hot = {
         <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
         ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span></div>`:''}
       </div>
-      <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="aiDetailBody" style="font-size:14px;color:var(--text);line-height:1.8">${it.detail && it.detail.length>20 ? '<p>'+esc(it.detail)+'</p>' : '<div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div>'}</div></div>
+      <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="aiDetailBody" style="font-size:14px;color:var(--text);line-height:1.8">${it.detail && it.detail.length>20 && !it.detail.includes('暂无详细') ? '<p>'+esc(it.detail)+'</p>' : '<div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div>'}</div></div>
       ${!AI.getKey()?`<div class="card" style="background:var(--salt-light);border:1px dashed var(--purple)"><div class="muted" style="font-size:13px">💡 未配置 DeepSeek Key，显示基础模板。在「设置」中添加 Key 可解锁 AI 真实解读</div></div>`:''}
       ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始热搜</a>`:''}
       <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
-    // 如果已有 detail 且足够长，直接返回
-    if(it.detail && it.detail.length > 20) return;
+    // 如果已有真实 detail（非占位），直接返回
+    if(it.detail && it.detail.length > 20 && !it.detail.includes('暂无详细')) return;
     // 否则 AI 生成解读
     try{
       const key = AI.getKey();
