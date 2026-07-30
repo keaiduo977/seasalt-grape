@@ -1,0 +1,27 @@
+{
+  "name": "海盐葡萄 · 女生生活管理",
+  "short_name": "海盐葡萄",
+  "description": "甜酷女孩的专属个人生活管理 PWA：AI热点、补品打卡、食谱合集、护肤打卡、运动跟练、阅读打卡、学习打卡、工作日程、幸福碎片、可爱日记",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F0F7",
+  "theme_color": "#9B7EBD",
+  "lang": "zh-CN",
+  "categories": ["lifestyle", "productivity", "health"],
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
