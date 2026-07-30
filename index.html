@@ -43,9 +43,10 @@ a{color:var(--purple);text-decoration:none}
 .avatar{width:52px;height:52px;border-radius:50%;flex-shrink:0;overflow:hidden;
   background:#fff;box-shadow:var(--shadow);border:2px solid #fff;}
 .avatar img{width:100%;height:100%;display:block;object-fit:cover}
-.hero-text h1{font-size:18px;color:var(--purple-deep);font-weight:700;letter-spacing:.5px}
-.hero-text p{font-size:12px;color:var(--text-light);margin-top:2px}
-.hero-date{margin-left:auto;text-align:right}
+.hero-text{flex:1;min-width:0}
+.hero-text h1{font-size:18px;color:var(--purple-deep);font-weight:700;letter-spacing:.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-text p{font-size:12px;color:var(--text-light);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-date{margin-left:auto;text-align:right;flex-shrink:0;min-width:38px}
 .hero-date .d{font-size:22px;font-weight:700;color:var(--purple-deep);line-height:1}
 .hero-date .w{font-size:11px;color:var(--text-light);margin-top:4px}
 
@@ -55,9 +56,9 @@ a{color:var(--purple);text-decoration:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
 .section{padding:16px;padding-bottom:calc(var(--tab-h) + 16px)}
-.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-.section-title h2{font-size:17px;color:var(--purple-deep);font-weight:700;display:flex;align-items:center;gap:6px}
-.section-title .sub{font-size:12px;color:var(--text-light)}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:8px}
+.section-title h2{font-size:17px;color:var(--purple-deep);font-weight:700;display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
+.section-title .sub{font-size:11px;color:var(--text-light);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:50%}
 .card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:12px}
 .card-title{font-size:14px;font-weight:700;color:var(--purple-deep);margin-bottom:10px;display:flex;align-items:center;gap:6px}
 
