@@ -296,10 +296,13 @@ const Hot = {
         <span class="muted" style="font-size:11px">›</span>
       </div>`).join('');
     Hot._items = items;
-    // 显示来源标注
+    // 显示来源标注 + Key 状态
     if(source){
       const aiHint = $('#hotAiHint');
-      if(aiHint) aiHint.textContent = `${source}实时 · AI 精选 ${items.length} 条`;
+      if(aiHint){
+        const keyStatus = AI.getKey() ? '' : ' · 💡未配 Key';
+        aiHint.textContent = `${source}实时 · AI 精选 ${items.length} 条${keyStatus}`;
+      }
     }
   },
   async detail(i){
