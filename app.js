@@ -811,11 +811,16 @@ const Drama = {
   _tab: 'rec',
   _liveData: null,
   _liveItems: null,
+  _aiItems: null,
   _items: [],
   _score: 3,
   async load(){
     Drama._items = await DB.all('dramas');
     await Drama.fetchLive();
+    const cache = await DB.get('aiCache','dramaRec');
+    if(AI.getKey() && cache && Date.now()-cache.ts < 12*3600*1000){
+      Drama._aiItems = cache.data;
+    }
     Drama.render();
   },
   async fetchLive(){
@@ -835,13 +840,46 @@ const Drama = {
     if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
     try{
       await Drama.fetchLive();
-      Drama.render();
-      const updated = Drama._liveData?.updated;
-      toast(updated ? `已更新到 ${updated} ✨` : '已是最新 💫');
+      if(AI.getKey()){
+        await Drama.aiRec(false);   // 配 Key：AI 重新挑剧（内部已 toast）
+      }else{
+        Drama.render();
+        const updated = Drama._liveData?.updated;
+        toast(updated ? `已更新到 ${updated} 💫` : '已是最新 💫');
+      }
     }catch(e){
       toast('刷新失败，稍后再试 🌸');
     }finally{
       if(btn){ btn.disabled = false; btn.textContent = btn.dataset.orig || '🔄 刷新'; }
+    }
+  },
+  async aiRec(silent){
+    if(!AI.getKey()){ Drama.render(); return; }
+    if(!silent) toast('AI 正在为你挑近期好剧…');
+    const todayStr = new Date().toLocaleDateString('zh-CN');
+    const out = await AI.chat(
+      '你是影视推荐编辑。请基于当下（'+todayStr+'）推荐 6 部近期/经典值得看的作品，覆盖：国产热剧、美剧、英剧、电影、综艺、纪录片（题材多样，不要全是同类）。JSON 数组格式，每部含：title(作品名), type(电影/电视剧/综艺/纪录片), category(国产剧/美剧/英剧/电影/综艺/纪录片), reason(一句话推荐理由,25字内要具体), summary(简介,120-180字,含题材/看点/适合人群)。只输出JSON。',
+      '请推荐近期值得看的 6 部作品，像真正追剧的人给出的真心推荐。',
+      {kind:'hot', maxTokens:2500}
+    );
+    let items = null;
+    try{ items = JSON.parse(AI._cleanJSON(out)); if(!Array.isArray(items)) throw 0; }catch(e){ items = null; }
+    if(items && items.length){
+      items = items.map(b => (b && typeof b==='object') ? {
+        title: b.title || b.name || '',
+        type: b.type || b.kind || '电视剧',
+        category: b.category || b.type || '',
+        reason: b.reason || '',
+        summary: b.summary || b.detail || b.intro || '',
+        rating: b.rating || ''
+      } : {title:String(b||''), type:'电视剧', category:'', reason:'', summary:'', rating:''});
+      Drama._aiItems = items;
+      await DB.put('aiCache',{id:'dramaRec', data:items, ts:Date.now()});
+      Drama.render();
+      if(!silent) toast('已为你挑好新剧单 ✨');
+    }else{
+      Drama.render();
+      if(!silent) toast('AI 推荐失败，已显示豆瓣热播 🎬');
     }
   },
   switchTab(cat){
@@ -853,13 +891,16 @@ const Drama = {
     const box = $('#dramaList');
     const tab = Drama._tab;
     if(tab==='rec'){
-      const live = Drama._liveData;
-      if(!live || !live.items || !live.items.length){
+      const list = Drama._aiItems || (Drama._liveData && Drama._liveData.items) || [];
+      const useAi = !!Drama._aiItems;
+      const tag = $('#dramaSourceTag');
+      if(tag) tag.textContent = useAi ? 'AI 实时推荐' : ((Drama._liveData?.source||'豆瓣')+'热播');
+      if(!list.length){
         box.innerHTML = '<div class="empty"><div class="emoji">🎬</div><p>剧集数据加载中，稍后刷新...</p></div>';
         return;
       }
       const myDramas = Drama._items || [];
-      box.innerHTML = live.items.map((d,i)=>`
+      box.innerHTML = list.map((d,i)=>`
         <div class="drama-card" onclick="Drama.detail(${i})">
           <div class="between">
             <div style="flex:1;min-width:0">
@@ -874,7 +915,7 @@ const Drama = {
             <span class="muted" style="font-size:16px">›</span>
           </div>
         </div>`).join('');
-      Drama._liveItems = live.items;
+      Drama._liveItems = list;
     } else {
       const list = (Drama._items||[]).filter(d=>d.status===tab);
       box.innerHTML = list.length ? list.map(d=>`
@@ -909,7 +950,7 @@ const Drama = {
     const mine = myDramas.find(x=>x.title===d.title);
     Modal.open('🎬 ' + d.title, `
       <div class="ai-card">
-        <div class="ai-tag">🔥 ${(Drama._liveData.source||'豆瓣')}热播</div>
+        <div class="ai-tag">🔥 ${(Drama._aiItems? 'AI 实时' : (Drama._liveData.source||'豆瓣'))}热播</div>
         <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(d.title)}</div>
         <div class="flex gap8 mt8 wrap">
           <span class="drama-cat ${Drama.catClass(d.type)}">${esc(d.type)}</span>
