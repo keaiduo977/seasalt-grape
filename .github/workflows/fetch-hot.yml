@@ -2,6 +2,11 @@
 name: 抓取实时热搜
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch_hot.py'
+      - '.github/workflows/fetch-hot.yml'
   schedule:
     # 每3小时运行一次（UTC 时间 0,3,6,9,12,15,18,21 点）
     - cron: '0 */3 * * *'
