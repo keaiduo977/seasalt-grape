@@ -152,6 +152,9 @@ const Hot = {
     }catch(e){ return null; }
   },
   async refresh(silent){
+    const isUser = silent !== true;
+    const btn = isUser ? document.querySelector('#page-hot button[onclick*="Hot.refresh"]') : null;
+    if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
     const cache = await DB.get('aiCache','hot');
     const last = cache?.ts || 0;
     const threeHours = 3*60*60*1000;
@@ -195,6 +198,10 @@ const Hot = {
     }
     await DB.put('aiCache',{id:'hot', data:items, ts:Date.now()});
     Hot.render(items, Date.now(), liveSource);
+    if(isUser){
+      const updated = Hot._liveData?.updated;
+      toast(updated ? `已更新到 ${updated} ✨` : '已是最新 💫');
+    }
     // 甜酷小贴士
     if(!silent || !$('#dailyTip').dataset.loaded){
       const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字。只输出这句话。',
@@ -202,6 +209,7 @@ const Hot = {
       $('#dailyTip').textContent = tip.replace(/^[\d.、\s]+/,'').split('\n')[0];
       $('#dailyTip').dataset.loaded = '1';
     }
+    if(btn){ btn.disabled = false; btn.textContent = btn.dataset.orig || '🔄 刷新'; }
   },
   parse(text){
     try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||'',url:x.url||''})).slice(0,6); }catch(e){}
@@ -580,9 +588,9 @@ const Skin = {
     const elapsed = isCurMonth ? new Date().getDate() : daysInMonth;
     const maxPossible = items.length * elapsed;
     $('#skinDashboard').innerHTML = `
-      <div class="skin-stat"><div class="v">${totalChecks}</div><div class="l">总打卡</div></div>
-      <div class="skin-stat"><div class="v">${activeDays.size}</div><div class="l">坚持天数</div></div>
-      <div class="skin-stat"><div class="v">${maxPossible>0?Math.round(totalChecks/maxPossible*100):0}%</div><div class="l">完成率</div></div>`;
+      <div class="skin-stat"><div class="v">${totalChecks}</div><div class="l">💗 累计打卡</div></div>
+      <div class="skin-stat"><div class="v">${activeDays.size}</div><div class="l">✨ 连续在坚持</div></div>
+      <div class="skin-stat"><div class="v">${maxPossible>0?Math.round(totalChecks/maxPossible*100):0}%</div><div class="l">🌸 达成度</div></div>`;
     const firstDay = new Date(Y, M, 1).getDay();
     let html = '';
     for(let i=0;i<firstDay;i++) html += '<div class="skin-cal-cell empty"></div>';
@@ -823,9 +831,18 @@ const Drama = {
     }catch(e){ /* 静默失败，用缓存 */ }
   },
   async refresh(){
-    await Drama.fetchLive();
-    Drama.render();
-    toast('已刷新 🎬');
+    const btn = document.querySelector('#page-drama button[onclick*="Drama.refresh"]');
+    if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
+    try{
+      await Drama.fetchLive();
+      Drama.render();
+      const updated = Drama._liveData?.updated;
+      toast(updated ? `已更新到 ${updated} ✨` : '已是最新 💫');
+    }catch(e){
+      toast('刷新失败，稍后再试 🌸');
+    }finally{
+      if(btn){ btn.disabled = false; btn.textContent = btn.dataset.orig || '🔄 刷新'; }
+    }
   },
   switchTab(cat){
     Drama._tab = cat;
