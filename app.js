@@ -120,6 +120,9 @@ $('#modalMask').addEventListener('click', e=>{ if(e.target.id==='modalMask') Mod
    1. AI 热点
    ============================================ */
 const Hot = {
+  _liveData: null,
+  _items: null,
+  _filter: '全部',
   async load(){ await Hot.refresh(true); },
   // 拉取 GitHub Actions 抓取的实时热搜（同源，无CORS）
   async fetchLive(){
@@ -134,35 +137,36 @@ const Hot = {
     const cache = await DB.get('aiCache','hot');
     const last = cache?.ts || 0;
     const threeHours = 3*60*60*1000;
+    // 先渲染实时热搜（不等 AI）
+    const live = await Hot.fetchLive();
+    if(live && live.items && live.items.length > 1){
+      Hot._liveData = live;
+      Hot.renderLive(live);
+    }else if(cache?.data){
+      Hot.renderLive(cache);
+    }else{
+      Hot.renderLive(null);
+    }
+    // AI 精选解读（3小时内用缓存）
     if(silent && cache && Date.now()-last < threeHours){
       Hot.render(cache.data, last);
-      // 后台静默更新热搜词条源
-      Hot.fetchLive().then(j=>{ if(j && j.items) Hot._liveData = j; });
       return;
     }
-    $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>正在拉取实时热搜...</p></div>';
-    // 1. 先拉实时热搜词条
-    const live = await Hot.fetchLive();
+    $('#hotList').innerHTML = '<div class="empty"><div class="emoji">🤖</div><p>AI 正在精选解读...</p></div>';
     let seed = '', liveSource = '本地';
     if(live && live.items && live.items.length > 1){
       liveSource = live.source || '实时';
-      Hot._liveData = live;
       seed = live.items.slice(0,30).map((t,i)=>`${i+1}. ${t.title}`).join('\n');
-      $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>AI 正在解读'+liveSource+'热搜...</p></div>';
-    }else{
-      // hot.json 不存在（Actions 还没跑过），用 AI 自行生成当下热点
-      $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>AI 正在生成当下热点...</p></div>';
     }
-    // 2. AI 解读
     const todayStr = new Date().toLocaleDateString('zh-CN');
     const sysPrompt = live && seed
       ? '你是一个面向年轻女性的生活方式编辑。以下是当前'+liveSource+'实时热搜词条（GitHub Actions 自动抓取）：\n'+seed+'\n\n' +
-        '请从中精选 8 条女生会关心的热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感等领域，保持多样性），' +
-        '用 JSON 数组格式输出，每个对象含：title(热搜原标题或简化版),category(分类:时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感),detail(深度解读,150-250字,需说明：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度)。只输出JSON。'
-      : '你是面向年轻女性的生活方式编辑。请生成 8 条当下最新热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视等领域），' +
-        'JSON 数组格式，每个对象含：title(标题),category(分类),detail(深度解读150-250字,含背景/影响/给女生的建议)。只输出JSON。';
+        '请从中精选 6 条女生会关心的热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感等领域，保持多样性），' +
+        '用 JSON 数组格式输出，每个对象含：title(热搜原标题或简化版),category(分类:时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感),detail(深度解读,200-300字,需说明：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度)。只输出JSON。'
+      : '你是面向年轻女性的生活方式编辑。请生成 6 条当下最新热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视等领域），' +
+        'JSON 数组格式，每个对象含：title(标题),category(分类),detail(深度解读200-300字,含背景/影响/给女生的建议)。只输出JSON。';
     const out = await AI.chat(sysPrompt,
-      `今天是${todayStr}，请精选并深度解读 8 条女生向热点。`,
+      `今天是${todayStr}，请精选并深度解读 6 条女生向热点。`,
       {kind:'hot', maxTokens:3500});
     const items = Hot.parse(out);
     // 把实时热搜的原始链接并入解读结果
@@ -182,9 +186,92 @@ const Hot = {
     }
   },
   parse(text){
-    try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||'',url:x.url||''})).slice(0,8); }catch(e){}
-    return text.split('\n').map(l=>l.replace(/^\d+[.、\)\s]+/,'').trim()).filter(Boolean).slice(0,8).map(t=>({title:t,category:'生活',detail:'暂无详细说明，可点击刷新获取 AI 解读。',url:''}));
+    try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||'',url:x.url||''})).slice(0,6); }catch(e){}
+    return text.split('\n').map(l=>l.replace(/^\d+[.、\)\s]+/,'').trim()).filter(Boolean).slice(0,6).map(t=>({title:t,category:'生活',detail:'暂无详细说明，可点击刷新获取 AI 解读。',url:''}));
   },
+  // 渲染实时热搜列表（带分类筛选）
+  renderLive(live){
+    const box = $('#hotLiveList');
+    const catBox = $('#hotCats');
+    if(!live || !live.items || !live.items.length){
+      box.innerHTML = '<div class="empty"><div class="emoji">📡</div><p>实时热搜加载中，稍后刷新...</p></div>';
+      catBox.innerHTML = '';
+      $('#hotSourceTag').textContent = '等待数据';
+      return;
+    }
+    const items = live.items;
+    const source = live.source || '实时';
+    const updated = live.updated || '';
+    $('#hotSourceTag').textContent = source + '实时';
+    if(updated) $('#hotTime').textContent = updated;
+    // 分类统计
+    const cats = {'全部': items.length};
+    items.forEach(it=>{
+      const c = it.category || '热点';
+      cats[c] = (cats[c]||0) + 1;
+    });
+    const catList = Object.keys(cats);
+    catBox.innerHTML = catList.map(c=>
+      `<span class="hot-cat ${c===Hot._filter?'active':''}" onclick="Hot.filter('${c}')">${c}${c!=='全部'?' '+cats[c]:''}</span>`
+    ).join('');
+    // 渲染列表
+    const filtered = Hot._filter==='全部' ? items : items.filter(it=>(it.category||'热点')===Hot._filter);
+    box.innerHTML = filtered.map((it,i)=>{
+      const rank = items.indexOf(it) + 1;
+      const isTop3 = rank <= 3;
+      const cat = it.category || '热点';
+      const hotVal = it.hot ? Hot.fmtHot(it.hot) : '';
+      return `<div class="hot-live-item" onclick="Hot.liveDetail(${items.indexOf(it)})">
+        <div class="hot-live-rank ${isTop3?'top3':''}">${rank}</div>
+        <div class="hot-live-body">
+          <div class="hot-live-title">${esc(it.title)}</div>
+          <div class="hot-live-meta">
+            <span class="hot-live-cat">${cat}</span>
+            ${hotVal?`<span class="hot-live-hot">🔥 ${hotVal}</span>`:''}
+          </div>
+        </div>
+        <span class="muted" style="font-size:12px">›</span>
+      </div>`;
+    }).join('');
+    Hot._liveItems = items;
+    $('#hotHint').textContent = `共 ${items.length} 条 · 点击查看详情`;
+  },
+  fmtHot(n){
+    if(n >= 10000000) return (n/10000000).toFixed(1)+'千万';
+    if(n >= 10000) return (n/10000).toFixed(1)+'万';
+    return String(n);
+  },
+  filter(cat){
+    Hot._filter = cat;
+    Hot.renderLive(Hot._liveData);
+  },
+  // 点击实时热搜 → AI 生成深度解读
+  async liveDetail(i){
+    const it = Hot._liveItems[i]; if(!it) return;
+    // 先弹出 loading
+    Modal.open('🔥 ' + (it.category||'热点'), `
+      <div class="ai-card">
+        <div class="ai-tag">🔥 热搜 #${i+1}</div>
+        <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
+        ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span> ${it.hot?'<span class="muted">🔥 '+Hot.fmtHot(it.hot)+'</span>':''}</div>`:''}
+      </div>
+      <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="liveDetailBody" style="font-size:14px;color:var(--text);line-height:1.8"><div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div></div></div>
+      ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始新闻</a>`:''}
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+    // AI 生成深度解读
+    try{
+      const detail = await AI.chat(
+        '你是面向年轻女性的生活方式编辑。请对以下热搜词条进行深度解读（200-300字），需包含：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度。用自然流畅的口语化文风，不要用分点编号，直接写段落。只输出解读正文。',
+        `热搜词条：${it.title}\n分类：${it.category||'热点'}`,
+        {kind:'hot', maxTokens:800});
+      const body = $('#liveDetailBody');
+      if(body) body.innerHTML = `<p>${esc(detail.replace(/^[\d.、\s]+/,''))}</p>`;
+    }catch(e){
+      const body = $('#liveDetailBody');
+      if(body) body.innerHTML = '<p class="muted">解读加载失败，请稍后重试。可点击下方链接查看原始新闻。</p>';
+    }
+  },
+  // AI 精选解读列表
   render(items, ts, source){
     const list = $('#hotList');
     if(!items.length){ list.innerHTML='<div class="empty"><div class="emoji">🌡️</div><p>暂无数据</p></div>'; return; }
@@ -196,14 +283,12 @@ const Hot = {
         <span class="muted" style="font-size:11px">›</span>
       </div>`).join('');
     Hot._items = items;
-    $('#hotTime').textContent = '更新于 '+fmtTime(ts);
-    $('#hotHint').textContent = source ? `${source}实时·AI解读` : `共 ${items.length} 条`;
   },
   detail(i){
     const it = Hot._items[i]; if(!it) return;
     Modal.open('🔥 热点详情', `
       <div class="ai-card">
-        <div class="ai-tag">🔥 热点 #${i+1}</div>
+        <div class="ai-tag">🔥 精选 #${i+1}</div>
         <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
         ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span></div>`:''}
       </div>

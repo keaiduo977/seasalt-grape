@@ -137,6 +137,24 @@ a{color:var(--purple);text-decoration:none}
 .hot-rank{width:24px;height:24px;border-radius:6px;background:var(--salt);color:var(--purple-deep);
   font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .hot-rank.top{background:var(--purple);color:#fff}
+/* 实时热搜分类标签 */
+.hot-cats{display:flex;gap:6px;overflow-x:auto;padding:8px 0 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hot-cats::-webkit-scrollbar{display:none}
+.hot-cat{padding:5px 14px;border-radius:20px;background:#fff;font-size:12px;color:var(--text-light);
+  white-space:nowrap;flex-shrink:0;border:1px solid rgba(155,126,189,.15);transition:all .2s;cursor:pointer}
+.hot-cat.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+/* 实时热搜列表项 */
+.hot-live-item{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid rgba(155,126,189,.06);cursor:pointer;transition:all .15s}
+.hot-live-item:active{opacity:.6}
+.hot-live-item:last-child{border:none}
+.hot-live-rank{width:22px;font-size:14px;font-weight:800;color:var(--text-light);text-align:center;flex-shrink:0}
+.hot-live-rank.top3{color:var(--purple)}
+.hot-live-body{flex:1;min-width:0}
+.hot-live-title{font-size:14px;color:var(--text);font-weight:500;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hot-live-meta{display:flex;align-items:center;gap:6px;margin-top:3px}
+.hot-live-cat{font-size:10px;padding:1px 7px;border-radius:8px;background:var(--salt);color:var(--purple-deep);flex-shrink:0}
+.hot-live-hot{font-size:11px;color:var(--text-light)}
+.hot-ai-section{margin-top:16px;padding-top:12px;border-top:2px dashed rgba(155,126,189,.15)}
 
 /* 补品项 */
 .supp-item{display:flex;align-items:center;gap:12px;padding:14px;background:var(--salt-light);
@@ -347,12 +365,20 @@ a{color:var(--purple);text-decoration:none}
     <div class="card hot-card">
       <div class="between mb8">
         <div class="flex center gap8">
-          <span class="tag">3小时更新</span>
-          <span class="muted" id="hotHint">女生向精选</span>
+          <span class="tag" id="hotSourceTag">实时热搜</span>
+          <span class="muted" id="hotHint">点击查看详情</span>
         </div>
         <button class="btn btn-sm btn-ghost" onclick="Hot.refresh()">🔄 刷新</button>
       </div>
-      <div id="hotList"><div class="empty"><div class="emoji">🌡️</div><p>加载中...</p></div></div>
+      <!-- 分类筛选 -->
+      <div class="hot-cats" id="hotCats"></div>
+      <!-- 实时热搜列表 -->
+      <div id="hotLiveList"></div>
+      <!-- AI 精选解读 -->
+      <div class="hot-ai-section" id="hotAiSection">
+        <div class="card-title mt12" style="padding:0 4px">🤖 AI 精选解读</div>
+        <div id="hotList"><div class="empty"><div class="emoji">🌡️</div><p>加载中...</p></div></div>
+      </div>
     </div>
     <div class="card">
       <div class="card-title">🌸 今日甜酷小贴士</div>
