@@ -1,0 +1,13 @@
+{
+  "source": "兜底",
+  "items": [
+    {
+      "title": "今日热点加载中",
+      "hot": 0,
+      "source": "fallback",
+      "url": ""
+    }
+  ],
+  "updateTime": "2026-07-30T05:18:12.172813+00:00",
+  "total": 1
+}

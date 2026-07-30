@@ -120,31 +120,60 @@ $('#modalMask').addEventListener('click', e=>{ if(e.target.id==='modalMask') Mod
    1. AI 热点
    ============================================ */
 const Hot = {
-  // 实时热搜词库（定期手动更新当前真实热搜词条作为种子）
-  // 数据来源：微博热搜实时抓取
-  hotPool: ['千万不要把手机交给商家写好评','网友曝胖东来直饮水成免费取水点','张泽禹道歉','赵昭仪演戏一直这样吗','小区电梯失控从31楼下坠到负2楼','开车是最容易进入心流状态的活动','不要再指责现在的人过度防晒了','女子隐私照未打码被医美发朋友圈','眼镜蛇断头5分钟后把人咬成重伤','胖东来又上热搜','雷军感谢各地文旅支持','人民日报谈广西纸贵','周星驰做客董宇辉直播间','密逃连夜给陈哲远做了英寡特效','穷鬼年轻人被免费试吃坑麻了','莫氏鸡煲首轮遭淘汰','保姆因不能生育拐走雇主家10月大男婴','薛之谦全部专辑版权归自己','BLG战胜LGD','开车久了真的会有准确的直觉','女孩摆拍盲道被撞细节曝光','不抠字眼是一种认知高的表现','自家冰箱里拿出来的雪糕不要着急吃','蜘蛛侠4','孔雪儿邓凯一天内二搭变三搭','习近平强调做好这篇大文章','高个子最为薄弱的地方','不要被人当五折券用','已经忘了微信是怎么取代QQ的了','丁俊晖vs赵心童','养公猫和养母猫的区别','苏新皓发言哽咽','燕云十六声','赛里木湖75元自驾服务费已依法备案','制胜预告片震撼首发','泸溪河桃酥牙冠当事人发声','周佑凌因柳柳给民宿改名','胡一天时隔两年播剧','MLCC涨价30%','肖战新剧莫得闲定档','二次元毛娘因甲醛中毒永久停单','郑钦文排名跌至123位','中国男排vs日本男排','小苹果阿姨落泪称每天都在想大儿子','日本在731这天成立新特高课其心可诛'],
   async load(){ await Hot.refresh(true); },
+  // 拉取 GitHub Actions 抓取的实时热搜（同源，无CORS）
+  async fetchLive(){
+    try{
+      const r = await fetch('hot.json?v='+Date.now(), {cache:'no-store'});
+      if(!r.ok) return null;
+      const j = await r.json();
+      return j;
+    }catch(e){ return null; }
+  },
   async refresh(silent){
     const cache = await DB.get('aiCache','hot');
     const last = cache?.ts || 0;
     const threeHours = 3*60*60*1000;
     if(silent && cache && Date.now()-last < threeHours){
       Hot.render(cache.data, last);
+      // 后台静默更新热搜词条源
+      Hot.fetchLive().then(j=>{ if(j && j.items) Hot._liveData = j; });
       return;
     }
-    $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>AI 正在解读实时热点...</p></div>';
+    $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>正在拉取实时热搜...</p></div>';
+    // 1. 先拉实时热搜词条
+    const live = await Hot.fetchLive();
+    let seed = '', liveSource = '本地';
+    if(live && live.items && live.items.length > 1){
+      liveSource = live.source || '实时';
+      Hot._liveData = live;
+      seed = live.items.slice(0,30).map((t,i)=>`${i+1}. ${t.title}`).join('\n');
+      $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>AI 正在解读'+liveSource+'热搜...</p></div>';
+    }else{
+      // hot.json 不存在（Actions 还没跑过），用 AI 自行生成当下热点
+      $('#hotList').innerHTML = '<div class="empty"><div class="emoji">⏳</div><p>AI 正在生成当下热点...</p></div>';
+    }
+    // 2. AI 解读
     const todayStr = new Date().toLocaleDateString('zh-CN');
-    const seed = Hot.hotPool.slice(0,30).map((t,i)=>`${i+1}. ${t}`).join('\n');
-    const out = await AI.chat(
-      '你是一个面向年轻女性的生活方式编辑。以下是当前微博热搜词条（实时抓取）：\n'+seed+'\n\n' +
-      '请从中精选 8 条女生会关心的热点（涉及社会、文化、生活、情感、消费、健康、影视、安全等领域，过滤掉纯体育电竞），' +
-      '用 JSON 数组格式输出，每个对象含：title(热搜原标题或简化版),category(分类:社会/娱乐/生活/消费/安全/健康),detail(深度解读,150-250字,需说明：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度)。只输出JSON。',
-      `今天是${todayStr}，请从以上热搜中精选并深度解读 8 条女生向热点。`,
-      {kind:'hot', maxTokens:3500}
-    );
+    const sysPrompt = live && seed
+      ? '你是一个面向年轻女性的生活方式编辑。以下是当前'+liveSource+'实时热搜词条（GitHub Actions 自动抓取）：\n'+seed+'\n\n' +
+        '请从中精选 8 条女生会关心的热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感等领域，保持多样性），' +
+        '用 JSON 数组格式输出，每个对象含：title(热搜原标题或简化版),category(分类:时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感),detail(深度解读,150-250字,需说明：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度)。只输出JSON。'
+      : '你是面向年轻女性的生活方式编辑。请生成 8 条当下最新热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视等领域），' +
+        'JSON 数组格式，每个对象含：title(标题),category(分类),detail(深度解读150-250字,含背景/影响/给女生的建议)。只输出JSON。';
+    const out = await AI.chat(sysPrompt,
+      `今天是${todayStr}，请精选并深度解读 8 条女生向热点。`,
+      {kind:'hot', maxTokens:3500});
     const items = Hot.parse(out);
+    // 把实时热搜的原始链接并入解读结果
+    if(live && live.items){
+      const liveMap = {};
+      live.items.forEach(t=>{ liveMap[t.title] = t.url; });
+      items.forEach(it=>{ if(liveMap[it.title]) it.url = liveMap[it.title]; });
+    }
     await DB.put('aiCache',{id:'hot', data:items, ts:Date.now()});
-    Hot.render(items, Date.now());
+    Hot.render(items, Date.now(), liveSource);
+    // 甜酷小贴士
     if(!silent || !$('#dailyTip').dataset.loaded){
       const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字。只输出这句话。',
         '给我一句今日小贴士',{kind:'hot',maxTokens:80});
@@ -153,11 +182,10 @@ const Hot = {
     }
   },
   parse(text){
-    try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||''})).slice(0,8); }catch(e){}
-    // 降级：纯文本
-    return text.split('\n').map(l=>l.replace(/^\d+[.、\)\s]+/,'').trim()).filter(Boolean).slice(0,8).map(t=>({title:t,category:'生活',detail:'暂无详细说明，可点击刷新获取 AI 解读。'}));
+    try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||'',url:x.url||''})).slice(0,8); }catch(e){}
+    return text.split('\n').map(l=>l.replace(/^\d+[.、\)\s]+/,'').trim()).filter(Boolean).slice(0,8).map(t=>({title:t,category:'生活',detail:'暂无详细说明，可点击刷新获取 AI 解读。',url:''}));
   },
-  render(items, ts){
+  render(items, ts, source){
     const list = $('#hotList');
     if(!items.length){ list.innerHTML='<div class="empty"><div class="emoji">🌡️</div><p>暂无数据</p></div>'; return; }
     list.innerHTML = items.map((it,i)=>`
@@ -169,7 +197,7 @@ const Hot = {
       </div>`).join('');
     Hot._items = items;
     $('#hotTime').textContent = '更新于 '+fmtTime(ts);
-    $('#hotHint').textContent = `共 ${items.length} 条`;
+    $('#hotHint').textContent = source ? `${source}实时·AI解读` : `共 ${items.length} 条`;
   },
   detail(i){
     const it = Hot._items[i]; if(!it) return;
@@ -179,8 +207,9 @@ const Hot = {
         <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
         ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span></div>`:''}
       </div>
-      <div class="card"><div class="card-title">📝 详细解读</div><div style="font-size:14px;color:var(--text);line-height:1.7">${esc(it.detail||'暂无详细说明')}</div></div>
-      <button class="btn btn-block btn-ghost" onclick="Modal.close()">关闭</button>`);
+      <div class="card"><div class="card-title">📝 深度解读</div><div style="font-size:14px;color:var(--text);line-height:1.8">${esc(it.detail||'暂无详细解读')}</div></div>
+      ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始热搜</a>`:''}
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
   }
 };
 
