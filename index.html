@@ -182,6 +182,32 @@ a{color:var(--purple);text-decoration:none}
 .week-cell.today{outline:2px solid var(--purple)}
 .skincare-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(155,126,189,.07)}
 
+/* 护肤月历仪表盘 */
+.skin-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.skin-stat{background:var(--salt-light);border-radius:12px;padding:12px 8px;text-align:center}
+.skin-stat .v{font-size:20px;font-weight:700;color:var(--purple-deep)}
+.skin-stat .l{font-size:10px;color:var(--text-light);margin-top:2px}
+.skin-cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.skin-cal-head .ym{font-size:14px;font-weight:700;color:var(--purple-deep)}
+.skin-cal-arrow{width:30px;height:30px;border-radius:50%;background:var(--salt-light);display:flex;align-items:center;justify-content:center;color:var(--purple-deep);font-size:18px;cursor:pointer}
+.skin-cal-arrow:active{opacity:.6}
+.skin-cal-week{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px;text-align:center;font-size:10px;color:var(--text-light)}
+.skin-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.skin-cal-cell{aspect-ratio:1;border-radius:8px;background:var(--salt-light);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--text-light);cursor:pointer;transition:all .15s;position:relative}
+.skin-cal-cell:active{opacity:.6}
+.skin-cal-cell.empty{background:transparent;cursor:default}
+.skin-cal-cell .n{font-weight:600}
+.skin-cal-cell .cnt{font-size:8px;color:var(--purple);margin-top:1px}
+.skin-cal-cell.has{background:linear-gradient(135deg,#E8F0E8,#fff);color:#3D5C3D}
+.skin-cal-cell.has .cnt{color:#5A7A5A}
+.skin-cal-cell.today{outline:2px solid var(--purple)}
+.skin-cal-cell.selected{background:var(--purple);color:#fff;outline:none}
+.skin-cal-cell.selected .cnt{color:rgba(255,255,255,.8)}
+.skin-rate-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(155,126,189,.07)}
+.skin-rate-row:last-child{border:none}
+.skin-rate-bar{flex:1;height:6px;background:var(--salt-light);border-radius:3px;overflow:hidden}
+.skin-rate-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--purple),#B89BD0);border-radius:3px;transition:width .3s}
+
 /* 运动跟练卡片 */
 .sport-card{background:linear-gradient(135deg,#E8F0E8 0%,#fff 100%)}
 .watch-num{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
@@ -427,10 +453,31 @@ a{color:var(--purple);text-decoration:none}
       <h2>🧴 护肤打卡</h2>
       <button class="btn btn-sm" onclick="Skin.openAdd()">＋ 项目</button>
     </div>
+    <!-- 月历仪表盘 -->
     <div class="card">
-      <div class="card-title">📊 本周统计</div>
+      <div class="card-title">📊 护肤仪表盘</div>
+      <div class="skin-dashboard" id="skinDashboard"></div>
+      <div class="skin-cal-head">
+        <div class="skin-cal-arrow" onclick="Skin.prevMonth()">‹</div>
+        <div class="ym" id="skinCalYM">--</div>
+        <div class="skin-cal-arrow" onclick="Skin.nextMonth()">›</div>
+      </div>
+      <div class="skin-cal-week">
+        <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+      </div>
+      <div class="skin-cal-grid" id="skinCalGrid"></div>
+    </div>
+    <!-- 各项目完成率 -->
+    <div class="card">
+      <div class="card-title">📈 本月完成率</div>
+      <div id="skinRateList"></div>
+    </div>
+    <!-- 本周统计 -->
+    <div class="card">
+      <div class="card-title">📅 本周统计</div>
       <div id="skinWeek"></div>
     </div>
+    <!-- 今日打卡 -->
     <div class="card">
       <div class="card-title">✅ 今日打卡</div>
       <div id="skinToday"></div>

@@ -5,7 +5,7 @@
 /* ---------- 工具 ---------- */
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
-const today = () => new Date().toISOString().slice(0,10);
+const today = () => { const d=new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
 const now = () => new Date().toISOString();
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,7);
 const esc = s => String(s==null?'':s).replace(/[<>&"]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
@@ -18,10 +18,10 @@ const weekNames = ['日','一','二','三','四','五','六'];
 const DB = {
   db:null,
   open(){ return new Promise((res,rej)=>{
-    const r = indexedDB.open('seasalt', 3);
+    const r = indexedDB.open('seasalt', 4);
     r.onupgradeneeded = e=>{
       const db = e.target.result;
-      ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','aiCache','settings','anni','vocab'].forEach(name=>{
+      ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','aiCache','settings','anni','vocab','dramas'].forEach(name=>{
         if(!db.objectStoreNames.contains(name)) db.createObjectStore(name,{keyPath:'id'});
       });
     };
@@ -68,13 +68,22 @@ const AI = {
         '植物系香氛成为居家情绪疗愈新方式',
         '小众独立书店复合空间成周末打卡热点'
       ],
-      book:['《我胆小如鼠》余华','《人生的智慧》叔本华','《心流》米哈里','《雪国》川端康成','《明朝那些事儿》当年明月','《刻意练习》艾利克森','《人生海海》麦家','《长安的荔枝》马伯庸'],
+      book:[
+        {title:'我胆小如鼠',author:'余华',reason:'余华最被低估的中短篇，温柔却刺痛',detail:'余华以四个故事串联，写少年面对世界的怯懦与勇敢。语言朴素，却让每个曾"胆小"过的人找到共鸣——原来敏感不是缺陷，而是看见世界的另一种方式。适合在自我怀疑时重读，找回与脆弱共处的勇气。'},
+        {title:'人生的智慧',author:'叔本华',reason:'一本写给普通人的幸福指南',detail:'叔本华褪去晦涩的哲学外衣，用清晰的逻辑讨论：人如何在外物、他人、自身之间找到幸福。他认为内在丰盈远比外物重要。适合想独立思考人生、不被外界评价裹挟的女性读者。'},
+        {title:'心流',author:'米哈里',reason:'幸福不是结果，是专注的过程',detail:'心理学家米哈里提出"最优体验"——当挑战与能力匹配时，人会进入忘我的心流状态。书中给出大量案例，教你如何在工作、爱好中创造心流，让日常不再焦虑。适合想提升专注力、找回掌控感的读者。'},
+        {title:'雪国',author:'川端康成',reason:'极致的物哀之美，文字如雪',detail:'"穿过县界长长的隧道，便是雪国。"川端康成用极简笔触写一段无果的爱，在虚实之间描绘美的瞬息与虚无。读它像看一场静默的雪，适合慢下来、在冬日夜晚细品的读者。'},
+        {title:'长安的荔枝',author:'马伯庸',reason:'小人物的史诗，一口气读完',detail:'马伯庸以一骑荔枝写尽大唐官僚与小人物的命运。从岭南到长安五千余里，主角李善德用算学与韧性完成不可能的任务。节奏明快，适合喜欢历史、又被生活推着走的读者。'},
+        {title:'刻意练习',author:'艾利克森',reason:'天才不是天生的，是练出来的',detail:'心理学家艾利克森用数十年研究证明：杰出并非天赋，而是"刻意练习"。书中拆解练习的核心要素——目标、反馈、突破舒适区。适合想高效学习任何技能、不甘平庸的女性读者。'},
+        {title:'人生海海',author:'麦家',reason:'在苦难中守住尊严的故事',detail:'麦家写一个被称为"上校"的传奇人物，他的一生被流言、战争、屈辱缠绕，却始终保有秘密与体面。故事层层剥开，让人看到人性在极端中的光与影。适合喜欢悬疑叙事、思考命运与尊严的读者。'},
+        {title:'明朝那些事儿',author:'当年明月',reason:'把历史写成小说，痛快又深刻',detail:'当年明月以幽默笔调重述明朝三百年，帝王将相鲜活如邻人。但结尾最动人——他用徐霞客的故事告诉你：成功只有一种，按自己喜欢的方式过一生。适合想轻松读史、又想获得人生启示的读者。'}
+      ],
       sport:['15分钟清晨拉伸唤醒','20分钟蜜桃臀爆破训练','10分钟天鹅颈塑造','30分钟燃脂尊巴','15分钟核心马甲线','20分钟舒缓阴瑜伽','10分钟办公肩颈放松','25分钟HIIT全身燃脂'],
       study:['今日单词：serendipity 意外发现美好事物的能力','语录：种一棵树最好的时间是十年前，其次是现在','文章：《如何用费曼技巧高效学习任何技能》','单词：ephemeral 短暂的；朝生暮死的','语录：你现在的气质里，藏着你走过的路、读过的书和爱过的人','文章：《深度工作：如何专注地完成一件事》']
     };
     const arr = pool[kind] || pool.hot;
     return kind==='hot' ? arr.map((t,i)=>`${i+1}. ${t}`).join('\n')
-         : kind==='book' ? arr.map((t,i)=>`${i+1}. ${t}`).join('\n')
+         : kind==='book' ? JSON.stringify(arr.slice(0,4).map(b=>({title:b.title,author:b.author,reason:b.reason,detail:b.detail})))
          : kind==='sport' ? JSON.stringify(arr.slice(0,4).map(t=>({title:t,duration:parseInt(t),cal:parseInt(t)*4,desc:'居家跟练，无需器械'})))
          : arr.slice(0,3).map((t,i)=>`${i+1}. ${t}`).join('\n');
   }
@@ -88,7 +97,7 @@ const Nav = {
     $$('.tab').forEach(t=>t.classList.toggle('active', t.dataset.page===name));
     window.scrollTo(0,0);
     // 懒加载（const 声明不在 window 上，用直接引用）
-    const loaders = {hot:Hot, supp:Supp, recipe:Recipe, skin:Skin, sport:Sport, read:Read, study:Study, sched:Sched, frag:Frag, diary:Diary, anni:Anni, set:Setting};
+    const loaders = {hot:Hot, supp:Supp, recipe:Recipe, skin:Skin, sport:Sport, drama:Drama, read:Read, study:Study, sched:Sched, frag:Frag, diary:Diary, anni:Anni, set:Setting};
     const m = loaders[name];
     if(m && m.load) m.load();
   }
@@ -481,6 +490,11 @@ const Recipe = {
    4. 护肤打卡
    ============================================ */
 const Skin = {
+  _viewY: new Date().getFullYear(),
+  _viewM: new Date().getMonth(),
+  _selectedDate: null,
+  _items: [],
+  _records: {},
   async load(){
     let all = await DB.all('skincare');
     if(!all.length){
@@ -492,23 +506,28 @@ const Skin = {
       await Promise.all(presets.map(p=>DB.put('skincare',p)));
       all = presets;
     }
-    // 本周打卡记录
     const records = await DB.get('aiCache','skinRecords') || {id:'skinRecords', data:{}};
-    Skin.render(all, records.data);
+    Skin._items = all;
+    Skin._records = records.data || {};
+    Skin.renderWeek(all, records.data);
+    Skin.renderDashboard();
   },
   weekDates(){
     const now = new Date();
-    const day = now.getDay()||7; // 周日=7
+    const day = now.getDay()||7;
     const monday = new Date(now); monday.setDate(now.getDate()-day+1);
-    return Array.from({length:7},(_,i)=>{ const d=new Date(monday); d.setDate(monday.getDate()+i); return d.toISOString().slice(0,10); });
+    return Array.from({length:7},(_,i)=>{ const d=new Date(monday); d.setDate(monday.getDate()+i); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; });
   },
-  render(items, records){
-    // records: {itemId: {dateStr: true}}
+  renderWeek(items, records){
     const week = Skin.weekDates();
     const todayStr = today();
     $('#skinWeek').innerHTML = `
       <div class="week-grid">
-        ${week.map((d,i)=>`<div class="week-cell ${d===todayStr?'today':''}"><div class="dn">${weekNames[i+1>7?0:i+1]||'日'}</div><div>${d.slice(5)}</div></div>`).join('')}
+        ${week.map((d,i)=>{
+          const cnt = items.filter(it=>records[it.id] && records[it.id][d]).length;
+          const on = cnt>0 ? 'on' : '';
+          return `<div class="week-cell ${d===todayStr?'today':''} ${on}" onclick="Skin.selectDate('${d}')"><div class="dn">${weekNames[i+1>7?0:i+1]||'日'}</div><div>${d.slice(5)}</div>${on?`<div style="font-size:9px">${cnt}</div>`:''}</div>`;
+        }).join('')}
       </div>
       <div class="mt12">${items.map(it=>{
         const rec = records[it.id]||{};
@@ -531,16 +550,97 @@ const Skin = {
       </div>`;
     }).join('') || '<div class="muted">暂无项目</div>';
   },
-  async toggle(id){
+  prevMonth(){ if(Skin._viewM===0){Skin._viewM=11;Skin._viewY--;}else{Skin._viewM--;} Skin.renderDashboard(); },
+  nextMonth(){ if(Skin._viewM===11){Skin._viewM=0;Skin._viewY++;}else{Skin._viewM++;} Skin.renderDashboard(); },
+  renderDashboard(){
+    const items = Skin._items || [];
+    const records = Skin._records || {};
+    const Y = Skin._viewY, M = Skin._viewM;
+    $('#skinCalYM').textContent = `${Y}年${M+1}月`;
+    const monthPrefix = `${Y}-${String(M+1).padStart(2,'0')}`;
+    let totalChecks = 0; const activeDays = new Set();
+    items.forEach(it=>{
+      const rec = records[it.id] || {};
+      Object.keys(rec).forEach(date=>{
+        if(date.startsWith(monthPrefix) && rec[date]){ totalChecks++; activeDays.add(date); }
+      });
+    });
+    const daysInMonth = new Date(Y, M+1, 0).getDate();
+    const todayStr = today();
+    const isCurMonth = (Y===new Date().getFullYear() && M===new Date().getMonth());
+    const elapsed = isCurMonth ? new Date().getDate() : daysInMonth;
+    const maxPossible = items.length * elapsed;
+    $('#skinDashboard').innerHTML = `
+      <div class="skin-stat"><div class="v">${totalChecks}</div><div class="l">总打卡</div></div>
+      <div class="skin-stat"><div class="v">${activeDays.size}</div><div class="l">坚持天数</div></div>
+      <div class="skin-stat"><div class="v">${maxPossible>0?Math.round(totalChecks/maxPossible*100):0}%</div><div class="l">完成率</div></div>`;
+    const firstDay = new Date(Y, M, 1).getDay();
+    let html = '';
+    for(let i=0;i<firstDay;i++) html += '<div class="skin-cal-cell empty"></div>';
+    for(let d=1; d<=daysInMonth; d++){
+      const dateStr = `${Y}-${String(M+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+      const cnt = items.filter(it=>records[it.id] && records[it.id][dateStr]).length;
+      const cls = ['skin-cal-cell'];
+      if(cnt>0) cls.push('has');
+      if(dateStr===todayStr) cls.push('today');
+      if(dateStr===Skin._selectedDate) cls.push('selected');
+      html += `<div class="${cls.join(' ')}" onclick="Skin.selectDate('${dateStr}')"><div class="n">${d}</div>${cnt>0?`<div class="cnt">${cnt}项</div>`:''}</div>`;
+    }
+    $('#skinCalGrid').innerHTML = html;
+    $('#skinRateList').innerHTML = items.map(it=>{
+      const rec = records[it.id] || {};
+      const done = Object.keys(rec).filter(d=>d.startsWith(monthPrefix) && rec[d]).length;
+      const rate = elapsed>0 ? Math.round(done/elapsed*100) : 0;
+      return `<div class="skin-rate-row">
+        <span style="font-size:18px">${esc(it.emoji||'🧴')}</span>
+        <span style="font-size:13px;min-width:60px">${esc(it.name)}</span>
+        <div class="skin-rate-bar"><span style="width:${Math.min(rate,100)}%"></span></div>
+        <span class="muted" style="font-size:11px;min-width:50px;text-align:right">${done}/${elapsed} (${rate}%)</span>
+      </div>`;
+    }).join('') || '<div class="muted">暂无项目</div>';
+  },
+  selectDate(dateStr){
+    Skin._selectedDate = dateStr;
+    const items = Skin._items || [];
+    const records = Skin._records || {};
+    const doneItems = items.filter(it=>records[it.id] && records[it.id][dateStr]);
+    Modal.open(`📅 ${dateStr} 护肤详情`, `
+      <div class="card">
+        <div class="card-title">✅ 当天打卡 (${doneItems.length}/${items.length})</div>
+        ${doneItems.length ? doneItems.map(it=>`
+          <div class="skincare-row">
+            <span style="font-size:22px">${esc(it.emoji||'🧴')}</span>
+            <div style="flex:1;font-weight:600">${esc(it.name)}</div>
+            <span class="tag" style="background:var(--green);color:#3D5C3D">已完成</span>
+          </div>`).join('') : '<div class="muted">当天未打卡</div>'}
+      </div>
+      <div class="card">
+        <div class="card-title">📋 全部项目（点击补打卡）</div>
+        ${items.map(it=>{
+          const done = records[it.id] && records[it.id][dateStr];
+          return `<div class="skincare-row">
+            <span style="font-size:22px">${esc(it.emoji||'🧴')}</span>
+            <div style="flex:1;font-weight:600">${esc(it.name)}</div>
+            <div class="check ${done?'on':''}" onclick="Skin.toggleDate('${it.id}','${dateStr}')"></div>
+          </div>`;
+        }).join('') || '<div class="muted">暂无项目</div>'}
+      </div>
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+    Skin.renderDashboard();
+  },
+  async toggleDate(id, dateStr){
+    if(dateStr > today()){ toast('不能给未来日期打卡'); return; }
     const records = await DB.get('aiCache','skinRecords') || {id:'skinRecords', data:{}};
     records.data = records.data||{};
     records.data[id] = records.data[id]||{};
-    const t = today();
-    records.data[id][t] = !records.data[id][t];
+    records.data[id][dateStr] = !records.data[id][dateStr];
     await DB.put('aiCache', records);
-    Skin.load();
-    toast(records.data[id][t]?'✅ 打卡成功':'已取消');
+    Skin._records = records.data;
+    toast(records.data[id][dateStr]?'✅ 打卡成功':'已取消');
+    Skin.selectDate(dateStr);
+    Skin.renderDashboard();
   },
+  async toggle(id){ await Skin.toggleDate(id, today()); Skin.load(); },
   openAdd(){
     Modal.open('添加护肤项目', `
       <div class="field"><label>名称</label><input class="input" id="skName" placeholder="如：去角质"></div>
@@ -751,7 +851,14 @@ const Read = {
     let items;
     try{ items = JSON.parse(out); if(!Array.isArray(items)) throw 0; }
     catch(e){
-      items = out.split('\n').filter(l=>l.trim()).slice(0,4).map(l=>{ const m=l.replace(/^\d+[.、\s]+/,'').split(/[-—·]/); return {title:(m[0]||'').trim(), author:(m[1]||'').trim(), reason:'值得细细品味', detail:'一本让人读完后久久不能平静的书。在快节奏的生活里，它提醒我们慢下来，重新审视日常的意义。书中细腻的描写与深刻的洞察，能让女性读者找到共鸣——关于成长、关于自我、关于如何在纷繁世界中守住内心的那份清明。'}; });
+      // 降级解析：兼容 "《书名》作者" 与 "1. 《书名》- 作者" 两种格式
+      items = out.split('\n').filter(l=>l.trim()).slice(0,4).map(l=>{
+        const clean = l.replace(/^\d+[.、\)\s]+/,'').trim();
+        const m = clean.match(/《(.+?)》(.+)/);
+        if(m) return {title:m[1].trim(), author:m[2].replace(/^[-—·\s]+/,'').trim()||'佚名', reason:'值得一读的好书', detail:'一本值得静下心来阅读的书。在快节奏生活中，它提醒我们慢下来，重新审视日常的意义。'};
+        const parts = clean.split(/[-—·]/);
+        return {title:(parts[0]||clean).trim(), author:(parts[1]||'').trim()||'佚名', reason:'值得一读的好书', detail:'一本值得静下心来阅读的书。'};
+      });
     }
     await DB.put('aiCache',{id:'bookRec', data:items, ts:Date.now()});
     Read.renderRec(items);
@@ -841,12 +948,12 @@ const Study = {
     if(!records.length) return 0;
     const set = new Set(records);
     let s=0; const d=new Date();
-    while(true){ const ds=d.toISOString().slice(0,10); if(set.has(ds)){ s++; d.setDate(d.getDate()-1); } else break; }
+    while(true){ const ds=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; if(set.has(ds)){ s++; d.setDate(d.getDate()-1); } else break; }
     return s;
   },
   switchTab(cat){
     Study._currentTab = cat;
-    $$('.study-tab').forEach(t=>t.classList.toggle('active', t.dataset.cat===cat));
+    $$('#page-study .study-tab').forEach(t=>t.classList.toggle('active', t.dataset.cat===cat));
     Study.renderTab();
   },
   renderTab(){
@@ -1186,7 +1293,7 @@ const Sched = {
   },
   openAdd(){
     const now = new Date(); now.setHours(now.getHours()+1,0,0);
-    const def = now.toISOString().slice(0,16);
+    const def = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}T${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
     Modal.open('添加工作事项', `
       <div class="field"><label>事项标题</label><input class="input" id="scTitle" placeholder="如：开会 / 提交报告"></div>
       <div class="field"><label>时间</label><input class="input" id="scTime" type="datetime-local" value="${def}"></div>
@@ -1575,7 +1682,7 @@ const Setting = {
   },
   async exportData(){
     const data = {};
-    for(const s of ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','anni','vocab']){
+    for(const s of ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','anni','vocab','dramas']){
       data[s] = await DB.all(s);
     }
     const blob = new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
@@ -1586,7 +1693,7 @@ const Setting = {
   async clearData(){
     if(!confirm('确定清空全部数据？此操作不可恢复！')) return;
     if(!confirm('再次确认：所有打卡、记录、日程都将删除！')) return;
-    for(const s of ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','anni','vocab','aiCache']){
+    for(const s of ['supplements','recipes','skincare','sports','reads','study','schedule','fragments','diary','anni','vocab','dramas','aiCache']){
       await DB.clear(s);
     }
     toast('已清空'); location.reload();
