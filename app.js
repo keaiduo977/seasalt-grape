@@ -149,7 +149,7 @@ const Hot = {
     }
     // AI 精选解读（3小时内用缓存）
     if(silent && cache && Date.now()-last < threeHours){
-      Hot.render(cache.data, last);
+      Hot.render(cache.data, last, Hot._liveData?.source || '实时');
       return;
     }
     $('#hotList').innerHTML = '<div class="empty"><div class="emoji">🤖</div><p>AI 正在精选解读...</p></div>';
