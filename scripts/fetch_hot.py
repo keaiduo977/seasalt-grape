@@ -17,6 +17,27 @@ HEADERS = {
     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
 }
 
+# 分类关键词词典
+CATEGORY_RULES = [
+    ('时政', ['全会', '中央', '国务院', '习近平', '主席', '总理', '书记', '反腐', '被查', '纪委', '监察', '两会', '人大', '政协', '政策', '外交', '访问', '会见', '外交部', '国防部', '政治局', '党中央', '改革开放', '治理', '党员', '干部']),
+    ('经济', ['股市', 'A股', '基金', '经济', '消费', 'GDP', '房价', '楼市', '利率', '降息', '通胀', '金融', '银行', '资本', '市场', '投资', '外贸', '出口', '进口', '新能源', '芯片', '半导体', '科技股', '比特币', '数字货币', '内卷', '就业', '失业']),
+    ('科技', ['AI', '人工智能', 'GPT', '大模型', '百度', '腾讯', '阿里', '华为', '小米', '苹果', '谷歌', '微软', 'OpenAI', '火箭', '卫星', '航天', '5G', '6G', '量子', '机器人', '自动驾驶', '芯片', '半导体', '光刻']),
+    ('社会', ['地震', '洪水', '台风', '暴雨', '山体', '滑坡', '火灾', '事故', '遇难', '救援', '警方', '刑拘', '逮捕', '判决', '法院', '律师', '学生', '校园', '高校', '高考', '考研', '开学', '毕业', '医疗', '医院', '医生']),
+    ('娱乐', ['剧', '综艺', '电影', '票房', '演唱会', '明星', '演员', '歌手', '偶像', '出道', '开播', '杀青', '官宣', '离婚', '结婚', '恋情', '八卦', '粉丝', '爱豆', '选秀']),
+    ('体育', ['奥运', '亚运', '世界杯', 'NBA', 'CBA', '足球', '篮球', '乒乓球', '羽毛球', '游泳', '田径', '体操', '滑雪', '冠军', '决赛', '半决赛', '联赛', '欧冠', '英超', '中超', '选手', '运动员', '教练']),
+    ('美妆', ['美妆', '护肤', '化妆', '口红', '粉底', '精华', '面膜', '防晒', '美白', '抗老', '医美', '整形', '美容', '穿搭', '时尚', '品牌', '限定', '联名', '香水']),
+    ('新媒体', ['短视频', '直播', '抖音', '快手', 'B站', '小红书', '微博', '热搜', '网红', '主播', 'UP主', '博主', '流量', '爆款', '出圈']),
+]
+
+
+def categorize(title):
+    """根据标题关键词自动分类"""
+    for category, keywords in CATEGORY_RULES:
+        for kw in keywords:
+            if kw in title:
+                return category
+    return '热点'
+
 
 def fetch_weibo():
     """微博热搜榜"""
@@ -42,7 +63,8 @@ def fetch_weibo():
                         'title': title,
                         'hot': hot,
                         'source': 'weibo',
-                        'url': 'https://s.weibo.com' + td_content.get('href', '')
+                        'url': 'https://s.weibo.com' + td_content.get('href', ''),
+                        'category': categorize(title)
                     })
         if items:
             return items[:30], '微博'
@@ -67,7 +89,8 @@ def fetch_zhihu():
                     'title': title,
                     'hot': d.get('detail_text', '').replace('万热度', '').strip() if d.get('detail_text') else 0,
                     'source': 'zhihu',
-                    'url': f"https://www.zhihu.com/question/{target.get('id', '')}"
+                    'url': f"https://www.zhihu.com/question/{target.get('id', '')}",
+                    'category': categorize(title)
                 })
         if items:
             return items[:30], '知乎'
@@ -90,7 +113,8 @@ def fetch_baidu():
                     'title': title,
                     'hot': 0,
                     'source': 'baidu',
-                    'url': ''
+                    'url': '',
+                    'category': categorize(title)
                 })
         if items:
             return items[:30], '百度'
@@ -113,7 +137,8 @@ def fetch_toutiao():
                     'title': title,
                     'hot': d.get('HotValue', 0),
                     'source': 'toutiao',
-                    'url': d.get('Url', '')
+                    'url': d.get('Url', ''),
+                    'category': categorize(title)
                 })
         if items:
             return items[:30], '头条'
@@ -138,14 +163,16 @@ def main():
     if not items:
         print('❌ 所有源都失败，使用兜底数据')
         items = [
-            {'title': '今日热点加载中', 'hot': 0, 'source': 'fallback', 'url': ''},
+            {'title': '今日热点加载中', 'hot': 0, 'source': 'fallback', 'url': '', 'category': '热点'},
         ]
         source_name = '兜底'
 
+    now = datetime.now(timezone.utc)
     output = {
         'source': source_name,
+        'updated': now.strftime('%Y-%m-%d %H:%M UTC'),
         'items': items,
-        'updateTime': datetime.now(timezone.utc).isoformat(),
+        'updateTime': now.isoformat(),
         'total': len(items)
     }
 
