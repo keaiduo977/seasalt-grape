@@ -56,6 +56,15 @@ const AI = {
       return j.choices?.[0]?.message?.content || AI._fallback(opts.kind);
     }catch(e){ console.warn('AI fetch fail',e); return AI._fallback(opts.kind); }
   },
+  _cleanJSON(t){
+    if(!t) return t;
+    let s = String(t).trim();
+    // 去掉 ```json / ``` 代码块包裹
+    if(s.startsWith('```')){ s = s.replace(/^```[a-zA-Z]*\n?/,'').replace(/```\s*$/,'').trim(); }
+    // 提取第一个 JSON 数组或对象（容忍前后多余文字）
+    const m = s.match(/\[[\s\S]*\]|\{[\s\S]*\}/);
+    return m ? m[0] : s;
+  },
   _fallback(kind){
     const pool = {
       hot:[
@@ -1062,16 +1071,26 @@ const Read = {
       {kind:'book', maxTokens:2500}
     );
     let items;
-    try{ items = JSON.parse(out); if(!Array.isArray(items)) throw 0; }
-    catch(e){
-      // 降级解析：兼容 "《书名》作者" 与 "1. 《书名》- 作者" 两种格式
+    try{
+      const raw = AI._cleanJSON(out);
+      items = JSON.parse(raw);
+      if(!Array.isArray(items)) throw 0;
+      // 字段容错：兼容 title/name、author/writer、reason/recommend、detail/desc 等不同命名
+      items = items.map(b => (b && typeof b === 'object') ? {
+        title: b.title || b.name || b.book || b.书名 || '',
+        author: b.author || b.writer || b.作者 || '',
+        reason: b.reason || b.recommend || b.why || b.推荐理由 || '',
+        detail: b.detail || b.desc || b.intro || b.summary || b.简介 || b.介绍 || ''
+      } : {title:String(b||''), author:'', reason:'', detail:''});
+    }catch(e){
+      // 兜底：兼容 "《书名》作者" 纯文本；仍失败则提示重试，避免雷同占位
       items = out.split('\n').filter(l=>l.trim()).slice(0,4).map(l=>{
         const clean = l.replace(/^\d+[.、\)\s]+/,'').trim();
         const m = clean.match(/《(.+?)》(.+)/);
-        if(m) return {title:m[1].trim(), author:m[2].replace(/^[-—·\s]+/,'').trim()||'佚名', reason:'值得一读的好书', detail:'一本值得静下心来阅读的书。在快节奏生活中，它提醒我们慢下来，重新审视日常的意义。'};
-        const parts = clean.split(/[-—·]/);
-        return {title:(parts[0]||clean).trim(), author:(parts[1]||'').trim()||'佚名', reason:'值得一读的好书', detail:'一本值得静下心来阅读的书。'};
-      });
+        if(m) return {title:m[1].trim(), author:m[2].replace(/^[-—·\s]+/,'').trim()||'佚名', reason:m[2].trim().slice(0,30), detail:''};
+        return null;
+      }).filter(Boolean);
+      if(!items.length) items = [{title:'AI 返回格式异常', author:'', reason:'点击「AI 推荐」重试', detail:'这次 AI 的回复没能解析成书单，请重新点一次 AI 推荐。'}];
     }
     await DB.put('aiCache',{id:'bookRec', data:items, ts:Date.now()});
     Read.renderRec(items);
