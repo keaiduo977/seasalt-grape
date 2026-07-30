@@ -296,18 +296,51 @@ const Hot = {
         <span class="muted" style="font-size:11px">›</span>
       </div>`).join('');
     Hot._items = items;
+    // 显示来源标注
+    if(source){
+      const aiHint = $('#hotAiHint');
+      if(aiHint) aiHint.textContent = `${source}实时 · AI 精选 ${items.length} 条`;
+    }
   },
-  detail(i){
+  async detail(i){
     const it = Hot._items[i]; if(!it) return;
-    Modal.open('🔥 热点详情', `
+    // 弹窗（先显示 loading）
+    Modal.open('🔥 精选解读', `
       <div class="ai-card">
         <div class="ai-tag">🔥 精选 #${i+1}</div>
         <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
         ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span></div>`:''}
       </div>
-      <div class="card"><div class="card-title">📝 深度解读</div><div style="font-size:14px;color:var(--text);line-height:1.8">${esc(it.detail||'暂无详细解读')}</div></div>
+      <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="aiDetailBody" style="font-size:14px;color:var(--text);line-height:1.8">${it.detail && it.detail.length>20 ? '<p>'+esc(it.detail)+'</p>' : '<div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div>'}</div></div>
+      ${!AI.getKey()?`<div class="card" style="background:var(--salt-light);border:1px dashed var(--purple)"><div class="muted" style="font-size:13px">💡 未配置 DeepSeek Key，显示基础模板。在「设置」中添加 Key 可解锁 AI 真实解读</div></div>`:''}
       ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始热搜</a>`:''}
       <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+    // 如果已有 detail 且足够长，直接返回
+    if(it.detail && it.detail.length > 20) return;
+    // 否则 AI 生成解读
+    try{
+      const key = AI.getKey();
+      let detail;
+      if(key){
+        detail = await AI.chat(
+          '你是面向年轻女性的生活方式编辑。请对以下热点进行深度解读（200-300字），需包含：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度。用自然流畅的口语化文风，不要用分点编号，直接写段落。只输出解读正文。',
+          `热点词条：${it.title}\n分类：${it.category||'热点'}`,
+          {kind:'hot', maxTokens:800});
+      }else{
+        // 无 Key：基础模板
+        detail = `【${it.category||'热点'}】${it.title}\n\n这是一条 AI 精选的女生向热点话题。\n\n作为女生向内容编辑的建议：①关注事件核心背景与人物立场；②思考与日常生活（消费/职场/情感/健康）的关联；③在社交平台发表看法时保持独立判断；④理性吸收，避免被舆论裹挟。\n\n💡 在「设置」中配置 DeepSeek API Key 后，可解锁 AI 深度解读（200-300字，含背景、影响、给女生的具体建议）。`;
+      }
+      const body = $('#aiDetailBody');
+      if(body){
+        const formatted = detail.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join('');
+        body.innerHTML = formatted;
+      }
+      // 缓存到 item
+      it.detail = detail;
+    }catch(e){
+      const body = $('#aiDetailBody');
+      if(body) body.innerHTML = '<p class="muted">解读加载失败，请稍后重试。</p>';
+    }
   }
 };
 
