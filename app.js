@@ -788,6 +788,219 @@ const Sport = {
 };
 
 /* ============================================
+   5.5 剧集推荐（GitHub Actions 抓取 + 想看/已看 + 影评）
+   ============================================ */
+const Drama = {
+  _tab: 'rec',
+  _liveData: null,
+  _liveItems: null,
+  _items: [],
+  _score: 3,
+  async load(){
+    Drama._items = await DB.all('dramas');
+    await Drama.fetchLive();
+    Drama.render();
+  },
+  async fetchLive(){
+    try{
+      const r = await fetch('drama.json?v='+Date.now(), {cache:'no-store'});
+      if(!r.ok) return;
+      const j = await r.json();
+      if(j && j.items && j.items.length){
+        Drama._liveData = j;
+        $('#dramaSourceTag').textContent = (j.source||'豆瓣') + '热播';
+        if(j.updated) $('#dramaTime').textContent = j.updated;
+      }
+    }catch(e){ /* 静默失败，用缓存 */ }
+  },
+  async refresh(){
+    await Drama.fetchLive();
+    Drama.render();
+    toast('已刷新 🎬');
+  },
+  switchTab(cat){
+    Drama._tab = cat;
+    $$('#page-drama .study-tab').forEach(t=>t.classList.toggle('active', t.dataset.cat===cat));
+    Drama.render();
+  },
+  render(){
+    const box = $('#dramaList');
+    const tab = Drama._tab;
+    if(tab==='rec'){
+      const live = Drama._liveData;
+      if(!live || !live.items || !live.items.length){
+        box.innerHTML = '<div class="empty"><div class="emoji">🎬</div><p>剧集数据加载中，稍后刷新...</p></div>';
+        return;
+      }
+      const myDramas = Drama._items || [];
+      box.innerHTML = live.items.map((d,i)=>`
+        <div class="drama-card" onclick="Drama.detail(${i})">
+          <div class="between">
+            <div style="flex:1;min-width:0">
+              <div class="dt">${esc(d.title)}</div>
+              <div class="dm">
+                <span class="drama-cat ${Drama.catClass(d.type)}">${esc(d.type)}</span>
+                ${d.category?`<span class="drama-cat">${esc(d.category)}</span>`:''}
+                ${d.rating?`<span class="rating">★ ${esc(d.rating)}</span>`:''}
+                ${Drama.myStatus(d.title, myDramas)}
+              </div>
+            </div>
+            <span class="muted" style="font-size:16px">›</span>
+          </div>
+        </div>`).join('');
+      Drama._liveItems = live.items;
+    } else {
+      const list = (Drama._items||[]).filter(d=>d.status===tab);
+      box.innerHTML = list.length ? list.map(d=>`
+        <div class="drama-card" onclick="Drama.openMine('${d.id}')">
+          <div class="between">
+            <div style="flex:1;min-width:0">
+              <div class="dt">${esc(d.title)}</div>
+              <div class="dm">
+                <span class="drama-cat ${Drama.catClass(d.type)}">${esc(d.type)}</span>
+                ${d.category?`<span class="drama-cat">${esc(d.category)}</span>`:''}
+                ${tab==='watched' && d.rating?`<span class="rating">★ ${d.rating}</span>`:''}
+                <span class="drama-status ${d.status}">${d.status==='want'?'想看':'已看'}</span>
+              </div>
+              ${tab==='watched' && d.review?`<div class="muted mt8" style="font-size:12px;line-height:1.6">${esc(d.review.slice(0,50))}${d.review.length>50?'...':''}</div>`:''}
+            </div>
+            <span class="muted" style="font-size:16px">›</span>
+          </div>
+        </div>`).join('') : `<div class="empty"><div class="emoji">${tab==='want'?'💡':'✅'}</div><p>${tab==='want'?'还没有想看的剧集<br>去推荐 tab 收藏吧':'还没有标记已看的剧集<br>看完一部来写影评吧'}</p></div>`;
+    }
+  },
+  catClass(type){
+    return ({'电影':'movie','电视剧':'tv','综艺':'show','纪录片':'doc'})[type] || '';
+  },
+  myStatus(title, myDramas){
+    const d = myDramas.find(x=>x.title===title);
+    if(!d) return '';
+    return `<span class="drama-status ${d.status}">${d.status==='want'?'想看':'已看'}</span>`;
+  },
+  detail(i){
+    const d = Drama._liveItems[i]; if(!d) return;
+    const myDramas = Drama._items || [];
+    const mine = myDramas.find(x=>x.title===d.title);
+    Modal.open('🎬 ' + d.title, `
+      <div class="ai-card">
+        <div class="ai-tag">🔥 ${(Drama._liveData.source||'豆瓣')}热播</div>
+        <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(d.title)}</div>
+        <div class="flex gap8 mt8 wrap">
+          <span class="drama-cat ${Drama.catClass(d.type)}">${esc(d.type)}</span>
+          ${d.category?`<span class="drama-cat">${esc(d.category)}</span>`:''}
+          ${d.rating?`<span class="tag tag-yellow">★ ${esc(d.rating)}</span>`:''}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📝 简介</div>
+        <div id="dramaSummary" style="font-size:14px;color:var(--text);line-height:1.7">
+          ${d.summary ? esc(d.summary) : '<div class="empty" style="padding:16px 0"><div class="emoji">🤖</div><p>AI 正在生成简介...</p></div>'}
+        </div>
+      </div>
+      ${mine?`<div class="card" style="background:var(--salt-light)"><div class="muted">你已标记为「${mine.status==='want'?'想看':'已看'}」</div></div>`:''}
+      <div class="flex gap8 mt8">
+        ${!mine||mine.status!=='want'?`<button class="btn btn-ghost" style="flex:1" onclick="Drama.markWant(${i});Modal.close()">💡 想看</button>`:''}
+        <button class="btn" style="flex:1" onclick="Drama.markWatched(${i})">✅ 已看</button>
+        ${d.url?`<a href="${esc(d.url)}" target="_blank" class="btn btn-outline" style="flex:1">🔗 详情</a>`:''}
+      </div>
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+    if(!d.summary){
+      AI.chat('你是影视编辑。请用 120-160 字介绍作品《'+d.title+'》（'+d.type+'），包含题材、看点、适合人群。只输出正文。',
+        '请介绍《'+d.title+'》', {kind:'hot', maxTokens:300}).then(txt=>{
+        const body = $('#dramaSummary');
+        if(body && txt) body.innerHTML = '<p>'+esc(txt.split('\n')[0])+'</p>';
+      }).catch(()=>{});
+    }
+  },
+  async markWant(i){
+    const d = Drama._liveItems[i]; if(!d) return;
+    const existing = (Drama._items||[]).find(x=>x.title===d.title);
+    if(existing){ existing.status='want'; await DB.put('dramas', existing); }
+    else {
+      await DB.put('dramas',{id:uid(), title:d.title, type:d.type, category:d.category||'',
+        status:'want', date:today(), rating:0, review:'', url:d.url||'', summary:d.summary||''});
+    }
+    Drama._items = await DB.all('dramas');
+    Drama.render();
+    toast('已加入想看 💡');
+  },
+  markWatched(i){
+    const d = Drama._liveItems[i]; if(!d) return;
+    Drama.openReview(null, d);
+  },
+  async openMine(id){
+    const d = await DB.get('dramas', id); if(!d) return;
+    Modal.open('🎬 ' + d.title, `
+      <div class="ai-card">
+        <div class="ai-tag">${d.status==='want'?'💡 想看':'✅ 已看'} · ${esc(d.date||'')}</div>
+        <div style="font-size:17px;font-weight:700;color:var(--purple-deep)">${esc(d.title)}</div>
+        <div class="flex gap8 mt8 wrap">
+          <span class="drama-cat ${Drama.catClass(d.type)}">${esc(d.type)}</span>
+          ${d.category?`<span class="drama-cat">${esc(d.category)}</span>`:''}
+          ${d.rating?`<span class="rating">★ ${d.rating}</span>`:''}
+        </div>
+      </div>
+      ${d.summary?`<div class="card"><div class="card-title">📝 简介</div><div style="font-size:14px;color:var(--text);line-height:1.7">${esc(d.summary)}</div></div>`:''}
+      ${d.review?`<div class="card"><div class="card-title">✍️ 我的影评</div><div style="font-size:14px;color:var(--text);line-height:1.8;white-space:pre-wrap">${esc(d.review)}</div>${d.reviewTs?`<div class="muted mt8" style="font-size:11px">${fmtDate(d.reviewTs)}</div>`:''}</div>`:''}
+      ${d.url?`<a href="${esc(d.url)}" target="_blank" class="btn btn-block btn-outline mt8">🔗 查看原片</a>`:''}
+      <div class="flex gap8 mt8">
+        ${d.status==='want'?`<button class="btn" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✅ 标记已看 + 写影评</button>`:`<button class="btn btn-ghost" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✍️ 编辑影评</button>`}
+        <button class="btn btn-red" style="flex:1" onclick="Drama.del('${d.id}');Modal.close()">🗑 删除</button>
+      </div>
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+  },
+  openReview(id, d){
+    const target = id ? (Drama._items||[]).find(x=>x.id===id) : d;
+    if(!target) return;
+    const starsHtml = [1,2,3,4,5].map(i=>`<span class="${i<=(target.rating||3)?'on':''}" data-v="${i}">★</span>`).join('');
+    Modal.open('✍️ 写影评', `
+      <div class="card" style="background:var(--salt-light);margin-bottom:12px">
+        <div style="font-weight:700;color:var(--purple-deep)">${esc(target.title)}</div>
+        <div class="muted">${esc(target.type)} ${target.category?'· '+esc(target.category):''}</div>
+      </div>
+      <div class="field"><label>评分</label>
+        <div class="stars" id="drStars">${starsHtml}</div>
+      </div>
+      <div class="field"><label>影评（写写你的感受）</label>
+        <textarea class="textarea" id="drReview" placeholder="这部剧让你印象最深的是什么？剧情、表演、镜头、还是某个瞬间..." style="min-height:140px">${esc(target.review||'')}</textarea>
+      </div>
+      <button class="btn btn-block" onclick="Drama.saveReview('${id||''}', ${d?`'${esc(d.title)}'`:'null'}, ${d?`'${esc(d.type)}'`:'null'}, ${d?`'${esc(d.category||'')}'`:'null'}, ${d?`'${esc(d.url||'')}'`:'null'}, ${d?`'${esc(d.summary||'')}'`:'null'})">保存</button>`);
+    let score = target.rating || 3;
+    $$('#drStars span').forEach(s=>s.onclick=()=>{
+      score = parseInt(s.dataset.v);
+      $$('#drStars span').forEach(x=>x.classList.toggle('on', parseInt(x.dataset.v)<=score));
+    });
+    Drama._score = ()=>score;
+  },
+  async saveReview(id, title, type, category, url, summary){
+    let rec;
+    if(id){
+      rec = await DB.get('dramas', id);
+      if(!rec) return;
+    } else {
+      rec = {id:uid(), title, type, category, url, summary, date:today(), status:'watched'};
+    }
+    rec.status = 'watched';
+    rec.rating = Drama._score();
+    rec.review = $('#drReview').value.trim();
+    rec.reviewTs = now();
+    if(!rec.review){ toast('请写点影评再保存'); return; }
+    await DB.put('dramas', rec);
+    Drama._items = await DB.all('dramas');
+    Modal.close();
+    Drama.render();
+    toast('影评已保存 ✍️');
+  },
+  async del(id){
+    if(!confirm('从清单删除？')) return;
+    await DB.del('dramas', id);
+    Drama._items = await DB.all('dramas');
+    Drama.render();
+    toast('已删除');
+  }
+};
+
+/* ============================================
    6. 阅读打卡
    ============================================ */
 const Read = {
