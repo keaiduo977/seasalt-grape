@@ -271,7 +271,8 @@ const Hot = {
       }else{
         // 无 Key：给一个基于该词条的基础解读模板
         const hotTxt = it.hot ? Hot.fmtHot(it.hot)+'热度' : '较高';
-        detail = `【${it.category||'热点'}】${it.title}\n\n这是当前${it.source||'实时'}热搜上排名第${items.indexOf(it)+1}位的话题，关注度${hotTxt}。\n\n作为女生向内容编辑的建议：①关注事件核心背景与人物立场；②思考与日常生活（消费/职场/情感/健康）的关联；③在社交平台发表看法时保持独立判断；④理性吸收，避免被舆论裹挟。\n\n💡 在「设置」中配置 DeepSeek API Key 后，可解锁 AI 深度解读（200-300字，含背景、影响、给女生的具体建议）。`;
+        const sourceName = (Hot._liveData && Hot._liveData.source) || '实时';
+        detail = `【${it.category||'热点'}】${it.title}\n\n这是当前${sourceName}热搜上排名第${i+1}位的话题，关注度${hotTxt}。\n\n作为女生向内容编辑的建议：①关注事件核心背景与人物立场；②思考与日常生活（消费/职场/情感/健康）的关联；③在社交平台发表看法时保持独立判断；④理性吸收，避免被舆论裹挟。\n\n💡 在「设置」中配置 DeepSeek API Key 后，可解锁 AI 深度解读（200-300字，含背景、影响、给女生的具体建议）。`;
       }
       const body = $('#liveDetailBody');
       if(body){
