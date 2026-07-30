@@ -256,16 +256,27 @@ const Hot = {
         ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span> ${it.hot?'<span class="muted">🔥 '+Hot.fmtHot(it.hot)+'</span>':''}</div>`:''}
       </div>
       <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="liveDetailBody" style="font-size:14px;color:var(--text);line-height:1.8"><div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div></div></div>
+      ${!AI.getKey()?`<div class="card" style="background:var(--salt-light);border:1px dashed var(--purple)"><div class="muted" style="font-size:13px">💡 未配置 DeepSeek Key，显示基础模板。在「设置」中添加 Key 可解锁 AI 真实解读</div></div>`:''}
       ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始新闻</a>`:''}
       <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
     // AI 生成深度解读
     try{
-      const detail = await AI.chat(
-        '你是面向年轻女性的生活方式编辑。请对以下热搜词条进行深度解读（200-300字），需包含：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度。用自然流畅的口语化文风，不要用分点编号，直接写段落。只输出解读正文。',
-        `热搜词条：${it.title}\n分类：${it.category||'热点'}`,
-        {kind:'hot', maxTokens:800});
+      const key = AI.getKey();
+      let detail;
+      if(key){
+        detail = await AI.chat(
+          '你是面向年轻女性的生活方式编辑。请对以下热搜词条进行深度解读（200-300字），需包含：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度。用自然流畅的口语化文风，不要用分点编号，直接写段落。只输出解读正文。',
+          `热搜词条：${it.title}\n分类：${it.category||'热点'}`,
+          {kind:'hot', maxTokens:800});
+      }else{
+        // 无 Key：给一个基于该词条的基础解读模板
+        detail = `【${it.category||'热点'}】${it.title}\n\n这是当前${it.source||'实时'}热搜上排名第${items.indexOf(it)+1}位的话题，关注度${it.hot?Hot.fmtHot(it.hot)+'热度':''较高。\n\n作为女生向内容编辑的建议：①关注事件核心背景与人物立场；②思考与日常生活（消费/职场/情感/健康）的关联；③在社交平台发表看法时保持独立判断；④理性吸收，避免被舆论裹挟。\n\n💡 在「设置」中配置 DeepSeek API Key 后，可解锁 AI 深度解读（200-300字，含背景、影响、给女生的具体建议）。`;
+      }
       const body = $('#liveDetailBody');
-      if(body) body.innerHTML = `<p>${esc(detail.replace(/^[\d.、\s]+/,''))}</p>`;
+      if(body){
+        const formatted = detail.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join('');
+        body.innerHTML = formatted;
+      }
     }catch(e){
       const body = $('#liveDetailBody');
       if(body) body.innerHTML = '<p class="muted">解读加载失败，请稍后重试。可点击下方链接查看原始新闻。</p>';
