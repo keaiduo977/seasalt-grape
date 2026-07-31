@@ -157,19 +157,26 @@ const Hot = {
     const isUser = silent !== true;
     const btn = isUser ? document.querySelector('#page-hot button[onclick*="Hot.refresh"]') : null;
     if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
-    // 实时热搜（同源，无CORS）—— 点击任意条目即可唤起 AI 深度解读
+    // 重新拉取实时热搜（同源 hot.json，GitHub Actions 每 3 小时抓取一次）
     const live = await Hot.fetchLive();
     if(live && live.items && live.items.length > 1){
       Hot._liveData = live;
+      // 用户手动刷新时：若上游数据与当前一致，打乱顺序让用户立刻看到变化
+      const prev = Hot._lastUpdated;
+      const cur = live.updated;
+      if(isUser && prev && cur && prev===cur){
+        live.items = live.items.slice().sort(()=>Math.random()-0.5);
+      }
+      Hot._lastUpdated = cur;
       Hot.renderLive(live);
     }else{
       Hot.renderLive(null);
     }
-    // 甜酷小贴士
+    // 甜酷小贴士：用户手动刷新时强制重新生成（忽略 dataset.loaded 缓存）
     if(!silent || !$('#dailyTip').dataset.loaded){
       try{
-        const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字。只输出这句话。',
-          '给我一句今日小贴士',{kind:'hot',maxTokens:80});
+        const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字，每次给不同的。只输出这句话。',
+          '给我一句今日小贴士，这次要不一样',{kind:'hot',maxTokens:80});
         $('#dailyTip').textContent = tip.replace(/^[\d.、\s]+/,'').split('\n')[0];
         $('#dailyTip').dataset.loaded = '1';
       }catch(e){ /* 保留上一次提示 */ }
