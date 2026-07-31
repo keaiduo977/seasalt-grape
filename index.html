@@ -193,20 +193,42 @@ a{color:var(--purple);text-decoration:none}
 .skin-cal-arrow{width:24px;height:24px;border-radius:50%;background:var(--salt-light);display:flex;align-items:center;justify-content:center;color:var(--purple-deep);font-size:14px;cursor:pointer}
 .skin-cal-arrow:active{opacity:.6}
 .skin-cal-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-bottom:3px;text-align:center;font-size:9px;color:var(--text-light);min-width:0}
-.skin-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;min-width:0}
-.skin-cal-cell{height:38px;border-radius:6px;background:var(--salt-light);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:var(--text-light);cursor:pointer;transition:all .15s;position:relative;line-height:1.1}
+.skin-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;min-width:0;grid-auto-rows:1fr}
+.skin-cal-cell{aspect-ratio:1/1;min-height:34px;border-radius:9px;background:var(--salt-light);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:var(--text-light);cursor:pointer;transition:all .15s;position:relative;line-height:1.1;overflow:hidden}
 .skin-cal-cell:active{opacity:.6}
 .skin-cal-cell.empty{background:transparent;cursor:default}
-.skin-cal-cell .n{font-weight:600;font-size:11px}
+.skin-cal-cell .n{font-weight:600;font-size:12px}
 .skin-cal-cell .cnt{font-size:7px;color:var(--purple);margin-top:1px}
 .skin-cal-cell.has{background:linear-gradient(135deg,#E8F0E8,#fff);color:#3D5C3D}
 .skin-cal-cell.has .cnt{color:#5A7A5A}
-.skin-cal-cell.today{outline:1.5px solid var(--purple)}
-.skin-cal-cell.selected{background:var(--purple);color:#fff;outline:none}
-.skin-cal-cell.selected .cnt{color:rgba(255,255,255,.8)}
+.skin-cal-cell.today{background:var(--purple);color:#fff}
+.skin-cal-cell.today .n{color:#fff}
+.skin-cal-cell.today .cnt{color:rgba(255,255,255,.85)}
+.skin-cal-cell.selected{background:var(--purple-deep);color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.skin-cal-cell.selected .n{color:#fff}
+.skin-cal-cell.selected .cnt{color:rgba(255,255,255,.85)}
 .skin-rate-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid rgba(155,126,189,.07)}
 .skin-rate-row:last-child{border:none}
 .skin-rate-bar{flex:1;height:5px;background:var(--salt-light);border-radius:3px;overflow:hidden}
+/* ===== 日程苹果风格月历 ===== */
+.sched-cal-head{display:flex;align-items:center;justify-content:space-between;margin:2px 0 8px}
+.sched-cal-ym{font-size:14px;font-weight:700;color:var(--purple-deep)}
+.sched-cal-arrow{width:26px;height:26px;border-radius:50%;background:var(--salt-light);display:flex;align-items:center;justify-content:center;color:var(--purple-deep);font-size:16px;cursor:pointer}
+.sched-cal-arrow:active{opacity:.6}
+.sched-cal-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-bottom:4px;text-align:center;font-size:10px;color:var(--text-light);min-width:0}
+.sched-cal-week span{font-weight:600}
+.sched-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;min-width:0;grid-auto-rows:1fr}
+.sched-cal-cell{aspect-ratio:1/1;min-height:32px;border-radius:9px;background:var(--salt-light);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--text-light);cursor:pointer;transition:all .15s;position:relative;line-height:1.1;overflow:hidden}
+.sched-cal-cell:active{opacity:.6}
+.sched-cal-cell.empty{background:transparent;cursor:default}
+.sched-cal-cell .n{font-weight:600;font-size:12px}
+.sched-cal-cell .dot{width:5px;height:5px;border-radius:50%;background:var(--purple);margin-top:3px}
+.sched-cal-cell.today{background:var(--purple);color:#fff}
+.sched-cal-cell.today .n{color:#fff}
+.sched-cal-cell.today .dot{background:#fff}
+.sched-cal-cell.selected{background:var(--purple-deep);color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.sched-cal-cell.selected .n{color:#fff}
+.sched-cal-cell.selected .dot{background:#fff}
 .skin-rate-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--purple),#B89BD0);border-radius:3px;transition:width .3s}
 
 /* 运动跟练卡片 */
@@ -417,16 +439,8 @@ a{color:var(--purple);text-decoration:none}
       </div>
       <!-- 分类筛选 -->
       <div class="hot-cats" id="hotCats"></div>
-      <!-- 实时热搜列表 -->
+      <!-- 实时热搜列表（点击条目即可唤起 AI 深度解读） -->
       <div id="hotLiveList"></div>
-      <!-- AI 精选解读 -->
-      <div class="hot-ai-section" id="hotAiSection">
-        <div class="between mt12" style="padding:0 4px">
-          <div class="card-title" style="margin:0">🤖 AI 精选解读</div>
-          <span class="muted" style="font-size:11px" id="hotAiHint">AI 精选中...</span>
-        </div>
-        <div id="hotList" style="margin-top:8px"><div class="empty"><div class="emoji">🌡️</div><p>加载中...</p></div></div>
-      </div>
     </div>
     <div class="card">
       <div class="card-title">🌸 今日甜酷小贴士</div>
@@ -609,13 +623,31 @@ a{color:var(--purple);text-decoration:none}
   <div class="section">
     <div class="section-title">
       <h2>💼 工作日程</h2>
-      <button class="btn btn-sm" onclick="Sched.openAdd()">＋ 事项</button>
+      <button class="btn btn-sm" onclick="Sched.openAdd(Sched._selectedDate)">＋ 事项</button>
     </div>
     <div class="card">
-      <div class="card-title">🔔 闹钟提醒</div>
-      <p class="muted" id="schedAlarmInfo">应用保持打开时到点响铃，关闭后通过浏览器通知提醒。</p>
+      <div class="sched-cal-head">
+        <div class="sched-cal-arrow" onclick="Sched.prevMonth()">‹</div>
+        <div class="sched-cal-ym" id="schedCalYM"></div>
+        <div class="sched-cal-arrow" onclick="Sched.nextMonth()">›</div>
+      </div>
+      <div class="sched-cal-week">
+        <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+      </div>
+      <div class="sched-cal-grid" id="schedCalGrid"></div>
     </div>
-    <div id="schedList"></div>
+    <div class="card">
+      <div class="between" style="margin-bottom:8px">
+        <div class="card-title" id="schedDayTitle" style="margin:0">📋 今日待办</div>
+        <button class="btn btn-sm btn-ghost" onclick="Sched.openAdd(Sched._selectedDate)">＋ 添加</button>
+      </div>
+      <div id="schedDayList"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">🔔 提醒设置</div>
+      <p class="muted" id="schedAlarmInfo" style="font-size:13px"></p>
+      <button class="btn btn-sm btn-ghost mt8" onclick="Sched.enableNotify()">🔔 开启通知提醒</button>
+    </div>
   </div>
 </section>
 

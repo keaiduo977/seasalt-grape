@@ -65,32 +65,34 @@ const AI = {
     const m = s.match(/\[[\s\S]*\]|\{[\s\S]*\}/);
     return m ? m[0] : s;
   },
+  _pools:{
+    hot:[
+      '近期热门：可持续美妆兴起，无塑料包装护肤成为新趋势',
+      '城市City Walk路线走红，女生们用脚步丈量城市浪漫',
+      '手帐文化回潮，纸质记录搭配AI助手成新搭配',
+      '低糖甜品店在一线城市密集开业，健康与甜蜜兼得',
+      '瑜伽+冥想组合训练受到都市女生追捧',
+      '复古胶片相机在Z世代中再度流行',
+      '植物系香氛成为居家情绪疗愈新方式',
+      '小众独立书店复合空间成周末打卡热点'
+    ],
+    book:[
+      {title:'我胆小如鼠',author:'余华',reason:'余华最被低估的中短篇，温柔却刺痛',detail:'余华以四个故事串联，写少年面对世界的怯懦与勇敢。语言朴素，却让每个曾"胆小"过的人找到共鸣——原来敏感不是缺陷，而是看见世界的另一种方式。适合在自我怀疑时重读，找回与脆弱共处的勇气。'},
+      {title:'人生的智慧',author:'叔本华',reason:'一本写给普通人的幸福指南',detail:'叔本华褪去晦涩的哲学外衣，用清晰的逻辑讨论：人如何在外物、他人、自身之间找到幸福。他认为内在丰盈远比外物重要。适合想独立思考人生、不被外界评价裹挟的女性读者。'},
+      {title:'心流',author:'米哈里',reason:'幸福不是结果，是专注的过程',detail:'心理学家米哈里提出"最优体验"——当挑战与能力匹配时，人会进入忘我的心流状态。书中给出大量案例，教你如何在工作、爱好中创造心流，让日常不再焦虑。适合想提升专注力、找回掌控感的读者。'},
+      {title:'雪国',author:'川端康成',reason:'极致的物哀之美，文字如雪',detail:'"穿过县界长长的隧道，便是雪国。"川端康成用极简笔触写一段无果的爱，在虚实之间描绘美的瞬息与虚无。读它像看一场静默的雪，适合慢下来、在冬日夜晚细品的读者。'},
+      {title:'长安的荔枝',author:'马伯庸',reason:'小人物的史诗，一口气读完',detail:'马伯庸以一骑荔枝写尽大唐官僚与小人物的命运。从岭南到长安五千余里，主角李善德用算学与韧性完成不可能的任务。节奏明快，适合喜欢历史、又被生活推着走的读者。'},
+      {title:'刻意练习',author:'艾利克森',reason:'天才不是天生的，是练出来的',detail:'心理学家艾利克森用数十年研究证明：杰出并非天赋，而是"刻意练习"。书中拆解练习的核心要素——目标、反馈、突破舒适区。适合想高效学习任何技能、不甘平庸的女性读者。'},
+      {title:'人生海海',author:'麦家',reason:'在苦难中守住尊严的故事',detail:'麦家写一个被称为"上校"的传奇人物，他的一生被流言、战争、屈辱缠绕，却始终保有秘密与体面。故事层层剥开，让人看到人性在极端中的光与影。适合喜欢悬疑叙事、思考命运与尊严的读者。'},
+      {title:'明朝那些事儿',author:'当年明月',reason:'把历史写成小说，痛快又深刻',detail:'当年明月以幽默笔调重述明朝三百年，帝王将相鲜活如邻人。但结尾最动人——他用徐霞客的故事告诉你：成功只有一种，按自己喜欢的方式过一生。适合想轻松读史、又想获得人生启示的读者。'},
+      {title:'始于极限',author:'上野千鹤子',reason:'两代女性的坦诚书信',detail:'上野千鹤子与铃木凉美以书信往返，坦诚聊恋爱、工作、独立与伤害。没有说教，只有真实经验的碰撞。适合想理清自我与关系边界、在亲密关系里不迷失的女性读者。'},
+      {title:'被讨厌的勇气',author:'岸见一郎',reason:'课题分离，把自己还给自己',detail:'以"哲人与青年对话"形式讲阿德勒心理学：一切烦恼来自人际关系，而自由来自"被讨厌的勇气"。书中"课题分离"尤其实用，适合总在讨好、在意他人眼光的读者。'}
+    ],
+    sport:['15分钟清晨拉伸唤醒','20分钟蜜桃臀爆破训练','10分钟天鹅颈塑造','30分钟燃脂尊巴','15分钟核心马甲线','20分钟舒缓阴瑜伽','10分钟办公肩颈放松','25分钟HIIT全身燃脂'],
+    study:['今日单词：serendipity 意外发现美好事物的能力','语录：种一棵树最好的时间是十年前，其次是现在','文章：《如何用费曼技巧高效学习任何技能》','单词：ephemeral 短暂的；朝生暮死的','语录：你现在的气质里，藏着你走过的路、读过的书和爱过的人','文章：《深度工作：如何专注地完成一件事》']
+  },
   _fallback(kind){
-    const pool = {
-      hot:[
-        '近期热门：可持续美妆兴起，无塑料包装护肤成为新趋势',
-        '城市City Walk路线走红，女生们用脚步丈量城市浪漫',
-        '手帐文化回潮，纸质记录搭配AI助手成新搭配',
-        '低糖甜品店在一线城市密集开业，健康与甜蜜兼得',
-        '瑜伽+冥想组合训练受到都市女生追捧',
-        '复古胶片相机在Z世代中再度流行',
-        '植物系香氛成为居家情绪疗愈新方式',
-        '小众独立书店复合空间成周末打卡热点'
-      ],
-      book:[
-        {title:'我胆小如鼠',author:'余华',reason:'余华最被低估的中短篇，温柔却刺痛',detail:'余华以四个故事串联，写少年面对世界的怯懦与勇敢。语言朴素，却让每个曾"胆小"过的人找到共鸣——原来敏感不是缺陷，而是看见世界的另一种方式。适合在自我怀疑时重读，找回与脆弱共处的勇气。'},
-        {title:'人生的智慧',author:'叔本华',reason:'一本写给普通人的幸福指南',detail:'叔本华褪去晦涩的哲学外衣，用清晰的逻辑讨论：人如何在外物、他人、自身之间找到幸福。他认为内在丰盈远比外物重要。适合想独立思考人生、不被外界评价裹挟的女性读者。'},
-        {title:'心流',author:'米哈里',reason:'幸福不是结果，是专注的过程',detail:'心理学家米哈里提出"最优体验"——当挑战与能力匹配时，人会进入忘我的心流状态。书中给出大量案例，教你如何在工作、爱好中创造心流，让日常不再焦虑。适合想提升专注力、找回掌控感的读者。'},
-        {title:'雪国',author:'川端康成',reason:'极致的物哀之美，文字如雪',detail:'"穿过县界长长的隧道，便是雪国。"川端康成用极简笔触写一段无果的爱，在虚实之间描绘美的瞬息与虚无。读它像看一场静默的雪，适合慢下来、在冬日夜晚细品的读者。'},
-        {title:'长安的荔枝',author:'马伯庸',reason:'小人物的史诗，一口气读完',detail:'马伯庸以一骑荔枝写尽大唐官僚与小人物的命运。从岭南到长安五千余里，主角李善德用算学与韧性完成不可能的任务。节奏明快，适合喜欢历史、又被生活推着走的读者。'},
-        {title:'刻意练习',author:'艾利克森',reason:'天才不是天生的，是练出来的',detail:'心理学家艾利克森用数十年研究证明：杰出并非天赋，而是"刻意练习"。书中拆解练习的核心要素——目标、反馈、突破舒适区。适合想高效学习任何技能、不甘平庸的女性读者。'},
-        {title:'人生海海',author:'麦家',reason:'在苦难中守住尊严的故事',detail:'麦家写一个被称为"上校"的传奇人物，他的一生被流言、战争、屈辱缠绕，却始终保有秘密与体面。故事层层剥开，让人看到人性在极端中的光与影。适合喜欢悬疑叙事、思考命运与尊严的读者。'},
-        {title:'明朝那些事儿',author:'当年明月',reason:'把历史写成小说，痛快又深刻',detail:'当年明月以幽默笔调重述明朝三百年，帝王将相鲜活如邻人。但结尾最动人——他用徐霞客的故事告诉你：成功只有一种，按自己喜欢的方式过一生。适合想轻松读史、又想获得人生启示的读者。'}
-      ],
-      sport:['15分钟清晨拉伸唤醒','20分钟蜜桃臀爆破训练','10分钟天鹅颈塑造','30分钟燃脂尊巴','15分钟核心马甲线','20分钟舒缓阴瑜伽','10分钟办公肩颈放松','25分钟HIIT全身燃脂'],
-      study:['今日单词：serendipity 意外发现美好事物的能力','语录：种一棵树最好的时间是十年前，其次是现在','文章：《如何用费曼技巧高效学习任何技能》','单词：ephemeral 短暂的；朝生暮死的','语录：你现在的气质里，藏着你走过的路、读过的书和爱过的人','文章：《深度工作：如何专注地完成一件事》']
-    };
-    const arr = pool[kind] || pool.hot;
+    const arr = AI._pools[kind] || AI._pools.hot;
     return kind==='hot' ? arr.map((t,i)=>`${i+1}. ${t}`).join('\n')
          : kind==='book' ? JSON.stringify(arr.slice(0,4).map(b=>({title:b.title,author:b.author,reason:b.reason,detail:b.detail})))
          : kind==='sport' ? JSON.stringify(arr.slice(0,4).map(t=>({title:t,duration:parseInt(t),cal:parseInt(t)*4,desc:'居家跟练，无需器械'})))
@@ -155,65 +157,28 @@ const Hot = {
     const isUser = silent !== true;
     const btn = isUser ? document.querySelector('#page-hot button[onclick*="Hot.refresh"]') : null;
     if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
-    const cache = await DB.get('aiCache','hot');
-    const last = cache?.ts || 0;
-    const threeHours = 3*60*60*1000;
-    // 先渲染实时热搜（不等 AI）
+    // 实时热搜（同源，无CORS）—— 点击任意条目即可唤起 AI 深度解读
     const live = await Hot.fetchLive();
     if(live && live.items && live.items.length > 1){
       Hot._liveData = live;
       Hot.renderLive(live);
-    }else if(cache?.data){
-      Hot.renderLive(cache);
     }else{
       Hot.renderLive(null);
     }
-    // AI 精选解读（3小时内用缓存）
-    if(silent && cache && Date.now()-last < threeHours){
-      Hot.render(cache.data, last, Hot._liveData?.source || '实时');
-      return;
+    // 甜酷小贴士
+    if(!silent || !$('#dailyTip').dataset.loaded){
+      try{
+        const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字。只输出这句话。',
+          '给我一句今日小贴士',{kind:'hot',maxTokens:80});
+        $('#dailyTip').textContent = tip.replace(/^[\d.、\s]+/,'').split('\n')[0];
+        $('#dailyTip').dataset.loaded = '1';
+      }catch(e){ /* 保留上一次提示 */ }
     }
-    $('#hotList').innerHTML = '<div class="empty"><div class="emoji">🤖</div><p>AI 正在精选解读...</p></div>';
-    let seed = '', liveSource = '本地';
-    if(live && live.items && live.items.length > 1){
-      liveSource = live.source || '实时';
-      seed = live.items.slice(0,30).map((t,i)=>`${i+1}. ${t.title}`).join('\n');
-    }
-    const todayStr = new Date().toLocaleDateString('zh-CN');
-    const sysPrompt = live && seed
-      ? '你是一个面向年轻女性的生活方式编辑。以下是当前'+liveSource+'实时热搜词条（GitHub Actions 自动抓取）：\n'+seed+'\n\n' +
-        '请从中精选 6 条女生会关心的热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感等领域，保持多样性），' +
-        '用 JSON 数组格式输出，每个对象含：title(热搜原标题或简化版),category(分类:时政/经济/社会/新媒体/体育/美妆/消费/健康/影视/情感),detail(深度解读,200-300字,需说明：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度)。只输出JSON。'
-      : '你是面向年轻女性的生活方式编辑。请生成 6 条当下最新热点（覆盖时政/经济/社会/新媒体/体育/美妆/消费/健康/影视等领域），' +
-        'JSON 数组格式，每个对象含：title(标题),category(分类),detail(深度解读200-300字,含背景/影响/给女生的建议)。只输出JSON。';
-    const out = await AI.chat(sysPrompt,
-      `今天是${todayStr}，请精选并深度解读 6 条女生向热点。`,
-      {kind:'hot', maxTokens:3500});
-    const items = Hot.parse(out);
-    // 把实时热搜的原始链接并入解读结果
-    if(live && live.items){
-      const liveMap = {};
-      live.items.forEach(t=>{ liveMap[t.title] = t.url; });
-      items.forEach(it=>{ if(liveMap[it.title]) it.url = liveMap[it.title]; });
-    }
-    await DB.put('aiCache',{id:'hot', data:items, ts:Date.now()});
-    Hot.render(items, Date.now(), liveSource);
     if(isUser){
       const updated = Hot._liveData?.updated;
       toast(updated ? `已更新到 ${updated} ✨` : '已是最新 💫');
     }
-    // 甜酷小贴士
-    if(!silent || !$('#dailyTip').dataset.loaded){
-      const tip = await AI.chat('你是闺蜜型助手，用一句话给女生一句甜酷小贴士，不超过30字。只输出这句话。',
-        '给我一句今日小贴士',{kind:'hot',maxTokens:80});
-      $('#dailyTip').textContent = tip.replace(/^[\d.、\s]+/,'').split('\n')[0];
-      $('#dailyTip').dataset.loaded = '1';
-    }
     if(btn){ btn.disabled = false; btn.textContent = btn.dataset.orig || '🔄 刷新'; }
-  },
-  parse(text){
-    try{ const j=JSON.parse(text); if(Array.isArray(j)) return j.map(x=>({title:x.title||'',category:x.category||'生活',detail:x.detail||'',url:x.url||''})).slice(0,6); }catch(e){}
-    return text.split('\n').map(l=>l.replace(/^\d+[.、\)\s]+/,'').trim()).filter(Boolean).slice(0,6).map(t=>({title:t,category:'生活',detail:'暂无详细说明，可点击刷新获取 AI 解读。',url:''}));
   },
   // 渲染实时热搜列表（带分类筛选）
   renderLive(live){
@@ -310,67 +275,6 @@ const Hot = {
       if(body) body.innerHTML = '<p class="muted">解读加载失败，请稍后重试。可点击下方链接查看原始新闻。</p>';
     }
   },
-  // AI 精选解读列表
-  render(items, ts, source){
-    const list = $('#hotList');
-    if(!items.length){ list.innerHTML='<div class="empty"><div class="emoji">🌡️</div><p>暂无数据</p></div>'; return; }
-    list.innerHTML = items.map((it,i)=>`
-      <div class="hot-item row" style="cursor:pointer" onclick="Hot.detail(${i})">
-        <div class="hot-rank ${i<3?'top':''}">${i+1}</div>
-        <div style="flex:1;font-size:13px;color:var(--text)">${esc(it.title||it)}</div>
-        ${it.category?`<span class="tag">${esc(it.category)}</span>`:''}
-        <span class="muted" style="font-size:11px">›</span>
-      </div>`).join('');
-    Hot._items = items;
-    // 显示来源标注 + Key 状态
-    if(source){
-      const aiHint = $('#hotAiHint');
-      if(aiHint){
-        const keyStatus = AI.getKey() ? '' : ' · 💡未配 Key';
-        aiHint.textContent = `${source}实时 · AI 精选 ${items.length} 条${keyStatus}`;
-      }
-    }
-  },
-  async detail(i){
-    const it = Hot._items[i]; if(!it) return;
-    // 弹窗（先显示 loading）
-    Modal.open('🔥 精选解读', `
-      <div class="ai-card">
-        <div class="ai-tag">🔥 精选 #${i+1}</div>
-        <div style="font-size:17px;font-weight:700;color:var(--purple-deep);line-height:1.4">${esc(it.title)}</div>
-        ${it.category?`<div class="mt8"><span class="tag">${esc(it.category)}</span></div>`:''}
-      </div>
-      <div class="card"><div class="card-title">📝 AI 深度解读</div><div id="aiDetailBody" style="font-size:14px;color:var(--text);line-height:1.8">${it.detail && it.detail.length>20 && !it.detail.includes('暂无详细') ? '<p>'+esc(it.detail)+'</p>' : '<div class="empty" style="padding:20px 0"><div class="emoji">🤖</div><p>AI 正在解读...</p></div>'}</div></div>
-      ${!AI.getKey()?`<div class="card" style="background:var(--salt-light);border:1px dashed var(--purple)"><div class="muted" style="font-size:13px">💡 未配置 DeepSeek Key，显示基础模板。在「设置」中添加 Key 可解锁 AI 真实解读</div></div>`:''}
-      ${it.url?`<a href="${esc(it.url)}" target="_blank" class="btn btn-block btn-ghost mt8">🔗 查看原始热搜</a>`:''}
-      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
-    // 如果已有真实 detail（非占位），直接返回
-    if(it.detail && it.detail.length > 20 && !it.detail.includes('暂无详细')) return;
-    // 否则 AI 生成解读
-    try{
-      const key = AI.getKey();
-      let detail;
-      if(key){
-        detail = await AI.chat(
-          '你是面向年轻女性的生活方式编辑。请对以下热点进行深度解读（200-300字），需包含：1)事件是什么、涉及的人物或机构、关键背景；2)为什么值得关注；3)对女生有什么启发或影响；4)实用建议或思考角度。用自然流畅的口语化文风，不要用分点编号，直接写段落。只输出解读正文。',
-          `热点词条：${it.title}\n分类：${it.category||'热点'}`,
-          {kind:'hot', maxTokens:800});
-      }else{
-        // 无 Key：基础模板
-        detail = `【${it.category||'热点'}】${it.title}\n\n这是一条 AI 精选的女生向热点话题。\n\n作为女生向内容编辑的建议：①关注事件核心背景与人物立场；②思考与日常生活（消费/职场/情感/健康）的关联；③在社交平台发表看法时保持独立判断；④理性吸收，避免被舆论裹挟。\n\n💡 在「设置」中配置 DeepSeek API Key 后，可解锁 AI 深度解读（200-300字，含背景、影响、给女生的具体建议）。`;
-      }
-      const body = $('#aiDetailBody');
-      if(body){
-        const formatted = detail.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join('');
-        body.innerHTML = formatted;
-      }
-      // 缓存到 item
-      it.detail = detail;
-    }catch(e){
-      const body = $('#aiDetailBody');
-      if(body) body.innerHTML = '<p class="muted">解读加载失败，请稍后重试。</p>';
-    }
-  }
 };
 
 /* ============================================
@@ -1142,35 +1046,45 @@ const Read = {
   },
   async aiRec(silent){
     if(!silent) $('#readRec').innerHTML='<div class="muted">AI 推荐中...</div>';
-    const out = await AI.chat(
-      '你是资深书评人。请推荐4本适合年轻女性阅读的好书，JSON数组格式，每本含：title(书名),author(作者),reason(一句话推荐,30字内,要具体说明为什么值得读),detail(详细介绍,150-250字,需涵盖：1)本书核心主题；2)为什么这本书值得读,具体打动人的点；3)它适合什么样的女性读者、能在生活哪方面带来启发)。涵盖文学、成长、生活、思维、心理类。只输出JSON。',
-      '请推荐4本适合今天阅读的书，AI 像是真正读完书后的真心推荐。',
-      {kind:'book', maxTokens:2500}
-    );
-    let items;
+    // 每次刷新换主题 + 随机种子 + 日期，显著降低重复率
+    const themes = ['文学小说','自我成长','心理学','思维方式','女性力量','亲密关系','职场进阶','生活美学','历史传记','治愈系'];
+    const theme = themes[Math.floor(Math.random()*themes.length)];
+    const seed = Math.floor(Math.random()*1000000);
+    const todayStr = new Date().toLocaleDateString('zh-CN');
+    const avoid = (Read._recHistory||[]).slice(-12);
+    const avoidTxt = avoid.length ? `\n\n【重要】绝对不要推荐已推荐过的书，已推荐：${avoid.join('、')}` : '';
+    const sys = `你是资深书评人，本次聚焦「${theme}」主题。请推荐4本适合年轻女性阅读的好书，JSON数组格式，每本含：title(书名),author(作者),reason(一句话推荐,30字内,要具体说明为什么值得读),detail(详细介绍,150-250字,需涵盖：1)本书核心主题；2)为什么这本书值得读,具体打动人的点；3)它适合什么样的女性读者、能在生活哪方面带来启发)。只输出JSON。随机种子${seed}。${avoidTxt}`;
+    const user = `今天是${todayStr}，围绕「${theme}」主题推荐4本不一样的书，要像真读完书后的真心推荐，避免与常见书单雷同。`;
+    let items = null;
     try{
+      const out = await AI.chat(sys, user, {kind:'book', maxTokens:2500});
       const raw = AI._cleanJSON(out);
-      items = JSON.parse(raw);
-      if(!Array.isArray(items)) throw 0;
-      // 字段容错：兼容 title/name、author/writer、reason/recommend、detail/desc 等不同命名
-      items = items.map(b => (b && typeof b === 'object') ? {
+      const parsed = JSON.parse(raw);
+      if(!Array.isArray(parsed) || !parsed.length) throw 0;
+      items = parsed.map(b => (b && typeof b === 'object') ? {
         title: b.title || b.name || b.book || b.书名 || '',
         author: b.author || b.writer || b.作者 || '',
         reason: b.reason || b.recommend || b.why || b.推荐理由 || '',
         detail: b.detail || b.desc || b.intro || b.summary || b.简介 || b.介绍 || ''
-      } : {title:String(b||''), author:'', reason:'', detail:''});
+      } : {title:String(b||''), author:'', reason:'', detail:''}).filter(b=>b.title);
+      if(items.length < 1) throw 0;
     }catch(e){
-      // 兜底：兼容 "《书名》作者" 纯文本；仍失败则提示重试，避免雷同占位
-      items = out.split('\n').filter(l=>l.trim()).slice(0,4).map(l=>{
-        const clean = l.replace(/^\d+[.、\)\s]+/,'').trim();
-        const m = clean.match(/《(.+?)》(.+)/);
-        if(m) return {title:m[1].trim(), author:m[2].replace(/^[-—·\s]+/,'').trim()||'佚名', reason:m[2].trim().slice(0,30), detail:''};
-        return null;
-      }).filter(Boolean);
-      if(!items.length) items = [{title:'AI 返回格式异常', author:'', reason:'点击「AI 推荐」重试', detail:'这次 AI 的回复没能解析成书单，请重新点一次 AI 推荐。'}];
+      // 兜底：从本地书池随机抽 4 本（排除最近推荐），保证每次刷新都有变化、绝不“报错”
+      const pool = (AI._pools && AI._pools.book) ? AI._pools.book : [];
+      const avoidSet = new Set((Read._recHistory||[]).slice(-8));
+      let pick = pool.filter(b=>!avoidSet.has(b.title));
+      if(pick.length < 4) pick = pool.slice();
+      items = Read._shuffle(pick).slice(0,4).map(b=>({title:b.title,author:b.author,reason:b.reason,detail:b.detail}));
     }
+    // 记录历史，下次刷新主动避开
+    Read._recHistory = (Read._recHistory||[]).concat(items.map(b=>b.title)).slice(-16);
     await DB.put('aiCache',{id:'bookRec', data:items, ts:Date.now()});
     Read.renderRec(items);
+  },
+  _shuffle(arr){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+    return a;
   },
   openAdd(){
     Modal.open('记录一本书', `
@@ -1573,116 +1487,164 @@ const Study = {
    8. 工作日程 + 闹钟
    ============================================ */
 const Sched = {
+  _viewY:0, _viewM:0, _selectedDate:'', _all:[],
   async load(){
     const all = await DB.all('schedule');
-    const now = Date.now();
-    all.sort((a,b)=>(a.datetime||'').localeCompare(b.datetime||''));
-    const upcoming = all.filter(s=>!s.done);
-    const done = all.filter(s=>s.done);
-    $('#schedList').innerHTML = `
-      ${upcoming.length?`<div class="card-title">⏰ 待办</div>`:''}
-      ${upcoming.map(s=>`
-        <div class="sched-item ${s.urgent?'urgent':''}">
-          <div class="sched-time">${s.datetime?fmtTime(s.datetime):'--:--'}<div class="muted" style="font-size:10px">${s.datetime?new Date(s.datetime).toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'}):''}</div></div>
-          <div style="flex:1">
-            <div class="st" style="font-weight:600">${esc(s.title)}</div>
-            ${s.note?`<div class="muted">${esc(s.note)}</div>`:''}
-            ${s.urgent?'<span class="tag tag-red">紧急</span>':'<span class="tag">普通</span>'}
-            ${s.alarm?'<span class="tag tag-yellow">🔔 闹钟</span>':''}
-          </div>
-          <div class="flex gap6">
-            <button class="btn btn-sm btn-green" style="padding:6px 10px" onclick="Sched.done('${s.id}')">✓</button>
-            <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Sched.del('${s.id}')">×</button>
-          </div>
-        </div>`).join('')}
-      ${done.length?`<div class="card-title mt12">✅ 已完成</div>`:''}
-      ${done.map(s=>`<div class="sched-item done"><div class="sched-time">--:--</div><div style="flex:1"><div class="st">${esc(s.title)}</div></div><button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Sched.del('${s.id}')">×</button></div>`).join('')}
-      ${!all.length?'<div class="empty"><div class="emoji">💼</div><p>还没有日程～</p></div>':''}`;
+    Sched._all = all;
+    if(!Sched._selectedDate) Sched._selectedDate = today();
+    const parts = Sched._selectedDate.split('-').map(Number);
+    Sched._viewY = parts[0]; Sched._viewM = parts[1]-1;
+    Sched.renderCal();
+    Sched.renderDay();
+    Sched._updateAlarmInfo();
     Alarm.schedule(all);
+    Alarm._fireDue();
   },
-  openAdd(){
-    const now = new Date(); now.setHours(now.getHours()+1,0,0);
-    const def = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}T${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
-    Modal.open('添加工作事项', `
+  renderCal(){
+    const Y=Sched._viewY, M=Sched._viewM;
+    const ym=$('#schedCalYM'); if(ym) ym.textContent=`${Y}年${M+1}月`;
+    const monthPrefix=`${Y}-${String(M+1).padStart(2,'0')}`;
+    const cntMap={};
+    (Sched._all||[]).forEach(s=>{ if(s.datetime){ const ds=s.datetime.slice(0,10); if(ds.startsWith(monthPrefix)) cntMap[ds]=(cntMap[ds]||0)+1; } });
+    const daysInMonth=new Date(Y,M+1,0).getDate();
+    const firstDay=new Date(Y,M,1).getDay();
+    const todayStr=today();
+    let html='';
+    for(let i=0;i<firstDay;i++) html+='<div class="sched-cal-cell empty"></div>';
+    for(let d=1; d<=daysInMonth; d++){
+      const ds=`${Y}-${String(M+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+      const cls=['sched-cal-cell'];
+      if(ds===todayStr) cls.push('today');
+      if(ds===Sched._selectedDate) cls.push('selected');
+      html+=`<div class="${cls.join(' ')}" onclick="Sched.selectDate('${ds}')"><div class="n">${d}</div>${cntMap[ds]?`<div class="dot"></div>`:''}</div>`;
+    }
+    const grid=$('#schedCalGrid'); if(grid) grid.innerHTML=html;
+  },
+  selectDate(ds){ Sched._selectedDate=ds; Sched.renderCal(); Sched.renderDay(); },
+  prevMonth(){ if(Sched._viewM===0){Sched._viewM=11;Sched._viewY--;}else{Sched._viewM--;} Sched.renderCal(); },
+  nextMonth(){ if(Sched._viewM===11){Sched._viewM=0;Sched._viewY++;}else{Sched._viewM++;} Sched.renderCal(); },
+  renderDay(){
+    const ds=Sched._selectedDate;
+    const title=$('#schedDayTitle'); if(title) title.textContent=`📋 ${ds} 待办`;
+    const items=(Sched._all||[]).filter(s=>s.datetime && s.datetime.slice(0,10)===ds).sort((a,b)=>(a.datetime||'').localeCompare(b.datetime||''));
+    const box=$('#schedDayList'); if(!box) return;
+    if(!items.length){ box.innerHTML='<div class="empty" style="padding:18px 0"><div class="emoji">🗒️</div><p>这一天还没有安排</p></div>'; return; }
+    const pending=items.filter(s=>!s.done), done=items.filter(s=>s.done);
+    let html=pending.map(s=>Sched._row(s,false)).join('');
+    if(done.length) html+=`<div class="muted" style="font-size:12px;margin:10px 0 4px">已完成</div>`+done.map(s=>Sched._row(s,true)).join('');
+    box.innerHTML=html;
+  },
+  _row(s,done){
+    return `<div class="sched-item ${done?'done':''} ${s.urgent?'urgent':''}">
+      <div class="sched-time">${s.datetime?fmtTime(s.datetime):'--:--'}</div>
+      <div style="flex:1;min-width:0">
+        <div class="st" style="font-weight:600">${esc(s.title)}</div>
+        ${s.note?`<div class="muted" style="font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(s.note)}</div>`:''}
+        <div class="flex gap4 mt4">${s.urgent?'<span class="tag tag-red">紧急</span>':''}${s.alarm?'<span class="tag tag-yellow">🔔</span>':''}</div>
+      </div>
+      <div class="flex gap6">
+        <button class="btn btn-sm btn-ghost" style="padding:6px 10px" onclick="Sched.edit('${s.id}')">✎</button>
+        ${done?'':`<button class="btn btn-sm btn-green" style="padding:6px 10px" onclick="Sched.done('${s.id}')">✓</button>`}
+        <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Sched.del('${s.id}')">×</button>
+      </div>
+    </div>`;
+  },
+  openAdd(dateStr){
+    dateStr = dateStr || Sched._selectedDate || today();
+    const def = `${dateStr}T09:00`;
+    Modal.open('添加事项 · '+dateStr, `
       <div class="field"><label>事项标题</label><input class="input" id="scTitle" placeholder="如：开会 / 提交报告"></div>
-      <div class="field"><label>时间</label><input class="input" id="scTime" type="datetime-local" value="${def}"></div>
+      <div class="field"><label>日期时间</label><input class="input" id="scTime" type="datetime-local" value="${def}"></div>
       <div class="field"><label>备注</label><input class="input" id="scNote" placeholder="可选"></div>
-      <div class="set-row">
-        <div><label>紧急事项</label><div class="desc">标红显示</div></div>
-        <div class="switch" id="scUrgent" onclick="this.classList.toggle('on')"></div>
-      </div>
-      <div class="set-row">
-        <div><label>闹钟提醒</label><div class="desc">到点响铃+通知</div></div>
-        <div class="switch on" id="scAlarm" onclick="this.classList.toggle('on')"></div>
-      </div>
-      <button class="btn btn-block mt8" onclick="Sched.save()">添加</button>`);
+      <div class="set-row"><div><label>紧急事项</label><div class="desc">标红显示</div></div><div class="switch" id="scUrgent" onclick="this.classList.toggle('on')"></div></div>
+      <div class="set-row"><div><label>闹钟提醒</label><div class="desc">到点响铃+通知</div></div><div class="switch on" id="scAlarm" onclick="this.classList.toggle('on')"></div></div>
+      <button class="btn btn-block mt8" onclick="Sched.save(null)">添加</button>`);
   },
-  async save(){
-    const title = $('#scTitle').value.trim();
+  async edit(id){
+    const s=await DB.get('schedule',id); if(!s) return;
+    const def=s.datetime?s.datetime.slice(0,16):'';
+    Modal.open('编辑事项', `
+      <div class="field"><label>事项标题</label><input class="input" id="scTitle" value="${esc(s.title)}"></div>
+      <div class="field"><label>日期时间</label><input class="input" id="scTime" type="datetime-local" value="${def}"></div>
+      <div class="field"><label>备注</label><input class="input" id="scNote" value="${esc(s.note||'')}"></div>
+      <div class="set-row"><div><label>紧急事项</label><div class="desc">标红显示</div></div><div class="switch ${s.urgent?'on':''}" id="scUrgent" onclick="this.classList.toggle('on')"></div></div>
+      <div class="set-row"><div><label>闹钟提醒</label><div class="desc">到点响铃+通知</div></div><div class="switch ${s.alarm?'on':''}" id="scAlarm" onclick="this.classList.toggle('on')"></div></div>
+      <button class="btn btn-block mt8" onclick="Sched.save('${id}')">保存</button>`);
+  },
+  async save(id){
+    const title=$('#scTitle').value.trim();
     if(!title){ toast('请输入标题'); return; }
-    const dt = $('#scTime').value;
-    await DB.put('schedule',{id:uid(), title, datetime:dt?new Date(dt).toISOString():null,
-      note:$('#scNote').value.trim(), urgent:$('#scUrgent').classList.contains('on'), alarm:$('#scAlarm').classList.contains('on'), done:false});
-    Modal.close(); Sched.load(); toast('已添加 🔔');
-    if('Notification' in window && Notification.permission!=='granted') Notification.requestPermission();
+    const dt=$('#scTime').value;
+    const data={ title, datetime: dt?new Date(dt).toISOString():null, note:$('#scNote').value.trim(), urgent:$('#scUrgent').classList.contains('on'), alarm:$('#scAlarm').classList.contains('on') };
+    if(id){ const ex=await DB.get('schedule',id); Object.assign(ex,data); await DB.put('schedule',ex); }
+    else { await DB.put('schedule',{id:uid(), done:false, alarmFired:false, ...data}); }
+    Modal.close(); Sched.load(); toast(id?'已更新 ✏️':'已添加 🔔');
+    if(data.alarm && 'Notification' in window && Notification.permission==='default'){ Notification.requestPermission().then(()=>Sched._updateAlarmInfo()).catch(()=>{}); }
   },
   async done(id){ const s=await DB.get('schedule',id); s.done=true; await DB.put('schedule',s); Sched.load(); toast('完成 ✅'); },
-  async del(id){ await DB.del('schedule',id); Sched.load(); }
+  async del(id){ await DB.del('schedule',id); Sched.load(); },
+  _updateAlarmInfo(){
+    const el=$('#schedAlarmInfo'); if(!el) return;
+    if(!('Notification' in window)){ el.textContent='当前浏览器不支持系统通知，应用保持打开时仍会响铃提醒。'; return; }
+    const p=Notification.permission;
+    el.textContent = p==='granted' ? '✅ 通知已开启：应用打开时到点响铃并弹出系统通知。'
+      : p==='denied' ? '⚠️ 通知已被拒绝，请在浏览器设置中允许；应用打开时仍会响铃。'
+      : '应用打开时会响铃提醒，点击「开启通知」可接收系统通知。';
+  },
+  enableNotify(){
+    if(!('Notification' in window)){ toast('当前浏览器不支持通知'); return; }
+    Notification.requestPermission().then(p=>{ Sched._updateAlarmInfo(); toast(p==='granted'?'已开启通知 🔔':'通知未授权'); }).catch(()=>{});
+  }
 };
 
 /* ---------- 闹钟 ---------- */
 const Alarm = {
   timer:null,
   schedule(all){
-    const upcoming = all.filter(s=>s.alarm && !s.done && s.datetime && new Date(s.datetime).getTime()>Date.now());
-    Alarm._list = upcoming;
+    // 未完成、未触发过、带闹钟的全部进入检查列表（含已过点的，应用打开即补提醒）
+    Alarm._list = (all||[]).filter(s=>s.alarm && !s.done && !s.alarmFired && s.datetime);
   },
   start(){
     if(Alarm.timer) return;
     Alarm.timer = setInterval(Alarm.check, 30000);
     Alarm.check();
   },
-  async check(){
-    const list = Alarm._list||[];
-    for(const s of list){
-      const t = new Date(s.datetime).getTime();
-      if(t<=Date.now() && !s._fired){
-        s._fired = true;
+  check(){ Alarm._fireDue(); },
+  async _fireDue(){
+    const now=Date.now();
+    for(const s of (Alarm._list||[])){
+      if(new Date(s.datetime).getTime()<=now && !s.alarmFired){
+        s.alarmFired=true;
+        try{ await DB.put('schedule', s); }catch(e){}
         Alarm.fire(s);
-        // 标记已完成
-        const item = await DB.get('schedule',s.id);
-        if(item){ item.done=true; await DB.put('schedule',item); }
-        Sched.load();
       }
     }
   },
   fire(s){
-    // 应用内响铃
-    $('#alarmTitle').textContent = s.title;
-    $('#alarmDesc').textContent = s.note || '到点啦～';
+    $('#alarmTitle').textContent=s.title;
+    $('#alarmDesc').textContent=s.note||'到点啦～';
     $('#alarmFull').classList.add('show');
     Alarm._playBell();
-    // 通知
     if('Notification' in window && Notification.permission==='granted'){
-      new Notification('🔔 '+s.title, {body: s.note||'到点啦', icon:'icon.svg', tag:s.id});
+      try{ new Notification('🔔 '+s.title, {body:s.note||'到点啦', icon:'icon.svg', tag:s.id}); }catch(e){}
     }
   },
   stop(){
     $('#alarmFull').classList.remove('show');
     if(Alarm._osc){ try{ Alarm._osc.stop(); }catch(e){} Alarm._osc=null; }
+    if(Alarm._bellInt){ clearTimeout(Alarm._bellInt); Alarm._bellInt=null; }
   },
   _playBell(){
     try{
-      const ctx = new (window.AudioContext||window.webkitAudioContext)();
-      const osc = ctx.createOscillator(); const gain = ctx.createGain();
+      const ctx=new (window.AudioContext||window.webkitAudioContext)();
+      const osc=ctx.createOscillator(); const gain=ctx.createGain();
       osc.connect(gain); gain.connect(ctx.destination);
       osc.type='sine'; osc.frequency.value=880;
       gain.gain.setValueAtTime(0.3, ctx.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime+2);
       osc.start(); osc.stop(ctx.currentTime+2);
-      Alarm._osc = osc;
-      // 重复
-      Alarm._bellInt = setTimeout(()=>{ if($('#alarmFull').classList.contains('show')) Alarm._playBell(); }, 2200);
+      Alarm._osc=osc;
+      Alarm._bellInt=setTimeout(()=>{ if($('#alarmFull').classList.contains('show')) Alarm._playBell(); }, 2200);
     }catch(e){}
   }
 };
@@ -2016,8 +1978,12 @@ const Setting = {
   // 头像/姓名/签名渲染
   Hero.render();
 
-  // 闹钟启动
+  // 日程 + 闹钟（先加载日程以填充闹钟检查列表，使提醒在任意页面都生效）
+  await Sched.load();
   Alarm.start();
+  // 应用从后台切回时补触发已到点闹钟
+  document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) Sched.load(); });
+  window.addEventListener('focus', ()=> Sched.load());
 
   // 首页加载
   Hot.load();
