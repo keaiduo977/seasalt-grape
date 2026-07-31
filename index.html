@@ -55,11 +55,11 @@ a{color:var(--purple);text-decoration:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
 .section{padding:16px;padding-bottom:calc(var(--tab-h) + 16px)}
-.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:8px}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px}
 .section-title h2{font-size:17px;color:var(--purple-deep);font-weight:700;display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
 .section-title .sub{font-size:11px;color:var(--text-light);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:50%}
-.card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:12px}
-.card-title{font-size:14px;font-weight:700;color:var(--purple-deep);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:14px}
+.card-title{font-size:14px;font-weight:700;color:var(--purple-deep);margin-bottom:12px;display:flex;align-items:center;gap:6px}
 
 /* ===== 按钮 ===== */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;
@@ -105,8 +105,8 @@ a{color:var(--purple);text-decoration:none}
 .row-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 
 /* ===== 弹层 ===== */
-.modal-mask{position:fixed;inset:0;background:rgba(61,46,92,.4);z-index:200;display:none;
-  align-items:flex-end;justify-content:center;backdrop-filter:blur(2px)}
+.modal-mask{position:fixed;inset:0;background:rgba(61,46,92,.55);z-index:200;display:none;
+  align-items:flex-end;justify-content:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
 .modal-mask.show{display:flex;animation:fadeIn .2s}
 .modal{background:#fff;width:100%;max-width:520px;border-radius:24px 24px 0 0;
   padding:20px 18px calc(24px + var(--safe-bottom));max-height:88vh;overflow-y:auto;animation:slideUp .3s ease}
@@ -173,17 +173,18 @@ a{color:var(--purple);text-decoration:none}
 .recipe-item{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#fff;border-radius:12px;margin-top:8px;box-shadow:var(--shadow)}
 
 /* 护肤周表 */
-.week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+.week-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin-top:10px;min-width:0;overflow:hidden}
 .week-cell{aspect-ratio:1;border-radius:10px;background:var(--salt-light);display:flex;flex-direction:column;
-  align-items:center;justify-content:center;font-size:10px;color:var(--text-light);gap:2px;cursor:pointer;transition:all .2s}
+  align-items:center;justify-content:center;font-size:10px;color:var(--text-light);gap:2px;cursor:pointer;transition:all .2s;min-width:0;padding:2px;overflow:hidden}
 .week-cell .dn{font-size:11px;font-weight:700}
+.week-cell .dt{font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;font-variant-numeric:tabular-nums}
 .week-cell.on{background:var(--green);color:#3D5C3D}
 .week-cell.today{outline:2px solid var(--purple)}
 .skincare-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(155,126,189,.07)}
 
 /* 护肤月历仪表盘 */
 /* 护肤仪表盘 · 紧凑布局 */
-.skin-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0 10px}
+.skin-dashboard{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:6px 0 10px}
 .skin-stat{background:var(--salt-light);border-radius:10px;padding:8px 4px;text-align:center}
 .skin-stat .v{font-size:18px;font-weight:700;color:var(--purple-deep);line-height:1.1}
 .skin-stat .l{font-size:10px;color:var(--text-light);margin-top:2px}
@@ -191,8 +192,8 @@ a{color:var(--purple);text-decoration:none}
 .skin-cal-head .ym{font-size:13px;font-weight:700;color:var(--purple-deep)}
 .skin-cal-arrow{width:24px;height:24px;border-radius:50%;background:var(--salt-light);display:flex;align-items:center;justify-content:center;color:var(--purple-deep);font-size:14px;cursor:pointer}
 .skin-cal-arrow:active{opacity:.6}
-.skin-cal-week{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:3px;text-align:center;font-size:9px;color:var(--text-light)}
-.skin-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.skin-cal-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-bottom:3px;text-align:center;font-size:9px;color:var(--text-light);min-width:0}
+.skin-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;min-width:0}
 .skin-cal-cell{height:38px;border-radius:6px;background:var(--salt-light);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:var(--text-light);cursor:pointer;transition:all .15s;position:relative;line-height:1.1}
 .skin-cal-cell:active{opacity:.6}
 .skin-cal-cell.empty{background:transparent;cursor:default}
@@ -470,7 +471,7 @@ a{color:var(--purple);text-decoration:none}
       <h2>🧴 护肤打卡</h2>
       <button class="btn btn-sm" onclick="Skin.openAdd()">＋ 项目</button>
     </div>
-    <!-- 月历仪表盘 -->
+    <!-- 月历日记 -->
     <div class="card">
       <div class="card-title">🌸 我的护肤日记</div>
       <div class="skin-dashboard" id="skinDashboard"></div>
@@ -484,20 +485,15 @@ a{color:var(--purple);text-decoration:none}
       </div>
       <div class="skin-cal-grid" id="skinCalGrid"></div>
     </div>
-    <!-- 各项目完成率 -->
+    <!-- 本周打卡 -->
+    <div class="card">
+      <div class="card-title">🍃 这周的护肤打卡</div>
+      <div id="skinWeek"></div>
+    </div>
+    <!-- 各项目月度完成率 -->
     <div class="card">
       <div class="card-title">🌷 各项小进度</div>
       <div id="skinRateList"></div>
-    </div>
-    <!-- 本周统计 -->
-    <div class="card">
-      <div class="card-title">🍃 这周的小记录</div>
-      <div id="skinWeek"></div>
-    </div>
-    <!-- 今日打卡 -->
-    <div class="card">
-      <div class="card-title">✅ 今日打卡</div>
-      <div id="skinToday"></div>
     </div>
   </div>
 </section>
@@ -654,11 +650,7 @@ a{color:var(--purple);text-decoration:none}
       <h2>🎀 纪念日</h2>
       <button class="btn btn-sm" onclick="Anni.openAdd()">＋ 添加</button>
     </div>
-    <div class="card">
-      <div class="card-title">⏳ 下一个节假日</div>
-      <div id="anniNextHoliday"></div>
-    </div>
-    <div class="section-title mt12"><h2>📅 法定节假日倒计时</h2></div>
+    <div class="section-title"><h2>📅 即将到来的节假日</h2></div>
     <div id="anniHolidays"></div>
     <div class="section-title mt12"><h2>💝 我的纪念日</h2></div>
     <div id="anniMine"></div>

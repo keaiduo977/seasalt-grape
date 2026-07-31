@@ -543,29 +543,22 @@ const Skin = {
         ${week.map((d,i)=>{
           const cnt = items.filter(it=>records[it.id] && records[it.id][d]).length;
           const on = cnt>0 ? 'on' : '';
-          return `<div class="week-cell ${d===todayStr?'today':''} ${on}" onclick="Skin.selectDate('${d}')"><div class="dn">${weekNames[i+1>7?0:i+1]||'日'}</div><div>${d.slice(5)}</div>${on?`<div style="font-size:9px">${cnt}</div>`:''}</div>`;
+          const dn = ['一','二','三','四','五','六','日'][i];
+          return `<div class="week-cell ${d===todayStr?'today':''} ${on}" onclick="Skin.selectDate('${d}')"><div class="dn">${dn}</div><div class="dt">${parseInt(d.slice(5,7))}/${parseInt(d.slice(8,10))}</div>${on?`<div style="font-size:9px">${cnt}</div>`:''}</div>`;
         }).join('')}
       </div>
       <div class="mt12">${items.map(it=>{
         const rec = records[it.id]||{};
         const count = week.filter(d=>rec[d]).length;
         return `<div class="skincare-row">
-          <span style="font-size:22px">${esc(it.emoji||'🧴')}</span>
-          <div class="col" style="flex:1">
-            <div style="font-weight:600;color:var(--text)">${esc(it.name)}</div>
+          <span style="font-size:22px;flex-shrink:0">${esc(it.emoji||'🧴')}</span>
+          <div class="col" style="flex:1;min-width:0">
+            <div style="font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(it.name)}</div>
             <div class="muted">本周 ${count}/7 次</div>
           </div>
-          <button class="btn btn-sm ${rec[todayStr]?'btn-green':''}" onclick="Skin.toggle('${it.id}')">${rec[todayStr]?'✓ 已完成':'打卡'}</button>
+          <button class="btn btn-sm ${rec[todayStr]?'btn-green':''}" onclick="Skin.toggle('${it.id}')">${rec[todayStr]?'✓ 已打卡':'打卡'}</button>
         </div>`;
       }).join('')}</div>`;
-    $('#skinToday').innerHTML = items.map(it=>{
-      const rec = records[it.id]||{};
-      return `<div class="skincare-row">
-        <span style="font-size:22px">${esc(it.emoji||'🧴')}</span>
-        <div style="flex:1;font-weight:600">${esc(it.name)}</div>
-        <div class="check ${rec[todayStr]?'on':''}" onclick="Skin.toggle('${it.id}')"></div>
-      </div>`;
-    }).join('') || '<div class="muted">暂无项目</div>';
   },
   prevMonth(){ if(Skin._viewM===0){Skin._viewM=11;Skin._viewY--;}else{Skin._viewM--;} Skin.renderDashboard(); },
   nextMonth(){ if(Skin._viewM===11){Skin._viewM=0;Skin._viewY++;}else{Skin._viewM++;} Skin.renderDashboard(); },
@@ -589,8 +582,7 @@ const Skin = {
     const maxPossible = items.length * elapsed;
     $('#skinDashboard').innerHTML = `
       <div class="skin-stat"><div class="v">${totalChecks}</div><div class="l">💗 累计打卡</div></div>
-      <div class="skin-stat"><div class="v">${activeDays.size}</div><div class="l">✨ 连续在坚持</div></div>
-      <div class="skin-stat"><div class="v">${maxPossible>0?Math.round(totalChecks/maxPossible*100):0}%</div><div class="l">🌸 达成度</div></div>`;
+      <div class="skin-stat"><div class="v">${activeDays.size}</div><div class="l">✨ 坚持天数</div></div>`;
     const firstDay = new Date(Y, M, 1).getDay();
     let html = '';
     for(let i=0;i<firstDay;i++) html += '<div class="skin-cal-cell empty"></div>';
@@ -835,6 +827,12 @@ const Drama = {
       }
     }catch(e){ /* 静默失败，用缓存 */ }
   },
+  _shuffleLive(){
+    const a = Drama._liveData && Drama._liveData.items;
+    if(Array.isArray(a)){
+      for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+    }
+  },
   async refresh(){
     const btn = document.querySelector('#page-drama button[onclick*="Drama.refresh"]');
     if(btn){ btn.disabled = true; btn.dataset.orig = btn.textContent; btn.textContent = '🌸 刷新中…'; }
@@ -843,9 +841,9 @@ const Drama = {
       if(AI.getKey()){
         await Drama.aiRec(false);   // 配 Key：AI 重新挑剧（内部已 toast）
       }else{
+        Drama._shuffleLive();       // 未配 Key：换一批顺序，让刷新有反馈
         Drama.render();
-        const updated = Drama._liveData?.updated;
-        toast(updated ? `已更新到 ${updated} 💫` : '已是最新 💫');
+        toast('已为你换一批 ✨ 配 Key 解锁 AI 实时挑剧');
       }
     }catch(e){
       toast('刷新失败，稍后再试 🌸');
@@ -967,8 +965,9 @@ const Drama = {
       ${mine?`<div class="card" style="background:var(--salt-light)"><div class="muted">你已标记为「${mine.status==='want'?'想看':'已看'}」</div></div>`:''}
       <div class="flex gap8 mt8">
         ${!mine||mine.status!=='want'?`<button class="btn btn-ghost" style="flex:1" onclick="Drama.markWant(${i});Modal.close()">💡 想看</button>`:''}
-        <button class="btn" style="flex:1" onclick="Drama.markWatched(${i})">✅ 已看</button>
-        ${d.url?`<a href="${esc(d.url)}" target="_blank" class="btn btn-outline" style="flex:1">🔗 详情</a>`:''}
+        <button class="btn" style="flex:1" onclick="Drama.markWatchedQuick(${i})">✅ 标记已看</button>
+        <button class="btn btn-outline" style="flex:1" onclick="Drama.openReview(null, Drama._liveItems[${i}])">✍️ 写影评</button>
+        ${d.url?`<a href="${esc(d.url)}" target="_blank" class="btn btn-ghost" style="flex:0 0 auto;padding:10px 14px">🔗</a>`:''}
       </div>
       <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
     if(!d.summary){
@@ -1011,7 +1010,10 @@ const Drama = {
       ${d.review?`<div class="card"><div class="card-title">✍️ 我的影评</div><div style="font-size:14px;color:var(--text);line-height:1.8;white-space:pre-wrap">${esc(d.review)}</div>${d.reviewTs?`<div class="muted mt8" style="font-size:11px">${fmtDate(d.reviewTs)}</div>`:''}</div>`:''}
       ${d.url?`<a href="${esc(d.url)}" target="_blank" class="btn btn-block btn-outline mt8">🔗 查看原片</a>`:''}
       <div class="flex gap8 mt8">
-        ${d.status==='want'?`<button class="btn" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✅ 标记已看 + 写影评</button>`:`<button class="btn btn-ghost" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✍️ 编辑影评</button>`}
+        ${d.status==='want'?`
+          <button class="btn btn-green" style="flex:1" onclick="Drama.markWatchedQuick(${i})">✅ 标记已看</button>
+          <button class="btn" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✍️ 写影评</button>
+        `:`<button class="btn" style="flex:1" onclick="Drama.openReview('${d.id}', null)">✍️ ${d.review?'编辑影评':'写影评'}</button>`}
         <button class="btn btn-red" style="flex:1" onclick="Drama.del('${d.id}');Modal.close()">🗑 删除</button>
       </div>
       <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
@@ -1049,14 +1051,31 @@ const Drama = {
     }
     rec.status = 'watched';
     rec.rating = Drama._score();
-    rec.review = $('#drReview').value.trim();
-    rec.reviewTs = now();
-    if(!rec.review){ toast('请写点影评再保存'); return; }
+    const reviewText = $('#drReview').value.trim();
+    rec.review = reviewText;
+    if(reviewText) rec.reviewTs = now();
     await DB.put('dramas', rec);
     Drama._items = await DB.all('dramas');
     Modal.close();
     Drama.render();
-    toast('影评已保存 ✍️');
+    toast(reviewText ? '影评已保存 ✍️' : '已标记已看 ✨');
+  },
+  async markWatchedQuick(i){
+    const d = Drama._liveItems[i]; if(!d) return;
+    const existing = (Drama._items||[]).find(x=>x.title===d.title);
+    let rec;
+    if(existing){
+      existing.status='watched'; existing.rating=existing.rating||3;
+      await DB.put('dramas', existing); rec=existing;
+    } else {
+      rec = {id:uid(), title:d.title, type:d.type, category:d.category||'',
+        status:'watched', rating:3, date:today(), url:d.url||'', summary:d.summary||'', review:''};
+      await DB.put('dramas', rec);
+    }
+    Drama._items = await DB.all('dramas');
+    Modal.close();
+    Drama.render();
+    toast('已标记已看 ✨ 想写影评随时点开');
   },
   async del(id){
     if(!confirm('从清单删除？')) return;
@@ -1823,25 +1842,13 @@ const Anni = {
     const mine = await DB.all('anni');
     // 节假日倒计时
     const todayStr = today();
-    const upcoming = Anni.holidays.filter(h=>h.date>=todayStr).slice(0,6);
-    const next = upcoming[0];
-    if(next){
-      const days = Anni.dayDiff(next.date);
-      $('#anniNextHoliday').innerHTML = `
-        <div class="anni-hero">
-          <div class="lbl">距离下一个节假日还有</div>
-          <div class="days">${days}<span style="font-size:18px;font-weight:400"> 天</span></div>
-          <div class="name">${next.emoji} ${next.name}</div>
-          <div class="date">${next.date.replace(/^(\d{4})-(\d{2})-(\d{2})$/, '$1年$2月$3日')}</div>
-        </div>`;
-    } else {
-      $('#anniNextHoliday').innerHTML = '<div class="muted">暂无节假日数据</div>';
-    }
+    const upcoming = Anni.holidays.filter(h=>h.date>=todayStr).slice(0,8);
     $('#anniHolidays').innerHTML = upcoming.map(h=>{
       const days = Anni.dayDiff(h.date);
-      return `<div class="anni-item">
+      const cls = days<=7 ? 'countdown' : '';
+      return `<div class="anni-item ${cls}">
         <div class="emoji">${h.emoji}</div>
-        <div class="info"><div class="nm">${h.name}</div><div class="dt">${h.date.replace(/-/g,'/')}</div></div>
+        <div class="info"><div class="nm">${h.name}${days<=7?' <span class="tag tag-red">⚠️ 一周内</span>':''}</div><div class="dt">${h.date.replace(/-/g,'/')}</div></div>
         <div><div class="d-num">${days}</div><div class="d-unit">天后</div></div>
       </div>`;
     }).join('') || '<div class="muted">暂无数据</div>';
