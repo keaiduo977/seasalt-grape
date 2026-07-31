@@ -403,6 +403,64 @@ a{color:var(--purple);text-decoration:none}
 .anni-item .info{flex:1;min-width:0}
 .anni-item .info .nm{font-weight:600;color:var(--text);font-size:14px}
 .anni-item .info .dt{font-size:11px;color:var(--text-light)}
+
+/* ===== 时间集 / 时光集 ===== */
+.timebook-mask{position:fixed;inset:0;z-index:250;background:var(--bg);
+  display:none;flex-direction:column;animation:fadeIn .25s}
+.timebook-mask.show{display:flex}
+.timebook-header{display:flex;align-items:center;padding:14px 16px;
+  background:linear-gradient(160deg,#E8D5F2 0%,#F5F0F7 100%);
+  border-bottom:1px solid rgba(155,126,189,.1);gap:10px;flex-shrink:0}
+.timebook-tabs{display:flex;gap:6px;flex:1;justify-content:center}
+.tb-tab{padding:6px 14px;border-radius:20px;background:#fff;color:var(--purple-deep);
+  font-size:13px;border:1px solid rgba(155,126,189,.15);cursor:pointer;transition:all .2s}
+.tb-tab.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+.tb-hint{font-size:11px;color:var(--text-light);text-align:center;padding:6px 12px 0}
+.timebook-canvas-wrap{flex:1;overflow:auto;display:flex;align-items:center;
+  justify-content:center;padding:18px;-webkit-overflow-scrolling:touch}
+.timebook-canvas-wrap canvas{max-width:100%;height:auto;background:#fff;
+  border-radius:18px;box-shadow:var(--shadow-lg)}
+/* 摄影集翻页 */
+.photobook-mask{position:fixed;inset:0;z-index:260;background:#000;
+  display:none;flex-direction:column;color:#fff;animation:fadeIn .25s}
+.photobook-mask.show{display:flex}
+.photobook-page{flex:1;display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;touch-action:pan-y}
+.photobook-img{max-width:100%;max-height:100%;display:flex;align-items:center;justify-content:center}
+.photobook-img img{max-width:100%;max-height:75vh;object-fit:contain;
+  border-radius:6px;box-shadow:0 12px 36px rgba(0,0,0,.5);user-select:none;-webkit-user-drag:none}
+.photobook-img .ph{color:#888;font-size:18px;padding:60px 24px;text-align:center}
+.photobook-caption{position:absolute;bottom:84px;left:0;right:0;
+  text-align:center;font-size:13px;opacity:.85;padding:0 24px;line-height:1.5;
+  max-height:80px;overflow:hidden}
+.photobook-progress{position:absolute;top:18px;left:0;right:0;
+  text-align:center;font-size:14px;font-weight:600;letter-spacing:.5px}
+.photobook-dots{position:absolute;bottom:24px;left:0;right:0;
+  display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:0 24px}
+.photobook-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);transition:all .2s}
+.photobook-dot.active{background:#fff;width:18px;border-radius:3px}
+.photobook-nav{position:absolute;top:50%;transform:translateY(-50%);
+  width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  color:#fff;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.photobook-nav:active{background:rgba(255,255,255,.2)}
+.photobook-nav.prev{left:12px}.photobook-nav.next{right:12px}
+.photobook-close{position:absolute;top:14px;right:14px;z-index:2;
+  width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.15);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);cursor:pointer}
+.photobook-export{position:absolute;top:14px;right:54px;z-index:2;
+  padding:6px 12px;border-radius:16px;background:rgba(255,255,255,.15);
+  color:#fff;font-size:12px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  cursor:pointer;display:flex;gap:6px;align-items:center}
+.photobook-export:active{background:rgba(255,255,255,.25)}
+.photobook-export-menu{position:absolute;top:46px;right:54px;z-index:3;
+  background:rgba(40,30,60,.95);border-radius:12px;padding:6px;display:none;
+  flex-direction:column;gap:2px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.photobook-export-menu.show{display:flex}
+.photobook-export-menu button{background:none;color:#fff;text-align:left;
+  padding:8px 14px;border-radius:8px;font-size:13px;cursor:pointer;white-space:nowrap}
+.photobook-export-menu button:active{background:rgba(255,255,255,.1)}
 </style>
 </head>
 <body>
@@ -658,9 +716,10 @@ a{color:var(--purple);text-decoration:none}
       <h2>🌷 幸福碎片</h2>
     </div>
     <div class="card">
-      <div class="flex gap8" style="margin-bottom:12px">
-        <button class="btn btn-sm btn-ghost right" onclick="Frag.openReport()">📊 看总报</button>
+      <div class="flex gap8" style="margin-bottom:12px;flex-wrap:wrap">
         <button class="btn btn-sm" onclick="Frag.openAddRecord()">＋ 记录</button>
+        <button class="btn btn-sm btn-ghost" onclick="Frag.openTimebook()">📖 我的时光集</button>
+        <button class="btn btn-sm btn-ghost" onclick="Frag.openPhotobook()">📷 翻看摄影集</button>
       </div>
       <div class="card-title">📸 生活美好瞬间</div>
       <div id="fragGrid" class="frag-grid"></div>
@@ -784,6 +843,40 @@ a{color:var(--purple);text-decoration:none}
   </div>
 </div>
 
+<!-- ===== 我的时光集 全屏画布 ===== -->
+<div class="timebook-mask" id="timebookMask">
+  <div class="timebook-header">
+    <button class="btn btn-sm btn-ghost" onclick="TimebookUI.close()" style="padding:6px 10px">✕ 关闭</button>
+    <div class="timebook-tabs">
+      <span class="tb-tab active" data-mode="day" onclick="TimebookUI.switch('day', this)">📅 日</span>
+      <span class="tb-tab" data-mode="week" onclick="TimebookUI.switch('week', this)">🗓️ 周</span>
+      <span class="tb-tab" data-mode="month" onclick="TimebookUI.switch('month', this)">📆 月</span>
+    </div>
+    <button class="btn btn-sm" onclick="TimebookUI.export('png')" style="padding:6px 10px">💾 PNG</button>
+    <button class="btn btn-sm btn-outline" onclick="TimebookUI.export('pdf')" style="padding:6px 10px">📄 PDF</button>
+  </div>
+  <div class="tb-hint" id="timebookHint">自动选择版式</div>
+  <div class="timebook-canvas-wrap" id="timebookCanvasWrap"><canvas id="timebookCanvas"></canvas></div>
+</div>
+
+<!-- ===== 摄影集 翻页 ===== -->
+<div class="photobook-mask" id="photobookMask">
+  <div class="photobook-close" onclick="PhotobookUI.close()">✕</div>
+  <div class="photobook-export" onclick="PhotobookUI.toggleExport()">💾 导出</div>
+  <div class="photobook-export-menu" id="photobookExportMenu">
+    <button onclick="PhotobookUI.exportAll('png')">逐张 PNG</button>
+    <button onclick="PhotobookUI.exportAll('pdf')">整本 PDF (A4)</button>
+  </div>
+  <div class="photobook-progress" id="photobookProgress">1/1</div>
+  <div class="photobook-page" id="photobookPage">
+    <div class="photobook-img" id="photobookImg"></div>
+    <div class="photobook-caption" id="photobookCaption"></div>
+  </div>
+  <div class="photobook-dots" id="photobookDots"></div>
+  <div class="photobook-nav prev" onclick="PhotobookUI.prev()">‹</div>
+  <div class="photobook-nav next" onclick="PhotobookUI.next()">›</div>
+</div>
+
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
@@ -798,6 +891,7 @@ a{color:var(--purple);text-decoration:none}
 <!-- 拍照输入 -->
 <input type="file" id="fileInput" accept="image/*" class="hidden">
 
+<script src="timebook.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

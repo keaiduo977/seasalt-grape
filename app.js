@@ -1719,21 +1719,216 @@ const Frag = {
     Modal.close(); Frag.load(); toast('已添加 💕');
   },
   async del(id){ await DB.del('fragments',id); Frag.load(); },
-  async openReport(){
+  async openTimebook(){
     const all = (await DB.all('fragments')).filter(f=>f.type==='record');
-    const nowd = new Date();
-    const weekAgo = new Date(nowd); weekAgo.setDate(nowd.getDate()-7);
-    const monthAgo = new Date(nowd); monthAgo.setMonth(nowd.getMonth()-1);
-    const yearAgo = new Date(nowd); yearAgo.setFullYear(nowd.getFullYear()-1);
-    const w = all.filter(f=>new Date(f.ts)>=weekAgo).length;
-    const m = all.filter(f=>new Date(f.ts)>=monthAgo).length;
-    const y = all.filter(f=>new Date(f.ts)>=yearAgo).length;
-    const recent = all.slice(0,3).map(f=>`<div class="muted">• ${esc((f.text||'美好瞬间').slice(0,20))}</div>`).join('') || '<div class="muted">还没有记录</div>';
-    Modal.open('幸福总报', `
-      <div class="report-card"><div class="big">${w}</div><div class="lbl">本周幸福瞬间</div></div>
-      <div class="report-card"><div class="big">${m}</div><div class="lbl">本月幸福瞬间</div></div>
-      <div class="report-card"><div class="big">${y}</div><div class="lbl">本年幸福瞬间</div></div>
-      <div class="card"><div class="card-title">🌸 最近美好</div>${recent}</div>`);
+    if(!all.length){ toast('还没有任何记录，先记录第一条小确幸吧 🌸'); return; }
+    TimebookUI.open(all);
+  },
+  async openPhotobook(){
+    const all = (await DB.all('fragments')).filter(f=>f.type==='record' && f.img).sort((a,b)=>(a.ts||'').localeCompare(b.ts||''));
+    if(!all.length){ toast('还没有带照片的记录～'); return; }
+    PhotobookUI.open(all);
+  }
+};
+
+/* ============================================
+   我的时光集 · 控制器(驱动全屏画布)
+   ============================================ */
+const TimebookUI = {
+  _records: [], _daysMap: {}, _mode: 'day', _canvas: null,
+  open(records){
+    TimebookUI._records = records;
+    TimebookUI._daysMap = Timebook.groupByDay(records);
+    const today = Timebook.ymd(new Date());
+    const ws = Timebook.weekStart(new Date());
+    const todayRecords = TimebookUI._daysMap[today] || [];
+    const weekKeys = [...Array(7)].map((_,i)=>{ const d=new Date(ws); d.setDate(ws.getDate()+i); return Timebook.ymd(d); });
+    const weekRecords = weekKeys.flatMap(k=>TimebookUI._daysMap[k]||[]);
+    const monthKey = today.slice(0,7);
+    const monthRecords = records.filter(r=> (r.ts||'').slice(0,7)===monthKey);
+    // 自动选择
+    let mode='month', hint='自动选择:月历';
+    if(todayRecords.length>=1){ mode='day'; hint='自动选择:今日日卡'; }
+    else if(weekRecords.length>=2){ mode='week'; hint='自动选择:本周周历'; }
+    else if(monthRecords.length>=4){ mode='month'; hint='自动选择:本月月历'; }
+    TimebookUI._mode = mode;
+    document.getElementById('timebookHint').textContent = hint;
+    $('#timebookMask').classList.add('show');
+    $$('#timebookMask .tb-tab').forEach(t=>t.classList.toggle('active', t.dataset.mode===mode));
+    TimebookUI._render();
+  },
+  close(){ $('#timebookMask').classList.remove('show'); },
+  switch(mode, tabEl){
+    TimebookUI._mode = mode;
+    $$('#timebookMask .tb-tab').forEach(t=>t.classList.toggle('active', t===tabEl));
+    document.getElementById('timebookHint').textContent = '已切换:'+(mode==='day'?'日卡':mode==='week'?'周历':'月历');
+    TimebookUI._render();
+  },
+  async _render(){
+    const wrap = document.getElementById('timebookCanvasWrap');
+    const canvas = document.getElementById('timebookCanvas');
+    wrap.querySelector('.tb-loading')?.remove();
+    const loading = document.createElement('div');
+    loading.className='tb-loading muted'; loading.textContent='绘制中…';
+    loading.style.cssText='padding:20px;text-align:center';
+    wrap.appendChild(loading);
+    canvas.style.display='none';
+    try{
+      let result;
+      if(TimebookUI._mode==='day'){
+        const today = Timebook.ymd(new Date());
+        const rec = TimebookUI._daysMap[today];
+        if(!rec){ toast('今天还没有记录，回到「记录」页补一条吧 🌷'); loading.textContent='今天还没有记录'; return; }
+        result = await Timebook.renderDay(today, rec);
+      } else if(TimebookUI._mode==='week'){
+        const ws = Timebook.weekStart(new Date());
+        result = await Timebook.renderWeek(ws, TimebookUI._daysMap);
+      } else {
+        const now = new Date();
+        result = await Timebook.renderMonth(now.getFullYear(), now.getMonth(), TimebookUI._daysMap);
+      }
+      const ctx = canvas.getContext('2d');
+      canvas.width = result.width; canvas.height = result.height;
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(result, 0, 0);
+      TimebookUI._canvas = canvas;
+      canvas.style.display='';
+    }catch(e){ console.warn('timebook render fail',e); loading.textContent='绘制失败'; return; }
+    loading.remove();
+  },
+  // 构建一组相关页(用于 PDF 输出)
+  async _buildAllPages(){
+    const pages = [];
+    if(TimebookUI._mode==='day'){
+      const today = Timebook.ymd(new Date());
+      const rec = TimebookUI._daysMap[today];
+      if(rec) pages.push(await Timebook.renderDay(today, rec));
+    } else if(TimebookUI._mode==='week'){
+      // 渲染本月所有有数据的周(最多 5 周)
+      const ws = Timebook.weekStart(new Date());
+      pages.push(await Timebook.renderWeek(ws, TimebookUI._daysMap));
+      const ws2 = new Date(ws); ws2.setDate(ws2.getDate()-7);
+      const daysMap2 = TimebookUI._daysMap;
+      const prevMap = {};
+      Object.keys(daysMap2).forEach(k=>{ const d=new Date(k); if(d>=ws2 && d<ws) prevMap[k]=daysMap2[k]; });
+      if(Object.keys(prevMap).length) pages.push(await Timebook.renderWeek(ws2, prevMap));
+    } else {
+      // 月历:本月 + 上月(若都有数据)
+      const now = new Date();
+      pages.push(await Timebook.renderMonth(now.getFullYear(), now.getMonth(), TimebookUI._daysMap));
+      const prev = new Date(now.getFullYear(), now.getMonth()-1, 1);
+      const prevMap = {};
+      Object.keys(TimebookUI._daysMap).forEach(k=>{ if(k.startsWith(Timebook.ymd(prev).slice(0,7))) prevMap[k]=TimebookUI._daysMap[k]; });
+      if(Object.keys(prevMap).length>=2) pages.push(await Timebook.renderMonth(prev.getFullYear(), prev.getMonth(), prevMap));
+    }
+    return pages;
+  },
+  async export(kind){
+    try{
+      if(kind==='png'){
+        if(!TimebookUI._canvas){ toast('请等待绘制完成'); return; }
+        const c = TimebookUI._canvas;
+        const stamp = Timebook.ymd(new Date());
+        const label = TimebookUI._mode==='day'?'日卡':TimebookUI._mode==='week'?'周历':'月历';
+        await Timebook.exportPNG(c, `时光集-${stamp}-${label}.png`);
+        toast('已导出 PNG 📷');
+      } else {
+        const pages = await TimebookUI._buildAllPages();
+        if(!pages.length){ toast('暂无可导出的内容'); return; }
+        const stamp = Timebook.ymd(new Date());
+        const label = TimebookUI._mode==='day'?'日卡':TimebookUI._mode==='week'?'周历':'月历';
+        await Timebook.exportPDF(pages, `时光集-${stamp}-${label}.pdf`);
+        toast('已导出 PDF 📄(可打印装订)');
+      }
+    }catch(e){ console.warn('export fail',e); toast('导出失败,请重试'); }
+  }
+};
+
+/* ============================================
+   摄影集 · 翻页控制器
+   ============================================ */
+const PhotobookUI = {
+  _records: [], _idx: 0,
+  open(records){
+    PhotobookUI._records = records;
+    PhotobookUI._idx = 0;
+    $('#photobookMask').classList.add('show');
+    PhotobookUI._renderDots();
+    PhotobookUI._show();
+    document.addEventListener('keydown', PhotobookUI._onKey);
+    $('#photobookPage').addEventListener('touchstart', PhotobookUI._onTouchStart, {passive:true});
+    $('#photobookPage').addEventListener('touchend', PhotobookUI._onTouchEnd, {passive:true});
+  },
+  close(){
+    $('#photobookMask').classList.remove('show');
+    document.removeEventListener('keydown', PhotobookUI._onKey);
+    $('#photobookPage').removeEventListener('touchstart', PhotobookUI._onTouchStart);
+    $('#photobookPage').removeEventListener('touchend', PhotobookUI._onTouchEnd);
+    $('#photobookExportMenu').classList.remove('show');
+  },
+  _onKey(e){
+    if($('#photobookMask').classList.contains('show')){
+      if(e.key==='ArrowLeft') PhotobookUI.prev();
+      else if(e.key==='ArrowRight') PhotobookUI.next();
+      else if(e.key==='Escape') PhotobookUI.close();
+    }
+  },
+  _touchStartX: 0,
+  _onTouchStart(e){ PhotobookUI._touchStartX = e.changedTouches[0].screenX; },
+  _onTouchEnd(e){
+    const dx = e.changedTouches[0].screenX - PhotobookUI._touchStartX;
+    if(Math.abs(dx) > 50){
+      if(dx < 0) PhotobookUI.next();
+      else PhotobookUI.prev();
+    }
+  },
+  prev(){ if(PhotobookUI._idx>0){ PhotobookUI._idx--; PhotobookUI._show(); } },
+  next(){ if(PhotobookUI._idx<PhotobookUI._records.length-1){ PhotobookUI._idx++; PhotobookUI._show(); } },
+  _show(){
+    const r = PhotobookUI._records[PhotobookUI._idx];
+    if(!r) return;
+    const imgBox = document.getElementById('photobookImg');
+    imgBox.innerHTML = r.img ? `<img src="${esc(r.img)}" alt="">` : `<div class="ph">无图记录</div>`;
+    const cap = document.getElementById('photobookCaption');
+    const d = new Date(r.ts);
+    const dn = ['日','一','二','三','四','五','六'][d.getDay()];
+    const txt = (r.text||'').slice(0,120);
+    cap.textContent = `${Timebook.ymd(d)} 周${dn}  ·  ${txt}`;
+    document.getElementById('photobookProgress').textContent = `${PhotobookUI._idx+1}/${PhotobookUI._records.length}`;
+    PhotobookUI._renderDots();
+  },
+  _renderDots(){
+    const wrap = document.getElementById('photobookDots');
+    wrap.innerHTML = PhotobookUI._records.map((_,i)=>`<span class="photobook-dot ${i===PhotobookUI._idx?'active':''}"></span>`).join('');
+  },
+  toggleExport(){
+    $('#photobookExportMenu').classList.toggle('show');
+  },
+  async exportAll(kind){
+    try{
+      PhotobookUI.toggleExport();
+      if(kind==='png'){
+        toast('正在逐张导出 PNG,请在浏览器下载中允许多次下载…');
+        for(let i=0;i<PhotobookUI._records.length;i++){
+          const c = await Timebook.renderPhotoPage(PhotobookUI._records[i]);
+          const r = PhotobookUI._records[i];
+          const ds = Timebook.ymd(new Date(r.ts));
+          const pad = String(i+1).padStart(3,'0');
+          await Timebook.exportPNG(c, `摄影集-${pad}-${ds}.png`);
+          await new Promise(r=>setTimeout(r,200));
+        }
+        toast(`已导出 ${PhotobookUI._records.length} 张 PNG 📷`);
+      } else {
+        toast('正在生成整本 PDF,可能需要几秒…');
+        const pages = [];
+        for(let i=0;i<PhotobookUI._records.length;i++){
+          pages.push(await Timebook.renderPhotoPage(PhotobookUI._records[i]));
+        }
+        const stamp = Timebook.ymd(new Date());
+        await Timebook.exportPDF(pages, `摄影集-${stamp}.pdf`);
+        toast(`已导出 PDF (${pages.length} 页, A4,可直接打印装订) 📕`);
+      }
+    }catch(e){ console.warn('photobook export fail',e); toast('导出失败,请重试'); }
   }
 };
 
