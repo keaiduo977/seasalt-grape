@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-01 14:43",
+  "updated": "2026-08-01 20:39",
   "items": [
     {
       "title": "痴迷",
@@ -17,6 +17,15 @@
       "category": "电影",
       "rating": 6.2,
       "url": "https://movie.douban.com/subject/37096700/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "吉伊卡哇：人鱼之岛的秘密",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/37868459/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,15 +48,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "后室",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36235977/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "揭秘日",
       "type": "电影",
       "category": "电影",
@@ -57,47 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "10间敢死队",
+      "title": "后室",
       "type": "电影",
       "category": "电影",
       "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37379599/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "永远心跳漏一拍",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37326018/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "今晚正好",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/37317133/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "火遮眼",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/36877245/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "超级少女",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.2,
-      "url": "https://movie.douban.com/subject/36225840/",
+      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,11 +75,47 @@
       "source": "豆瓣"
     },
     {
-      "title": "大濛",
+      "title": "今晚正好",
       "type": "电影",
       "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37317133/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "超级少女",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.2,
+      "url": "https://movie.douban.com/subject/36225840/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "消失的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36965301/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "10间敢死队",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37379599/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "火遮眼",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/36877245/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "诺曼底72小时",
+      "title": "永远心跳漏一拍",
       "type": "电影",
       "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36916000/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/37326018/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,29 +165,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "恐怖邻居大全",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/38520996/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "柯蒂斯总统 第一季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.7,
+      "rating": 7.6,
       "url": "https://movie.douban.com/subject/37453449/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "死神 千年血战篇 -祸进谭-",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36189165/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "御廷谣",
+      "title": "莫得闲",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/35691844/",
+      "url": "https://movie.douban.com/subject/38407550/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -197,6 +197,15 @@
       "category": "热播剧",
       "rating": 5.0,
       "url": "https://movie.douban.com/subject/37096230/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "御廷谣",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35691844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,6 +237,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "直到T恤干透",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "野狗骨头",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,29 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "直到T恤干透",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38462800/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "铁拳教育",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37071123/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "鬼谜东宫",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36924118/",
       "summary": "",
       "source": "豆瓣"
     },
