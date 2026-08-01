@@ -345,6 +345,20 @@ const Supp = {
    3. 食谱合集
    ============================================ */
 const Recipe = {
+  // 把用户填的链接规整成可正常打开的完整 URL
+  normalizeLink(raw){
+    if(!raw) return '';
+    let s = String(raw).trim();
+    if(!s) return '';
+    // 已经是完整 http(s) 链接
+    if(/^https?:\/\//i.test(s)) return s;
+    // 以 // 开头
+    if(s.startsWith('//')) return 'https:' + s;
+    // 形如 "www.xxx" 或 "xxx.com/yyy" → 补 https://
+    if(/^[\w-]+(\.[\w-]+)+/.test(s)) return 'https://' + s;
+    // 其它（含中文/特殊）当作搜索关键词，交给搜索引擎，保证一定能打开
+    return 'https://www.baidu.com/s?wd=' + encodeURIComponent(s);
+  },
   async load(){
     const all = await DB.all('recipes');
     Recipe.render(all);
@@ -367,11 +381,12 @@ const Recipe = {
         <div class="group-body">${(g.items||[]).map(it=>`
           <div class="recipe-item">
             <span style="font-size:20px">${esc(it.emoji||'🍽️')}</span>
-            <div class="col" style="flex:1">
+            <div class="col" style="flex:1;min-width:0">
               <div style="font-weight:600;font-size:13px">${esc(it.title)}</div>
               ${it.note?`<div class="muted">${esc(it.note)}</div>`:''}
+              ${it.link?`<a href="${esc(Recipe.normalizeLink(it.link))}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">🔗 打开链接</a>`:''}
             </div>
-            ${it.link?`<a href="${esc(it.link)}" target="_blank" class="btn btn-sm btn-ghost">打开</a>`:''}
+            <button class="btn btn-sm btn-ghost" style="padding:6px 10px" onclick="Recipe.openEditItem('${g.id}','${it.id}')">✎</button>
             <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Recipe.delItem('${g.id}','${it.id}')">×</button>
           </div>`).join('') || '<div class="muted" style="padding:10px">还没有菜单～</div>'}</div>
       </div>`).join('');
@@ -396,7 +411,7 @@ const Recipe = {
   openAddItem(gid){
     Modal.open('添加菜单', `
       <div class="field"><label>菜单名称</label><input class="input" id="rTitle" placeholder="如：番茄牛腩"></div>
-      <div class="field"><label>链接（可选）</label><input class="input" id="rLink" placeholder="https://..."></div>
+      <div class="field"><label>链接（可选）</label><input class="input" id="rLink" placeholder="粘贴小红书/微信/网页链接均可"></div>
       <div class="field"><label>备注（可选）</label><input class="input" id="rNote" placeholder="如：少油少盐"></div>
       <div class="field"><label>图标</label><input class="input" id="rEmoji" placeholder="🍽️" value="🍽️"></div>
       <button class="btn btn-block" onclick="Recipe.saveItem('${gid}')">添加</button>`);
@@ -406,6 +421,25 @@ const Recipe = {
     g.items = g.items||[];
     g.items.push({id:uid(), title:$('#rTitle').value.trim(), link:$('#rLink').value.trim(), note:$('#rNote').value.trim(), emoji:$('#rEmoji').value.trim()||'🍽️'});
     await DB.put('recipes',g); Modal.close(); Recipe.load(); toast('已添加');
+  },
+  async openEditItem(gid, iid){
+    const g = await DB.get('recipes',gid); if(!g) return;
+    const it = (g.items||[]).find(i=>i.id===iid); if(!it) return;
+    Modal.open('编辑菜单', `
+      <div class="field"><label>菜单名称</label><input class="input" id="rTitle" value="${esc(it.title)}"></div>
+      <div class="field"><label>链接（可选）</label><input class="input" id="rLink" value="${esc(it.link||'')}" placeholder="粘贴小红书/微信/网页链接均可"></div>
+      <div class="field"><label>备注（可选）</label><input class="input" id="rNote" value="${esc(it.note||'')}"></div>
+      <div class="field"><label>图标</label><input class="input" id="rEmoji" value="${esc(it.emoji||'🍽️')}"></div>
+      <button class="btn btn-block" onclick="Recipe.saveEditItem('${gid}','${iid}')">保存修改</button>`);
+  },
+  async saveEditItem(gid, iid){
+    const g = await DB.get('recipes',gid); if(!g) return;
+    const it = (g.items||[]).find(i=>i.id===iid); if(!it){ toast('未找到该项'); return; }
+    it.title = $('#rTitle').value.trim();
+    it.link  = $('#rLink').value.trim();
+    it.note  = $('#rNote').value.trim();
+    it.emoji = $('#rEmoji').value.trim()||'🍽️';
+    await DB.put('recipes',g); Modal.close(); Recipe.load(); toast('已更新');
   },
   async delItem(gid, iid){
     const g = await DB.get('recipes',gid); if(!g) return;
@@ -460,13 +494,18 @@ const Skin = {
       </div>
       <div class="mt12">${items.map(it=>{
         const rec = records[it.id]||{};
-        const count = week.filter(d=>rec[d]).length;
+        const weekCount = week.filter(d=>rec[d]).length;
+        // 本月累计
+        const monthPrefix = `${Skin._viewY}-${String(Skin._viewM+1).padStart(2,'0')}`;
+        const monthCount = Object.keys(rec).filter(d=>d.startsWith(monthPrefix) && rec[d]).length;
         return `<div class="skincare-row">
           <span style="font-size:22px;flex-shrink:0">${esc(it.emoji||'🧴')}</span>
           <div class="col" style="flex:1;min-width:0">
             <div style="font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(it.name)}</div>
-            <div class="muted">本周 ${count}/7 次</div>
+            <div class="muted">本周 ${weekCount}/7 · 本月 ${monthCount} 次</div>
           </div>
+          <button class="btn btn-sm btn-ghost" style="padding:6px 10px" onclick="Skin.openEdit('${it.id}')">✎</button>
+          <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Skin.del('${it.id}')">×</button>
           <button class="btn btn-sm ${rec[todayStr]?'btn-green':''}" onclick="Skin.toggle('${it.id}')">${rec[todayStr]?'✓ 已打卡':'打卡'}</button>
         </div>`;
       }).join('')}</div>`;
@@ -507,17 +546,6 @@ const Skin = {
       html += `<div class="${cls.join(' ')}" onclick="Skin.selectDate('${dateStr}')"><div class="n">${d}</div>${cnt>0?`<div class="cnt">${cnt}项</div>`:''}</div>`;
     }
     $('#skinCalGrid').innerHTML = html;
-    $('#skinRateList').innerHTML = items.map(it=>{
-      const rec = records[it.id] || {};
-      const done = Object.keys(rec).filter(d=>d.startsWith(monthPrefix) && rec[d]).length;
-      const rate = elapsed>0 ? Math.round(done/elapsed*100) : 0;
-      return `<div class="skin-rate-row">
-        <span style="font-size:18px">${esc(it.emoji||'🧴')}</span>
-        <span style="font-size:13px;min-width:60px">${esc(it.name)}</span>
-        <div class="skin-rate-bar"><span style="width:${Math.min(rate,100)}%"></span></div>
-        <span class="muted" style="font-size:11px;min-width:50px;text-align:right">${done}/${elapsed} (${rate}%)</span>
-      </div>`;
-    }).join('') || '<div class="muted">暂无项目</div>';
   },
   selectDate(dateStr){
     Skin._selectedDate = dateStr;
@@ -572,6 +600,37 @@ const Skin = {
     if(!name){ toast('请输入名称'); return; }
     await DB.put('skincare',{id:uid(), name, emoji:$('#skEmoji').value.trim()||'🧴'});
     Modal.close(); Skin.load(); toast('已添加');
+  },
+  async openEdit(id){
+    const it = Skin._items.find(x=>x.id===id);
+    if(!it){ toast('未找到项目'); return; }
+    Modal.open('编辑护肤项目', `
+      <div class="field"><label>名称</label><input class="input" id="skName" value="${esc(it.name)}"></div>
+      <div class="field"><label>图标</label><input class="input" id="skEmoji" value="${esc(it.emoji||'🧴')}"></div>
+      <div class="muted" style="font-size:11px;margin:-4px 0 8px">修改或删除项目不会影响已有的打卡记录</div>
+      <button class="btn btn-block" onclick="Skin.saveEdit('${id}')">保存修改</button>
+      <button class="btn btn-block btn-red mt8" onclick="Skin.del('${id}')">🗑 删除该项目</button>`);
+  },
+  async saveEdit(id){
+    const name = $('#skName').value.trim();
+    if(!name){ toast('请输入名称'); return; }
+    const it = Skin._items.find(x=>x.id===id);
+    if(!it){ toast('未找到项目'); return; }
+    it.name = name;
+    it.emoji = $('#skEmoji').value.trim()||'🧴';
+    await DB.put('skincare', it);
+    Modal.close(); Skin.load(); toast('已更新');
+  },
+  async del(id){
+    if(!confirm('确定删除该护肤项目？\n（已有的打卡记录会保留，不影响历史）')) return;
+    await DB.del('skincare', id);
+    // 同步清理该项目的打卡记录
+    const records = await DB.get('aiCache','skinRecords') || {id:'skinRecords', data:{}};
+    if(records.data && records.data[id]){
+      delete records.data[id];
+      await DB.put('aiCache', records);
+    }
+    Modal.close(); Skin.load(); toast('已删除');
   }
 };
 

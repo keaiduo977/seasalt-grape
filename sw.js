@@ -1,5 +1,5 @@
 // 海盐葡萄 Service Worker
-const CACHE = 'seasalt-v6';
+const CACHE = 'seasalt-v7';
 const ASSETS = ['./', './index.html', './app.js', './manifest.json', './icon.png', './icon-192.png'];
 
 self.addEventListener('install', e => {
