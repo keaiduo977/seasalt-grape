@@ -345,39 +345,37 @@ const Supp = {
    3. 食谱合集
    ============================================ */
 const Recipe = {
-  // 把用户填的链接规整成可正常跳转的完整 URL
-  // 原则：用户粘什么就跳什么，只补全协议头，绝不拿去搜索
+  // 从用户粘贴的内容里提取真正的链接
+  // 用户从小红书/B站等 App 分享时，复制的是"标题+链接+引导语"整段文本，
+  // 必须从中提取出 URL，否则整段文本会被浏览器当相对路径 → 404
   normalizeLink(raw){
     if(!raw) return '';
     const s = String(raw).trim();
     if(!s) return '';
-    // 已是完整协议头，原样返回（小红书/微信/网页链接都走这里）
-    if(/^https?:\/\//i.test(s)) return s;
-    // 形如 //host/path
-    if(s.startsWith('//')) return 'https:' + s;
-    // 形如 www.xxx.com/yyy 或 xhslink.com/abc → 补 https://
-    // 只要含一个点号就当域名处理（含中文也认，如"小红书.com"）
-    if(/^[^\s/]+\.[^\s/]/.test(s)) return 'https://' + s;
-    // 兜底：原样返回，让浏览器自己处理，不再转搜索
-    return s;
+    // 1) 优先匹配完整 http(s):// URL（含中文路径也能匹配，直到遇到空白或中文引号）
+    let m = s.match(/https?:\/\/[^\s\u3000\u4e00-\u9fff"'<>，。！？、（）【】《》]+/i);
+    if(m) return m[0].replace(/[.,;:!?）)]+$/,''); // 去掉尾部标点
+    // 2) 匹配无协议的短链/域名：xhslink.cn/xxx、www.xxx.com/yyy、xxx.com/path
+    //    允许多级域名（www.xiaohongshu.com），TLD 至少2位字母
+    m = s.match(/\b([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}(?:\/[^\s\u3000\u4e00-\u9fff"'<>，。！？、]*)?)/i);
+    if(m){
+      let u = m[1].replace(/[.,;:!?)]+$/,'');
+      return 'https://' + u;
+    }
+    // 3) 不是链接（纯文字），返回空，由 openLink 走"非链接"分支
+    return '';
   },
   // 点击链接：App 内弹窗预览，失败则降级
   openLink(raw){
     const url = Recipe.normalizeLink(raw);
-    if(!url){ toast('没有链接'); return; }
-    // 判断是否像合法 URL（含点号或以 http 开头），否则不当链接处理
-    const isUrl = /^https?:\/\//i.test(url) || /^[^\s/]+\.[^\s/]/.test(url);
-    if(!isUrl){
-      // 不是链接，直接显示原文 + 复制
+    if(!url){
+      // 提取不出链接：显示原文 + 复制（防御性，正常不会走到这）
       Modal.open('🔗 链接内容', `
         <div class="card" style="background:var(--salt-light)">
-          <div class="muted" style="margin-bottom:6px">这条记录里填的不是完整链接：</div>
+          <div class="muted" style="margin-bottom:6px">这条记录里没有识别到链接：</div>
           <div style="word-break:break-all;font-size:14px;padding:10px;background:#fff;border-radius:8px">${esc(raw)}</div>
         </div>
-        <div class="mt8" style="display:flex;gap:8px">
-          <button class="btn" style="flex:1" onclick="Recipe._copy(${JSON.stringify(raw).replace(/"/g,'&quot;')})">📋 复制内容</button>
-          <button class="btn btn-ghost" style="flex:1" onclick="Modal.close()">关闭</button>
-        </div>`);
+        <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
       return;
     }
     // App 内 iframe 预览
@@ -463,7 +461,7 @@ const Recipe = {
             <div class="col" style="flex:1;min-width:0">
               <div style="font-weight:600;font-size:13px">${esc(it.title)}</div>
               ${it.note?`<div class="muted">${esc(it.note)}</div>`:''}
-              ${it.link?`<button class="btn btn-sm btn-ghost" onclick="Recipe.openLink(${JSON.stringify(it.link).replace(/"/g,'&quot;')})">🔗 打开链接</button>`:''}
+              ${(it.link && Recipe.normalizeLink(it.link))?`<button class="btn btn-sm btn-ghost" onclick="Recipe.openLink(${JSON.stringify(it.link).replace(/"/g,'&quot;')})">🔗 打开链接</button>`:''}
             </div>
             <button class="btn btn-sm btn-ghost" style="padding:6px 10px" onclick="Recipe.openEditItem('${g.id}','${it.id}')">✎</button>
             <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Recipe.delItem('${g.id}','${it.id}')">×</button>
