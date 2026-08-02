@@ -361,6 +361,83 @@ const Recipe = {
     // 兜底：原样返回，让浏览器自己处理，不再转搜索
     return s;
   },
+  // 点击链接：App 内弹窗预览，失败则降级
+  openLink(raw){
+    const url = Recipe.normalizeLink(raw);
+    if(!url){ toast('没有链接'); return; }
+    // 判断是否像合法 URL（含点号或以 http 开头），否则不当链接处理
+    const isUrl = /^https?:\/\//i.test(url) || /^[^\s/]+\.[^\s/]/.test(url);
+    if(!isUrl){
+      // 不是链接，直接显示原文 + 复制
+      Modal.open('🔗 链接内容', `
+        <div class="card" style="background:var(--salt-light)">
+          <div class="muted" style="margin-bottom:6px">这条记录里填的不是完整链接：</div>
+          <div style="word-break:break-all;font-size:14px;padding:10px;background:#fff;border-radius:8px">${esc(raw)}</div>
+        </div>
+        <div class="mt8" style="display:flex;gap:8px">
+          <button class="btn" style="flex:1" onclick="Recipe._copy(${JSON.stringify(raw).replace(/"/g,'&quot;')})">📋 复制内容</button>
+          <button class="btn btn-ghost" style="flex:1" onclick="Modal.close()">关闭</button>
+        </div>`);
+      return;
+    }
+    // App 内 iframe 预览
+    Modal.open('🔗 链接预览', `
+      <div style="display:flex;gap:8px;margin-bottom:10px">
+        <a href="${esc(url)}" target="_blank" rel="noopener" class="btn" style="flex:1;text-align:center;text-decoration:none">↗ 在新标签页打开</a>
+        <button class="btn btn-ghost" style="flex:1" onclick="Recipe._copy(${JSON.stringify(url).replace(/"/g,'&quot;')})">📋 复制链接</button>
+      </div>
+      <div class="muted" style="font-size:11px;margin-bottom:8px;word-break:break-all">${esc(url)}</div>
+      <div id="linkPreviewWrap" style="position:relative;height:60vh;border-radius:12px;overflow:hidden;background:var(--salt-light)">
+        <iframe id="linkPreviewFrame" src="${esc(url)}" style="width:100%;height:100%;border:0"
+          onload="Recipe._frameOk()" onerror="Recipe._frameFail()"></iframe>
+        <div id="linkPreviewFallback" style="position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px;text-align:center;background:#fff">
+          <div style="font-size:36px">🛡️</div>
+          <div style="color:var(--text);font-weight:600">该网站不允许在 App 内预览</div>
+          <div class="muted" style="font-size:12px">小红书等平台有安全限制，需在外部浏览器打开。点击下方按钮跳转。</div>
+          <a href="${esc(url)}" target="_blank" rel="noopener" class="btn" style="text-decoration:none;margin-top:4px">↗ 在新标签页打开</a>
+        </div>
+        <div id="linkPreviewLoading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--salt-light);color:var(--purple-deep);font-size:13px">正在加载…</div>
+      </div>
+      <button class="btn btn-block btn-ghost mt8" onclick="Modal.close()">关闭</button>`);
+    // 超时兜底：5 秒后若仍在 loading，认为可能被拦截，显示降级
+    clearTimeout(Recipe._linkTimer);
+    Recipe._linkTimer = setTimeout(()=>{
+      const fb = $('#linkPreviewFallback');
+      const ld = $('#linkPreviewLoading');
+      if(fb && !fb.style.display.includes('flex') && ld){
+        // loading 还在且未触发 onload，降级
+        Recipe._frameFail();
+      }
+    }, 5000);
+  },
+  _frameOk(){
+    const ld = $('#linkPreviewLoading');
+    if(ld) ld.style.display='none';
+    clearTimeout(Recipe._linkTimer);
+  },
+  _frameFail(){
+    const ld = $('#linkPreviewLoading');
+    const fb = $('#linkPreviewFallback');
+    const fr = $('#linkPreviewFrame');
+    if(ld) ld.style.display='none';
+    if(fr) fr.style.display='none';
+    if(fb){ fb.style.display='flex'; }
+    clearTimeout(Recipe._linkTimer);
+  },
+  _copy(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(()=>toast('已复制 ✅')).catch(()=>Recipe._copyFallback(text));
+    }else{
+      Recipe._copyFallback(text);
+    }
+  },
+  _copyFallback(text){
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); toast('已复制 ✅'); }catch(e){ toast('复制失败，请手动长按复制'); }
+    document.body.removeChild(ta);
+  },
   async load(){
     const all = await DB.all('recipes');
     Recipe.render(all);
@@ -386,7 +463,7 @@ const Recipe = {
             <div class="col" style="flex:1;min-width:0">
               <div style="font-weight:600;font-size:13px">${esc(it.title)}</div>
               ${it.note?`<div class="muted">${esc(it.note)}</div>`:''}
-              ${it.link?`<a href="${esc(Recipe.normalizeLink(it.link))}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">🔗 打开链接</a>`:''}
+              ${it.link?`<button class="btn btn-sm btn-ghost" onclick="Recipe.openLink(${JSON.stringify(it.link).replace(/"/g,'&quot;')})">🔗 打开链接</button>`:''}
             </div>
             <button class="btn btn-sm btn-ghost" style="padding:6px 10px" onclick="Recipe.openEditItem('${g.id}','${it.id}')">✎</button>
             <button class="btn btn-sm btn-red" style="padding:6px 10px" onclick="Recipe.delItem('${g.id}','${it.id}')">×</button>
