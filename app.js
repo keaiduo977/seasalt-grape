@@ -345,19 +345,21 @@ const Supp = {
    3. 食谱合集
    ============================================ */
 const Recipe = {
-  // 把用户填的链接规整成可正常打开的完整 URL
+  // 把用户填的链接规整成可正常跳转的完整 URL
+  // 原则：用户粘什么就跳什么，只补全协议头，绝不拿去搜索
   normalizeLink(raw){
     if(!raw) return '';
-    let s = String(raw).trim();
+    const s = String(raw).trim();
     if(!s) return '';
-    // 已经是完整 http(s) 链接
+    // 已是完整协议头，原样返回（小红书/微信/网页链接都走这里）
     if(/^https?:\/\//i.test(s)) return s;
-    // 以 // 开头
+    // 形如 //host/path
     if(s.startsWith('//')) return 'https:' + s;
-    // 形如 "www.xxx" 或 "xxx.com/yyy" → 补 https://
-    if(/^[\w-]+(\.[\w-]+)+/.test(s)) return 'https://' + s;
-    // 其它（含中文/特殊）当作搜索关键词，交给搜索引擎，保证一定能打开
-    return 'https://www.baidu.com/s?wd=' + encodeURIComponent(s);
+    // 形如 www.xxx.com/yyy 或 xhslink.com/abc → 补 https://
+    // 只要含一个点号就当域名处理（含中文也认，如"小红书.com"）
+    if(/^[^\s/]+\.[^\s/]/.test(s)) return 'https://' + s;
+    // 兜底：原样返回，让浏览器自己处理，不再转搜索
+    return s;
   },
   async load(){
     const all = await DB.all('recipes');
