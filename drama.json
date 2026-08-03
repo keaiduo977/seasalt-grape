@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-03 13:23",
+  "updated": "2026-08-03 21:50",
   "items": [
     {
       "title": "痴迷",
@@ -21,29 +21,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "无界之环",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37234857/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "末路讨债人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/38352042/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "内华达之瑰",
       "type": "电影",
       "category": "电影",
-      "rating": 6.0,
+      "rating": 6.1,
       "url": "https://movie.douban.com/subject/37167155/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "男人没有好东西",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36948226/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "吉伊卡哇：人鱼之岛的秘密",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37868459/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,20 +57,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "消失的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36965301/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "揭秘日",
       "type": "电影",
       "category": "电影",
       "rating": 6.4,
       "url": "https://movie.douban.com/subject/36860212/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "后室",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -84,20 +84,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "消失的人",
+      "title": "后室",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36965301/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "超级少女",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.2,
-      "url": "https://movie.douban.com/subject/36225840/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -107,6 +98,15 @@
       "category": "电影",
       "rating": 6.0,
       "url": "https://movie.douban.com/subject/37317133/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "超级少女",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.2,
+      "url": "https://movie.douban.com/subject/36225840/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,29 +147,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "莫得闲",
+      "title": "天才，女友",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/38407550/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "斯卡洛尼之道",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.1,
-      "url": "https://movie.douban.com/subject/38412886/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "恐怖邻居大全",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/38520996/",
+      "url": "https://movie.douban.com/subject/36403345/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,11 +165,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "天才，女友",
+      "title": "莫得闲",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36403345/",
+      "url": "https://movie.douban.com/subject/38407550/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,11 +183,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "中餐厅 第十季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37814458/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "御廷谣",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/35691844/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "聪明镇",
+      "title": "铁拳教育",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.1,
-      "url": "https://movie.douban.com/subject/35896166/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37071123/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "铁拳教育",
+      "title": "杀人者的购物中心2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37071123/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37181749/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
+      "title": "聪明镇",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37501131/",
+      "rating": 5.1,
+      "url": "https://movie.douban.com/subject/35896166/",
       "summary": "",
       "source": "豆瓣"
     },
