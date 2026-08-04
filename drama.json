@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-04 11:11",
+  "updated": "2026-08-04 22:00",
   "items": [
     {
       "title": "痴迷",
@@ -33,7 +33,7 @@
       "title": "末路讨债人",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
+      "rating": 6.2,
       "url": "https://movie.douban.com/subject/38352042/",
       "summary": "",
       "source": "豆瓣"
@@ -165,6 +165,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "中餐厅 第十季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37814458/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "莫得闲",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,24 +192,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "中餐厅 第十季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37814458/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "御廷谣",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35691844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
@@ -215,6 +206,15 @@
       "category": "热播剧",
       "rating": 8.1,
       "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "御廷谣",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35691844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "聪明镇",
+      "title": "低智商犯罪",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.1,
-      "url": "https://movie.douban.com/subject/35896166/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/35517044/",
       "summary": "",
       "source": "豆瓣"
     },
