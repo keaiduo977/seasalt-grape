@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-06 11:07",
+  "updated": "2026-08-07 01:53",
   "items": [
     {
       "title": "痴迷",
@@ -21,29 +21,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "安昂传奇：最后的气宗",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/35930978/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "灵魂伴侣",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/36935883/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "狂唱下半场",
       "type": "电影",
       "category": "电影",
       "rating": 6.5,
       "url": "https://movie.douban.com/subject/37151885/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "无界之环",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37234857/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "末路讨债人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/38352042/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,6 +75,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "鬼玩人6：炼狱",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/36767846/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "揭秘日",
       "type": "电影",
       "category": "电影",
@@ -89,15 +98,6 @@
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36235977/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "鬼玩人6：炼狱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,20 +165,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "爱冲云霄 特别篇",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/38487848/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "姐姐对我来说是女人2",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/38201945/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,20 +201,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "直到T恤干透",
+      "title": "杀人者的购物中心2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38462800/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37181749/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "莫得闲",
+      "title": "人鱼",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/38407550/",
+      "url": "https://movie.douban.com/subject/36721173/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,11 +228,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
+      "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37501131/",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "百年孤独 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37185797/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "莫得闲",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38407550/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -242,24 +260,6 @@
       "category": "热播剧",
       "rating": 7.4,
       "url": "https://movie.douban.com/subject/37523009/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "雀骨",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37317368/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "人鱼",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36721173/",
       "summary": "",
       "source": "豆瓣"
     },
