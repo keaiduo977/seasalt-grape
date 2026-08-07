@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-07 12:29",
+  "updated": "2026-08-07 20:04",
   "items": [
     {
       "title": "痴迷",
@@ -24,7 +24,7 @@
       "title": "安昂传奇：最后的气宗",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/35930978/",
       "summary": "",
       "source": "豆瓣"
@@ -33,7 +33,7 @@
       "title": "灵魂伴侣",
       "type": "电影",
       "category": "电影",
-      "rating": 5.9,
+      "rating": 6.0,
       "url": "https://movie.douban.com/subject/36935883/",
       "summary": "",
       "source": "豆瓣"
@@ -42,7 +42,7 @@
       "title": "狂唱下半场",
       "type": "电影",
       "category": "电影",
-      "rating": 6.5,
+      "rating": 6.4,
       "url": "https://movie.douban.com/subject/37151885/",
       "summary": "",
       "source": "豆瓣"
@@ -78,7 +78,7 @@
       "title": "鬼玩人6：炼狱",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
@@ -165,24 +165,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "姐姐对我来说是女人2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/38201945/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "悬案",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,6 +201,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "百年孤独 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37185797/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "御廷谣",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,15 +228,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "百年孤独 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37185797/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "莫得闲",
       "type": "电视剧",
       "category": "热播剧",
@@ -255,20 +237,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "金特务：本色回归",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37523009/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "铁拳教育",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37071123/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "金特务：本色回归",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37523009/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "开庭",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37822829/",
       "summary": "",
       "source": "豆瓣"
     },
