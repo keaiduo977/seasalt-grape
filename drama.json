@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-08 11:06",
+  "updated": "2026-08-08 19:19",
   "items": [
     {
       "title": "痴迷",
@@ -17,6 +17,15 @@
       "category": "电影",
       "rating": 6.1,
       "url": "https://movie.douban.com/subject/37096700/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "一切从头来过",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36922688/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,11 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "狂唱下半场",
+      "title": "鬼玩人6：炼狱",
       "type": "电影",
       "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/37151885/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,15 +66,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "寒战1994",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36857924/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "利未记",
       "type": "电影",
       "category": "电影",
@@ -75,11 +75,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "鬼玩人6：炼狱",
+      "title": "寒战1994",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36767846/",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/36857924/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,6 +102,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "寻找艾米丽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "今晚正好",
       "type": "电影",
       "category": "电影",
@@ -120,20 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "寻找艾米丽",
+      "title": "大濛",
       "type": "电影",
       "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36912404/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "火遮眼",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/36877245/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36680492/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,24 +147,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "天才，女友",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36403345/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "爱达荷州血案：大学梦魇",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/38557432/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "悬案",
       "type": "电视剧",
       "category": "热播剧",
@@ -174,47 +156,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "这一秒过火",
+      "title": "爱冲云霄 特别篇",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.0,
-      "url": "https://movie.douban.com/subject/37096230/",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/38487848/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "杀人者的购物中心2",
+      "title": "姐姐对我来说是女人2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37181749/",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/38201945/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "人鱼",
+      "title": "天才，女友",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36721173/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百年孤独 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37185797/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "御廷谣",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35691844/",
+      "url": "https://movie.douban.com/subject/36403345/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,11 +192,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "莫得闲",
+      "title": "杀人者的购物中心2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37181749/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "百年孤独 第二季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/38407550/",
+      "url": "https://movie.douban.com/subject/37185797/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "这一秒过火",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.0,
+      "url": "https://movie.douban.com/subject/37096230/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,10 +228,19 @@
       "source": "豆瓣"
     },
     {
+      "title": "人鱼",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36721173/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
+      "rating": 7.9,
       "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
@@ -264,11 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "开庭",
+      "title": "我的荒糖恋爱",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/37822829/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37233536/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "御廷谣",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35691844/",
       "summary": "",
       "source": "豆瓣"
     },
