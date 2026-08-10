@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-10 12:10",
+  "updated": "2026-08-10 20:10",
   "items": [
     {
       "title": "痴迷",
@@ -12,11 +12,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "鬼玩人6：炼狱",
+      "title": "最后孤屋",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36767846/",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36877284/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我心里危险的东西 剧场版",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37069709/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "废用身",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/38067530/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -30,20 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "安昂传奇：最后的气宗",
+      "title": "鬼玩人6：炼狱",
       "type": "电影",
       "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/35930978/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "灵魂伴侣",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36935883/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -84,20 +93,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "揭秘日",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36860212/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "寻找艾米丽",
       "type": "电影",
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "揭秘日",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36860212/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,29 +120,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "灵魂伴侣",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.9,
+      "url": "https://movie.douban.com/subject/36935883/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "超级少女",
       "type": "电影",
       "category": "电影",
       "rating": 5.1,
       "url": "https://movie.douban.com/subject/36225840/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "今晚正好",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/37317133/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "大濛",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,20 +156,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "爱冲云霄 特别篇",
+      "title": "我的荒糖恋爱",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/38487848/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37233536/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "姐姐对我来说是女人2",
+      "title": "不良一族寻爱记 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/38201945/",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/38061818/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "足球教练 第四季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/37018941/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,29 +210,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "杀人者的购物中心2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37181749/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我的荒糖恋爱",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37233536/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "人鱼",
+      "title": "重器",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36721173/",
+      "url": "https://movie.douban.com/subject/36554071/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,11 +228,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "铁拳教育",
+      "title": "杀人者的购物中心2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37071123/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37181749/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "人鱼",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36721173/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "这一秒过火",
+      "title": "铁拳教育",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.0,
-      "url": "https://movie.douban.com/subject/37096230/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37071123/",
       "summary": "",
       "source": "豆瓣"
     },
