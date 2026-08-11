@@ -1,7 +1,34 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-11 12:30",
+  "updated": "2026-08-11 20:12",
   "items": [
+    {
+      "title": "欢迎来龙餐馆",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/35811064/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "去你的岛",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/35275131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我心里危险的东西 剧场版",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/37069709/",
+      "summary": "",
+      "source": "豆瓣"
+    },
     {
       "title": "痴迷",
       "type": "电影",
@@ -17,33 +44,6 @@
       "category": "电影",
       "rating": 5.5,
       "url": "https://movie.douban.com/subject/36877284/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我心里危险的东西 剧场版",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37069709/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "废用身",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/38067530/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一切从头来过",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36922688/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -78,7 +78,7 @@
       "title": "利未记",
       "type": "电影",
       "category": "电影",
-      "rating": 7.1,
+      "rating": 7.0,
       "url": "https://movie.douban.com/subject/37559942/",
       "summary": "",
       "source": "豆瓣"
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "超级少女",
+      "title": "今晚正好",
       "type": "电影",
       "category": "电影",
-      "rating": 5.1,
-      "url": "https://movie.douban.com/subject/36225840/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37317133/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,11 +147,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "九门",
+      "title": "重器",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/26811535/",
+      "url": "https://movie.douban.com/subject/36554071/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,20 +183,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "九门",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/26811535/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "悬案",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36624136/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "直到T恤干透",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,11 +210,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "重器",
+      "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36554071/",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,29 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "杀人者的购物中心2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37181749/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "人鱼",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36721173/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "凛冬下的罪恶",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/38194327/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +246,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "铁拳教育",
+      "title": "杀人者的购物中心2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37071123/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37181749/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "凛冬下的罪恶",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38194327/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "这一秒过火",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.0,
+      "url": "https://movie.douban.com/subject/37096230/",
       "summary": "",
       "source": "豆瓣"
     },
