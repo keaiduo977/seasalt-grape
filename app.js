@@ -1812,7 +1812,7 @@ const Frag = {
         <div style="flex:1">
           <div style="font-weight:600;color:var(--purple-deep)">${esc(l.title)}</div>
           ${l.note?`<div class="muted">${esc(l.note)}</div>`:''}
-          ${l.link?`<a href="${esc(l.link)}" target="_blank" class="muted">🔗 打开链接</a>`:''}
+          ${(l.link && Recipe.normalizeLink(l.link))?`<a href="${esc(Recipe.normalizeLink(l.link))}" target="_blank" rel="noopener" class="muted">🔗 打开链接</a>`:''}
           ${l.img?`<img src="${esc(l.img)}" style="width:100%;border-radius:8px;margin-top:6px">`:''}
         </div>
         <button class="btn btn-sm btn-red" style="padding:6px 10px;align-self:flex-start" onclick="Frag.del('${l.id}')">×</button>
