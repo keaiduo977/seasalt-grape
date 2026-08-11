@@ -379,6 +379,7 @@ const Recipe = {
       return;
     }
     // App 内 iframe 预览
+    const isXhs = /xhslink\.cn|xiaohongshu\.com/i.test(url);
     Modal.open('🔗 链接预览', `
       <div style="display:flex;gap:8px;margin-bottom:10px">
         <a href="${esc(url)}" target="_blank" rel="noopener" class="btn" style="flex:1;text-align:center;text-decoration:none">↗ 在新标签页打开</a>
@@ -390,8 +391,8 @@ const Recipe = {
           onload="Recipe._frameOk()" onerror="Recipe._frameFail()"></iframe>
         <div id="linkPreviewFallback" style="position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px;text-align:center;background:#fff">
           <div style="font-size:36px">🛡️</div>
-          <div style="color:var(--text);font-weight:600">该网站不允许在 App 内预览</div>
-          <div class="muted" style="font-size:12px">小红书等平台有安全限制，需在外部浏览器打开。点击下方按钮跳转。</div>
+          <div style="color:var(--text);font-weight:600">${isXhs?'小红书链接需在 App 内打开':'该网站不允许在 App 内预览'}</div>
+          <div class="muted" style="font-size:12px">${isXhs?'复制下面的链接，打开小红书 App 后粘贴即可查看笔记':'部分平台有安全限制，需在外部浏览器打开。点击下方按钮跳转。'}</div>
           <a href="${esc(url)}" target="_blank" rel="noopener" class="btn" style="text-decoration:none;margin-top:4px">↗ 在新标签页打开</a>
         </div>
         <div id="linkPreviewLoading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--salt-light);color:var(--purple-deep);font-size:13px">正在加载…</div>
@@ -1812,7 +1813,7 @@ const Frag = {
         <div style="flex:1">
           <div style="font-weight:600;color:var(--purple-deep)">${esc(l.title)}</div>
           ${l.note?`<div class="muted">${esc(l.note)}</div>`:''}
-          ${(l.link && Recipe.normalizeLink(l.link))?`<a href="${esc(Recipe.normalizeLink(l.link))}" target="_blank" rel="noopener" class="muted">🔗 打开链接</a>`:''}
+          ${(l.link && Recipe.normalizeLink(l.link))?`<button class="muted linkbtn" onclick="Recipe.openLink(${JSON.stringify(l.link).replace(/"/g,'&quot;')})">🔗 打开链接</button>`:''}
           ${l.img?`<img src="${esc(l.img)}" style="width:100%;border-radius:8px;margin-top:6px">`:''}
         </div>
         <button class="btn btn-sm btn-red" style="padding:6px 10px;align-self:flex-start" onclick="Frag.del('${l.id}')">×</button>
