@@ -1801,11 +1801,15 @@ const Frag = {
     const all = await DB.all('fragments');
     const records = all.filter(f=>f.type==='record').sort((a,b)=>(b.ts||'').localeCompare(a.ts||''));
     const loves = all.filter(f=>f.type==='love');
-    $('#fragGrid').innerHTML = records.length? records.slice(0,6).map(f=>`
-      <div class="frag-card">
+    $('#fragGrid').innerHTML = records.length? records.slice(0,6).map((f,i)=>`
+      <div class="frag-card" style="position:relative">
         ${f.img?`<img class="img" src="${esc(f.img)}">`:`<div class="img img-placeholder">🌸</div>`}
         <div class="tx">${esc(f.text||'')}</div>
         <div class="dt">${f.ts?fmtDate(f.ts):''}</div>
+        <div class="frag-card-actions">
+          <button class="btn btn-sm btn-ghost" style="padding:4px 8px;font-size:11px" onclick="Frag.openEditRecord('${f.id}')">✎</button>
+          <button class="btn btn-sm btn-red" style="padding:4px 8px;font-size:11px" onclick="Frag.del('${f.id}')">×</button>
+        </div>
       </div>`).join('') : '<div class="empty" style="grid-column:1/-1"><div class="emoji">🌷</div><p>记录生活的美好瞬间</p></div>';
     $('#fragLove').innerHTML = loves.length? loves.map(l=>`
       <div class="love-item">
@@ -1821,6 +1825,7 @@ const Frag = {
   },
   openAddRecord(){
     Modal.open('记录美好瞬间', `
+      <div class="field"><label>📅 日期</label><input class="input" id="frDate" type="date" value="${today()}"></div>
       <div class="field"><label>照片</label><input class="input" id="frImg" type="file" accept="image/*"></div>
       <div class="field"><label>文字</label><textarea class="textarea" id="frText" placeholder="今天的小确幸..."></textarea></div>
       <button class="btn btn-block" onclick="Frag.saveRecord()">记录</button>`);
@@ -1829,8 +1834,31 @@ const Frag = {
     const f = $('#frImg').files[0];
     let img=null;
     if(f){ img = await new Promise(res=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.readAsDataURL(f); }); }
-    await DB.put('fragments',{id:uid(), type:'record', text:$('#frText').value.trim(), img, ts:now()});
+    const dt = $('#frDate').value || today();
+    await DB.put('fragments',{id:uid(), type:'record', text:$('#frText').value.trim(), img, ts:dt});
     Modal.close(); Frag.load(); toast('已记录 🌷');
+  },
+  async openEditRecord(id){
+    const f = await DB.get('fragments',id); if(!f) return;
+    Modal.open('编辑记录', `
+      <div class="field"><label>📅 日期</label><input class="input" id="frDate" type="date" value="${f.ts||today()}"></div>
+      <div class="field"><label>照片</label><input class="input" id="frImg" type="file" accept="image/*"></div>
+      ${f.img?`<img src="${esc(f.img)}" style="width:100%;border-radius:8px;margin-top:6px;max-height:200px;object-fit:cover">`:''}
+      <div class="field"><label>文字</label><textarea class="textarea" id="frText" placeholder="今天的小确幸...">${esc(f.text||'')}</textarea></div>
+      <button class="btn btn-block" onclick="Frag.saveEditRecord('${id}')">保存修改</button>
+      <button class="btn btn-block btn-red mt8" onclick="Frag.del('${id}');Modal.close();">🗑 删除这条记录</button>`);
+  },
+  async saveEditRecord(id){
+    const f = await DB.get('fragments',id); if(!f){ toast('未找到记录'); return; }
+    // 如果选了新图片则替换，否则保留原图
+    const newFile = $('#frImg').files[0];
+    if(newFile){
+      f.img = await new Promise(res=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.readAsDataURL(newFile); });
+    }
+    f.text = $('#frText').value.trim();
+    f.ts = $('#frDate').value || f.ts || today();
+    await DB.put('fragments',f);
+    Modal.close(); Frag.load(); toast('已更新 🌷');
   },
   openAddLove(){
     Modal.open('恋爱小灵感', `
