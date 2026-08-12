@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-12 12:35",
+  "updated": "2026-08-12 20:11",
   "items": [
     {
       "title": "痴迷",
@@ -51,7 +51,7 @@
       "title": "利未记",
       "type": "电影",
       "category": "电影",
-      "rating": 7.0,
+      "rating": 7.1,
       "url": "https://movie.douban.com/subject/37559942/",
       "summary": "",
       "source": "豆瓣"
@@ -249,7 +249,7 @@
       "title": "杀人者的购物中心2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
+      "rating": 8.0,
       "url": "https://movie.douban.com/subject/37181749/",
       "summary": "",
       "source": "豆瓣"
