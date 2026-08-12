@@ -1,34 +1,7 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-11 20:12",
+  "updated": "2026-08-12 06:57",
   "items": [
-    {
-      "title": "欢迎来龙餐馆",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/35811064/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "去你的岛",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/35275131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我心里危险的东西 剧场版",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37069709/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "痴迷",
       "type": "电影",
@@ -134,6 +107,33 @@
       "category": "电影",
       "rating": 6.0,
       "url": "https://movie.douban.com/subject/37317133/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "超级少女",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.1,
+      "url": "https://movie.douban.com/subject/36225840/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "激情邀约",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/35801126/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "大濛",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36680492/",
       "summary": "",
       "source": "豆瓣"
     },
