@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-14 12:29",
+  "updated": "2026-08-14 20:01",
   "items": [
     {
       "title": "痴迷",
@@ -24,7 +24,7 @@
       "title": "袒露",
       "type": "电影",
       "category": "电影",
-      "rating": 6.6,
+      "rating": 6.5,
       "url": "https://movie.douban.com/subject/37560459/",
       "summary": "",
       "source": "豆瓣"
@@ -120,20 +120,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "后室",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36235977/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "灵魂伴侣",
       "type": "电影",
       "category": "电影",
       "rating": 5.9,
       "url": "https://movie.douban.com/subject/36935883/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "后室",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -152,15 +152,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36554071/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我的荒糖恋爱",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37233536/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,15 +192,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "人鱼",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,10 +219,28 @@
       "source": "豆瓣"
     },
     {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的荒糖恋爱",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37233536/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "狂怒追缉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.1,
+      "rating": 8.2,
       "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "铁拳教育",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37071123/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "我的鸵鸟先生",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/32581224/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "铁拳教育",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37071123/",
       "summary": "",
       "source": "豆瓣"
     },
