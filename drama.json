@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-13 12:36",
+  "updated": "2026-08-14 06:57",
   "items": [
     {
       "title": "痴迷",
@@ -17,6 +17,33 @@
       "category": "电影",
       "rating": 5.5,
       "url": "https://movie.douban.com/subject/36877284/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "袒露",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37560459/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "废用身",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/38067530/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "一切从头来过",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36922688/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,11 +84,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "寒战1994",
+      "title": "激情邀约",
       "type": "电影",
       "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36857924/",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/35801126/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -71,6 +98,15 @@
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "寒战1994",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/36857924/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,42 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "今晚正好",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/37317133/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "超级少女",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.1,
-      "url": "https://movie.douban.com/subject/36225840/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "激情邀约",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/35801126/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "大濛",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
@@ -159,26 +159,8 @@
       "title": "我的荒糖恋爱",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/37233536/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不良一族寻爱记 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/38061818/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "足球教练 第四季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/37018941/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -195,17 +177,8 @@
       "title": "悬案",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
+      "rating": 7.6,
       "url": "https://movie.douban.com/subject/36624136/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "天才，女友",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36403345/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -215,6 +188,15 @@
       "category": "热播剧",
       "rating": 8.1,
       "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "杀人者的购物中心2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/37181749/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,6 +219,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "天才，女友",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36403345/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "百年孤独 第二季",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "杀人者的购物中心2",
+      "title": "狂怒追缉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/37181749/",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "这一秒过火",
+      "title": "铁拳教育",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.0,
-      "url": "https://movie.douban.com/subject/37096230/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37071123/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的鸵鸟先生",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/32581224/",
       "summary": "",
       "source": "豆瓣"
     },
