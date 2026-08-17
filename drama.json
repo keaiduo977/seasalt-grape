@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-16 19:00",
+  "updated": "2026-08-17 04:26",
   "items": [
     {
       "title": "痴迷",
@@ -15,17 +15,8 @@
       "title": "最后孤屋",
       "type": "电影",
       "category": "电影",
-      "rating": 5.4,
+      "rating": 5.5,
       "url": "https://movie.douban.com/subject/36877284/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "懦夫",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37148241/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,6 +129,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "小黄人与大怪兽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36962219/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
@@ -156,11 +156,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "我们的少年时代2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/27119491/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "九门",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/26811535/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
+      "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37501131/",
+      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,15 +219,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "直到T恤干透",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38462800/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "百年孤独 第二季",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,38 +228,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "这一秒过火",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.0,
-      "url": "https://movie.douban.com/subject/37096230/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "铁拳教育",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37071123/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "狂怒追缉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
+      "rating": 8.1,
       "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "人鱼",
+      "title": "斯特林角",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36721173/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/37218815/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "踮起脚尖",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37235098/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "凛冬下的罪恶",
+      "title": "人鱼",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/38194327/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36721173/",
       "summary": "",
       "source": "豆瓣"
     },
