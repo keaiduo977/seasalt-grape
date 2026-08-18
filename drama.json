@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-18 11:00",
+  "updated": "2026-08-18 19:18",
   "items": [
     {
       "title": "痴迷",
@@ -12,11 +12,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "最后孤屋",
+      "title": "激情邀约",
       "type": "电影",
       "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36877284/",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/35801126/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,29 +39,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "废用身",
+      "title": "最后孤屋",
       "type": "电影",
       "category": "电影",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/38067530/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "激情邀约",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/35801126/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "鬼玩人6：炼狱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36767846/",
+      "rating": 5.4,
+      "url": "https://movie.douban.com/subject/36877284/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -71,6 +53,15 @@
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/36877245/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "鬼玩人6：炼狱",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,6 +111,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "挽救计划",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35010610/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "揭秘日",
       "type": "电影",
       "category": "电影",
@@ -147,20 +147,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "我们的少年时代2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/27119491/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "重器",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36554071/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我们的少年时代2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/27119491/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,6 +174,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "九门",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,11 +192,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "绿灯军团",
+      "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36225837/",
+      "url": "https://movie.douban.com/subject/35653123/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "踮起脚尖",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37235098/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -206,6 +224,15 @@
       "category": "热播剧",
       "rating": 8.1,
       "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "狂怒追缉",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,38 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "踮起脚尖",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37235098/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "斯特林角",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37218815/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "狂怒追缉",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37291935/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "藏锋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35653123/",
       "summary": "",
       "source": "豆瓣"
     },
