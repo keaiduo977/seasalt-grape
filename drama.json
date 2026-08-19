@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-19 10:59",
+  "updated": "2026-08-19 19:12",
   "items": [
     {
       "title": "痴迷",
@@ -17,6 +17,15 @@
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/35801126/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "低弧慢球",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37054667/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -60,7 +69,7 @@
       "title": "鬼玩人6：炼狱",
       "type": "电影",
       "category": "电影",
-      "rating": 6.6,
+      "rating": 6.5,
       "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
@@ -102,15 +111,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "小黄人与大怪兽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36962219/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "挽救计划",
       "type": "电影",
       "category": "电影",
@@ -120,20 +120,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "小黄人与大怪兽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36962219/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "揭秘日",
       "type": "电影",
       "category": "电影",
       "rating": 6.4,
       "url": "https://movie.douban.com/subject/36860212/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "后室",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,38 +156,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "我们的少年时代2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/27119491/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.1,
       "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绿灯军团",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36225837/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "九门",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/26811535/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,11 +174,56 @@
       "source": "豆瓣"
     },
     {
+      "title": "九门",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/26811535/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37235098/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我们的少年时代2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/27119491/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "师兄太稳健",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36406417/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "狂怒追缉",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,15 +246,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "狂怒追缉",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37291935/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "天才，女友",
       "type": "电视剧",
       "category": "热播剧",
@@ -251,15 +260,6 @@
       "category": "热播剧",
       "rating": 9.2,
       "url": "https://movie.douban.com/subject/37185797/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "杀人者的购物中心2",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37181749/",
       "summary": "",
       "source": "豆瓣"
     },
