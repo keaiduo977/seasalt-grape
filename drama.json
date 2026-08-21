@@ -1,31 +1,13 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-20 19:44",
+  "updated": "2026-08-21 04:22",
   "items": [
-    {
-      "title": "空枪",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/37508847/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "痴迷",
       "type": "电影",
       "category": "电影",
       "rating": 7.6,
       "url": "https://movie.douban.com/subject/37450627/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "汪汪队立大功大电影3：勇闯恐龙岛",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36791178/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -134,6 +116,24 @@
       "category": "电影",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "揭秘日",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36860212/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "后室",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36235977/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -258,7 +258,7 @@
       "title": "斯特林角",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.4,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/37218815/",
       "summary": "",
       "source": "豆瓣"
