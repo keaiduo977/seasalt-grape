@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-22 10:53",
+  "updated": "2026-08-22 19:02",
   "items": [
     {
       "title": "激情邀约",
@@ -12,38 +12,47 @@
       "source": "豆瓣"
     },
     {
-      "title": "痴迷",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/37450627/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "低弧慢球",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37054667/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "潮汐低语",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37447085/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "火遮眼",
       "type": "电影",
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/36877245/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "救赎",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36948305/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "荣光与暗影",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36960592/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不久，就要永别了",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/37315580/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "痴迷",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/37450627/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,47 +84,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "利未记",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37559942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "群体",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37096700/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "挽救计划",
       "type": "电影",
       "category": "电影",
       "rating": 8.6,
       "url": "https://movie.douban.com/subject/35010610/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "寻找艾米丽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36912404/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "小黄人与大怪兽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36962219/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +102,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "揭秘日",
+      "title": "利未记",
       "type": "电影",
       "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36860212/",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37559942/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "寻找艾米丽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "群体",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37096700/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小黄人与大怪兽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36962219/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -195,7 +195,7 @@
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
+      "rating": 8.8,
       "url": "https://movie.douban.com/subject/37235098/",
       "summary": "",
       "source": "豆瓣"
@@ -255,7 +255,7 @@
       "source": "豆瓣"
     },
     {
-      "title": "斯特林角",
+      "title": "斯特林角 第一季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.4,
