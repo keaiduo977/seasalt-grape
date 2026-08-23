@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-23 04:11",
+  "updated": "2026-08-23 10:53",
   "items": [
     {
       "title": "激情邀约",
@@ -33,7 +33,7 @@
       "title": "荣光与暗影",
       "type": "电影",
       "category": "电影",
-      "rating": 7.5,
+      "rating": 7.4,
       "url": "https://movie.douban.com/subject/36960592/",
       "summary": "",
       "source": "豆瓣"
@@ -222,7 +222,7 @@
       "title": "谜探路德维希 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/37100781/",
       "summary": "",
       "source": "豆瓣"
@@ -258,7 +258,7 @@
       "title": "绿灯军团",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 7.9,
       "url": "https://movie.douban.com/subject/36225837/",
       "summary": "",
       "source": "豆瓣"
