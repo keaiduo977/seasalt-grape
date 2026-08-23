@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-22 19:02",
+  "updated": "2026-08-23 04:11",
   "items": [
     {
       "title": "激情邀约",
@@ -174,20 +174,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "藏锋",
+      "title": "蝉",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/35653123/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "九门",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/26811535/",
+      "url": "https://movie.douban.com/subject/37252177/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,20 +192,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "我们的少年时代2",
+      "title": "九门",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/27119491/",
+      "url": "https://movie.douban.com/subject/26811535/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "狂怒追缉",
+      "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37291935/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35653123/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,20 +219,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "绿灯军团",
+      "title": "谜探路德维希 第二季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36225837/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蝉",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37252177/",
+      "url": "https://movie.douban.com/subject/37100781/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +237,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "斯特林角 第一季",
+      "title": "狂怒追缉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37218815/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "百年孤独 第二季",
+      "title": "我们的少年时代2",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.2,
-      "url": "https://movie.douban.com/subject/37185797/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/27119491/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绝望写手 第五季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.6,
+      "url": "https://movie.douban.com/subject/37370438/",
       "summary": "",
       "source": "豆瓣"
     },
