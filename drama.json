@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-23 10:53",
+  "updated": "2026-08-23 19:02",
   "items": [
     {
       "title": "激情邀约",
@@ -21,29 +21,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "救赎",
+      "title": "黑牢城",
       "type": "电影",
       "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36948305/",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/38112572/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "荣光与暗影",
+      "title": "迷失的露西",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/36960592/",
+      "rating": 8.8,
+      "url": "https://movie.douban.com/subject/36801349/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "不久，就要永别了",
+      "title": "青年华盛顿",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/37315580/",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37467525/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,6 +66,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "玩具总动员5",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "挽救计划",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35010610/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "鬼玩人6：炼狱",
       "type": "电影",
       "category": "电影",
@@ -84,24 +102,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "挽救计划",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/35010610/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玩具总动员5",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36238849/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "利未记",
       "type": "电影",
       "category": "电影",
@@ -111,20 +111,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "蔷薇修剪术",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/36419426/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "寻找艾米丽",
       "type": "电影",
       "category": "电影",
       "rating": 7.6,
       "url": "https://movie.douban.com/subject/36912404/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "群体",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37096700/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -222,7 +222,7 @@
       "title": "谜探路德维希 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.3,
+      "rating": 7.2,
       "url": "https://movie.douban.com/subject/37100781/",
       "summary": "",
       "source": "豆瓣"
