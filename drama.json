@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-24 11:14",
+  "updated": "2026-08-24 19:19",
   "items": [
     {
       "title": "激情邀约",
@@ -33,7 +33,7 @@
       "title": "迷失的露西",
       "type": "电影",
       "category": "电影",
-      "rating": 8.7,
+      "rating": 8.6,
       "url": "https://movie.douban.com/subject/36801349/",
       "summary": "",
       "source": "豆瓣"
@@ -93,6 +93,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "蔷薇修剪术",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36419426/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "消失的人",
       "type": "电影",
       "category": "电影",
@@ -107,15 +116,6 @@
       "category": "电影",
       "rating": 7.0,
       "url": "https://movie.douban.com/subject/37559942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蔷薇修剪术",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36419426/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -159,7 +159,7 @@
       "title": "美丽的执念",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
+      "rating": 8.3,
       "url": "https://movie.douban.com/subject/38586438/",
       "summary": "",
       "source": "豆瓣"
@@ -210,15 +210,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "踮起脚尖",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.8,
-      "url": "https://movie.douban.com/subject/37235098/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "九门",
       "type": "电视剧",
       "category": "热播剧",
@@ -228,11 +219,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "踮起脚尖",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.8,
+      "url": "https://movie.douban.com/subject/37235098/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/35653123/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "死神 千年血战篇 -祸进谭-",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.0,
+      "url": "https://movie.douban.com/subject/36189165/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -260,15 +269,6 @@
       "category": "热播剧",
       "rating": 8.3,
       "url": "https://movie.douban.com/subject/37291935/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "邻人可疑",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/38245102/",
       "summary": "",
       "source": "豆瓣"
     },
