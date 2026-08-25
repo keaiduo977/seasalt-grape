@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-25 11:04",
+  "updated": "2026-08-25 19:45",
   "items": [
     {
       "title": "激情邀约",
@@ -21,6 +21,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "追踪者游戏W 水鱼交融",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/38186304/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "青年华盛顿",
       "type": "电影",
       "category": "电影",
@@ -30,20 +39,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "渊之信",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37105738/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "痴迷",
       "type": "电影",
       "category": "电影",
       "rating": 7.6,
       "url": "https://movie.douban.com/subject/37450627/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "最后孤屋",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36877284/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,20 +75,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "鬼玩人6：炼狱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36767846/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "蔷薇修剪术",
       "type": "电影",
       "category": "电影",
       "rating": 5.5,
       "url": "https://movie.douban.com/subject/36419426/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "最后孤屋",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.4,
+      "url": "https://movie.douban.com/subject/36877284/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,29 +102,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "鬼玩人6：炼狱",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36767846/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "利未记",
       "type": "电影",
       "category": "电影",
       "rating": 7.0,
       "url": "https://movie.douban.com/subject/37559942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "寻找艾米丽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36912404/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "小黄人与大怪兽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36962219/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "大濛",
+      "title": "寻找艾米丽",
       "type": "电影",
       "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36912404/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -177,7 +177,7 @@
       "title": "S&X",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/38197629/",
       "summary": "",
       "source": "豆瓣"
@@ -228,6 +228,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "雀骨",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/37317368/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,29 +246,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "死神 千年血战篇 -祸进谭-",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 9.1,
       "url": "https://movie.douban.com/subject/36189165/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "直到T恤干透",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38462800/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "悬案",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36624136/",
       "summary": "",
       "source": "豆瓣"
     },
