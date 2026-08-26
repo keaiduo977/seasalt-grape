@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-25 19:45",
+  "updated": "2026-08-26 04:22",
   "items": [
     {
       "title": "激情邀约",
@@ -21,15 +21,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "追踪者游戏W 水鱼交融",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/38186304/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "青年华盛顿",
       "type": "电影",
       "category": "电影",
@@ -42,7 +33,7 @@
       "title": "渊之信",
       "type": "电影",
       "category": "电影",
-      "rating": 7.0,
+      "rating": 6.9,
       "url": "https://movie.douban.com/subject/37105738/",
       "summary": "",
       "source": "豆瓣"
@@ -132,8 +123,17 @@
       "title": "寻找艾米丽",
       "type": "电影",
       "category": "电影",
-      "rating": 7.5,
+      "rating": 7.6,
       "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小黄人与大怪兽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36962219/",
       "summary": "",
       "source": "豆瓣"
     },
