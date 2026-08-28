@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-28 01:38",
+  "updated": "2026-08-28 21:55",
   "items": [
     {
       "title": "激情邀约",
@@ -111,20 +111,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "鬼玩人6：炼狱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36767846/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "利未记",
       "type": "电影",
       "category": "电影",
       "rating": 7.0,
       "url": "https://movie.douban.com/subject/37559942/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "鬼玩人6：炼狱",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36767846/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,15 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "花开锦绣",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36810153/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
@@ -156,11 +147,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "美丽的执念",
+      "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/38586438/",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/36810153/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -195,7 +186,7 @@
       "title": "蝉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.1,
       "url": "https://movie.douban.com/subject/37252177/",
       "summary": "",
       "source": "豆瓣"
@@ -204,7 +195,7 @@
       "title": "师兄太稳健",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 5.9,
       "url": "https://movie.douban.com/subject/36406417/",
       "summary": "",
       "source": "豆瓣"
@@ -240,7 +231,7 @@
       "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 7.0,
       "url": "https://movie.douban.com/subject/35653123/",
       "summary": "",
       "source": "豆瓣"
@@ -264,7 +255,16 @@
       "source": "豆瓣"
     },
     {
-      "title": "狂怒追缉",
+      "title": "雀骨",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/37317368/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "狂怒追缉 第一季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.4,
