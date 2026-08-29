@@ -1,13 +1,49 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-29 10:03",
+  "updated": "2026-08-29 20:16",
   "items": [
+    {
+      "title": "抓特务",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/36812879/",
+      "summary": "",
+      "source": "豆瓣"
+    },
     {
       "title": "激情邀约",
       "type": "电影",
       "category": "电影",
       "rating": 7.4,
       "url": "https://movie.douban.com/subject/35801126/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "一夜限定",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37233476/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "UFO离奇命案",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/37296930/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "托尼",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/37002986/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -21,47 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "青年华盛顿",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37467525/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "渊之信",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/37105738/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "牢笼鬼魂",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36146114/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "痴迷",
       "type": "电影",
       "category": "电影",
       "rating": 7.6,
       "url": "https://movie.douban.com/subject/37450627/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玩具总动员5",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36238849/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,6 +75,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "玩具总动员5",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "夜王",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37375594/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "挽救计划",
       "type": "电影",
       "category": "电影",
@@ -84,20 +102,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "最后孤屋",
+      "title": "牢笼鬼魂",
       "type": "电影",
       "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36877284/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "消失的人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36965301/",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36146114/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,29 +120,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "利未记",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37559942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "鬼玩人6：炼狱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36767846/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "大濛",
       "type": "电影",
       "category": "电影",
       "rating": 8.2,
       "url": "https://movie.douban.com/subject/36680492/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "寻找艾米丽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36912404/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,20 +156,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "重器",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36554071/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.3,
       "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "师兄太稳健",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.9,
+      "url": "https://movie.douban.com/subject/36406417/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "重器",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36554071/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,15 +201,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "师兄太稳健",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36406417/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
@@ -215,6 +215,15 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36126289/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "百年孤独 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/37185797/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,38 +246,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "绿灯军团",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/36225837/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百年孤独 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/37185797/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "雀骨",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/37317368/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "狂怒追缉 第一季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.4,
       "url": "https://movie.douban.com/subject/37291935/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "直到T恤干透",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/36225837/",
       "summary": "",
       "source": "豆瓣"
     },
