@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-31 17:20",
+  "updated": "2026-08-31 22:15",
   "items": [
     {
       "title": "抓特务",
@@ -8,6 +8,33 @@
       "category": "电影",
       "rating": 7.4,
       "url": "https://movie.douban.com/subject/36812879/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "大唐妖探",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/35464353/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "征服者2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/38190906/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "密档",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/35209727/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -30,15 +57,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "火遮眼",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36877245/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "夜王",
       "type": "电影",
       "category": "电影",
@@ -48,11 +66,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "蔷薇修剪术",
+      "title": "火遮眼",
       "type": "电影",
       "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36419426/",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/36877245/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -62,6 +80,15 @@
       "category": "电影",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "蔷薇修剪术",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.4,
+      "url": "https://movie.douban.com/subject/36419426/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,33 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "利未记",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37559942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "消失的人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36965301/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "最后孤屋",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36877284/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,11 +183,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "师兄太稳健",
+      "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36406417/",
+      "rating": 8.9,
+      "url": "https://movie.douban.com/subject/37235098/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "踮起脚尖",
+      "title": "师兄太稳健",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.9,
-      "url": "https://movie.douban.com/subject/37235098/",
+      "rating": 5.9,
+      "url": "https://movie.douban.com/subject/36406417/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,20 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "藏锋",
+      "title": "绿灯军团",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/35653123/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "九门",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/26811535/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36225837/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -269,6 +260,15 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37172401/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "藏锋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/35653123/",
       "summary": "",
       "source": "豆瓣"
     },
