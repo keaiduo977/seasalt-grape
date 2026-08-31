@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-08-30 20:22",
+  "updated": "2026-08-31 07:58",
   "items": [
     {
       "title": "抓特务",
@@ -17,33 +17,6 @@
       "category": "电影",
       "rating": 7.4,
       "url": "https://movie.douban.com/subject/35801126/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "平行故事",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37296242/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一夜限定",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37233476/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "UFO离奇命案",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/37296930/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,6 +111,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "利未记",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37559942/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "消失的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/36965301/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "最后孤屋",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.4,
+      "url": "https://movie.douban.com/subject/36877284/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
@@ -204,7 +204,7 @@
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.8,
+      "rating": 8.9,
       "url": "https://movie.douban.com/subject/37235098/",
       "summary": "",
       "source": "豆瓣"
@@ -240,7 +240,7 @@
       "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.0,
+      "rating": 7.9,
       "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
@@ -249,7 +249,7 @@
       "title": "藏锋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.0,
+      "rating": 6.9,
       "url": "https://movie.douban.com/subject/35653123/",
       "summary": "",
       "source": "豆瓣"
