@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-02 14:00",
+  "updated": "2026-09-02 20:22",
   "items": [
     {
       "title": "抓特务",
@@ -102,20 +102,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "挽救计划",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/35010610/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "阳光女子合唱团",
       "type": "电影",
       "category": "电影",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37193250/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "挽救计划",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35010610/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -132,7 +132,7 @@
       "title": "寻找艾米丽",
       "type": "电影",
       "category": "电影",
-      "rating": 7.5,
+      "rating": 7.6,
       "url": "https://movie.douban.com/subject/36912404/",
       "summary": "",
       "source": "豆瓣"
@@ -156,15 +156,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "金色",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37325370/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
@@ -179,6 +170,15 @@
       "category": "热播剧",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36810153/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "金色",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37325370/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,15 +201,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "狂怒追缉 第一季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37291935/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "重案六组：消失的警号",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,29 +210,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "师兄太稳健",
+      "title": "狂怒追缉 第一季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/36406417/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绿灯军团",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36225837/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蝉",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37252177/",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,11 +228,38 @@
       "source": "豆瓣"
     },
     {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "师兄太稳健",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/36406417/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "百年孤独 第二季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 9.3,
       "url": "https://movie.douban.com/subject/37185797/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "蝉",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37252177/",
       "summary": "",
       "source": "豆瓣"
     },
