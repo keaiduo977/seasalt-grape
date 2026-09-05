@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-05 13:10",
+  "updated": "2026-09-05 19:47",
   "items": [
     {
       "title": "抓特务",
@@ -12,11 +12,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "激情邀约",
+      "title": "夜王",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/35801126/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37375594/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "夏日红岩",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36778280/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,29 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "伪钞之王",
+      "title": "激情邀约",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37116027/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "夜王",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37375594/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "痴迷",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/37450627/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/35801126/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -71,15 +62,6 @@
       "category": "电影",
       "rating": 7.6,
       "url": "https://movie.douban.com/subject/36877245/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蔷薇修剪术",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/36419426/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -96,26 +78,17 @@
       "title": "牢笼鬼魂",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
+      "rating": 6.6,
       "url": "https://movie.douban.com/subject/36146114/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "阳光女子合唱团",
+      "title": "蔷薇修剪术",
       "type": "电影",
       "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37193250/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "挽救计划",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/35010610/",
+      "rating": 5.4,
+      "url": "https://movie.douban.com/subject/36419426/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -134,6 +107,33 @@
       "category": "电影",
       "rating": 5.6,
       "url": "https://movie.douban.com/subject/35211447/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "挽救计划",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35010610/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "阳光女子合唱团",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37193250/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "利未记",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37559942/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,11 +165,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "金色",
+      "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37325370/",
+      "url": "https://movie.douban.com/subject/37233336/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,38 +183,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "重器",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36554071/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36810153/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "重案六组：消失的警号",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/38407616/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "狂怒追缉 第一季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,11 +201,56 @@
       "source": "豆瓣"
     },
     {
-      "title": "蝉",
+      "title": "金色",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37252177/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37325370/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "狂怒追缉 第一季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37291935/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "重器",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36554071/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "花儿与少年 第八季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37817080/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "重案六组：消失的警号",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38407616/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绅士们 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,29 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "师兄太稳健",
+      "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/36406417/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绿灯军团",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/36225837/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "赴汤蹈火",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36680293/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
