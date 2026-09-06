@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-06 13:20",
+  "updated": "2026-09-06 19:51",
   "items": [
     {
       "title": "抓特务",
@@ -17,6 +17,15 @@
       "category": "电影",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37375594/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "黑兔白兔",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/37386538/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -48,11 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "火遮眼",
+      "title": "牢笼鬼魂",
       "type": "电影",
       "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36877245/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36146114/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,11 +75,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "牢笼鬼魂",
+      "title": "我看见两朵一样的云",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36146114/",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/35211447/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -89,15 +98,6 @@
       "category": "电影",
       "rating": 8.2,
       "url": "https://movie.douban.com/subject/36680492/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我看见两朵一样的云",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/35211447/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,20 +138,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,20 +174,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "交锋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36314809/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "醒来",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36126289/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "花开锦绣",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36810153/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "金色",
+      "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37325370/",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/36810153/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,11 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "花儿与少年 第八季",
+      "title": "金色",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
+      "url": "https://movie.douban.com/subject/37325370/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,20 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "绅士们 第二季",
+      "title": "花儿与少年 第八季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37005231/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百年孤独 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/37185797/",
+      "url": "https://movie.douban.com/subject/37817080/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -269,6 +260,15 @@
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/38462800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绅士们 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
