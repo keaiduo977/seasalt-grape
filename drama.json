@@ -1,31 +1,13 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-07 20:58",
+  "updated": "2026-09-08 06:48",
   "items": [
-    {
-      "title": "坠落2：死点",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36318704/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "抓特务",
       "type": "电影",
       "category": "电影",
       "rating": 7.4,
       "url": "https://movie.douban.com/subject/36812879/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "逃出布迪秀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -62,15 +44,6 @@
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36953973/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "燃烧吧！爸爸",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36903929/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,6 +111,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "逃亡者",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37200003/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "大濛",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36680492/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "挽救计划",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35010610/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
@@ -159,7 +159,7 @@
       "title": "假面骑士麦斯",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
+      "rating": 7.4,
       "url": "https://movie.douban.com/subject/38409190/",
       "summary": "",
       "source": "豆瓣"
