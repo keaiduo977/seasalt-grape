@@ -1,16 +1,7 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-09 14:05",
+  "updated": "2026-09-09 20:16",
   "items": [
-    {
-      "title": "抓特务",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/36812879/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "求救信号",
       "type": "电影",
@@ -21,10 +12,19 @@
       "source": "豆瓣"
     },
     {
+      "title": "抓特务",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/36812879/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "战时离婚指南",
       "type": "电影",
       "category": "电影",
-      "rating": 7.0,
+      "rating": 6.9,
       "url": "https://movie.douban.com/subject/36513585/",
       "summary": "",
       "source": "豆瓣"
@@ -78,7 +78,7 @@
       "title": "激情邀约",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/35801126/",
       "summary": "",
       "source": "豆瓣"
@@ -168,17 +168,17 @@
       "title": "绅士们 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
+      "rating": 8.3,
       "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "成年人 第二季",
+      "title": "深渊无间",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37817695/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36576514/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,15 +219,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "醒来",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36126289/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "绿灯军团",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,6 +237,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "醒来",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36126289/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "飞到我心上",
       "type": "电视剧",
       "category": "热播剧",
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "金色",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37325370/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36810153/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "重器",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36554071/",
       "summary": "",
       "source": "豆瓣"
     },
