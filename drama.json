@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-10 14:00",
+  "updated": "2026-09-10 20:18",
   "items": [
     {
       "title": "求救信号",
@@ -12,11 +12,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "抓特务",
+      "title": "特立独行",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/36812879/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36953973/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -48,11 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "特立独行",
+      "title": "抓特务",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36953973/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/36812879/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "逃亡者",
+      "title": "盒子里的羊",
       "type": "电影",
       "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37200003/",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37227467/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36576514/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,15 +156,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "假面骑士麦斯",
       "type": "电视剧",
       "category": "热播剧",
@@ -165,20 +165,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "绅士们 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37005231/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "深渊无间",
+      "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36576514/",
+      "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,20 +201,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "冬城猎凶",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绿灯军团",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/36225837/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,6 +228,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "花儿与少年 第八季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37817080/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "醒来",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,11 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "飞到我心上",
+      "title": "绅士们 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37172262/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "重器",
+      "title": "飞到我心上",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36554071/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37172262/",
       "summary": "",
       "source": "豆瓣"
     },
