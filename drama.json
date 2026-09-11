@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-11 06:53",
+  "updated": "2026-09-11 13:59",
   "items": [
     {
       "title": "求救信号",
@@ -42,7 +42,7 @@
       "title": "一直在这里",
       "type": "电影",
       "category": "电影",
-      "rating": 7.1,
+      "rating": 7.0,
       "url": "https://movie.douban.com/subject/38481360/",
       "summary": "",
       "source": "豆瓣"
@@ -168,7 +168,7 @@
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
@@ -240,7 +240,7 @@
       "title": "醒来",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.8,
       "url": "https://movie.douban.com/subject/36126289/",
       "summary": "",
       "source": "豆瓣"
