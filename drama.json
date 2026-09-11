@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-11 13:59",
+  "updated": "2026-09-11 20:18",
   "items": [
     {
       "title": "求救信号",
@@ -102,15 +102,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "玩具总动员5",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36238849/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "我看见两朵一样的云",
       "type": "电影",
       "category": "电影",
@@ -120,20 +111,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "大濛",
+      "title": "罗斯",
       "type": "电影",
       "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "盒子里的羊",
+      "title": "玩具总动员5",
       "type": "电影",
       "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37227467/",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -159,7 +159,7 @@
       "title": "假面骑士麦斯",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.4,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/38409190/",
       "summary": "",
       "source": "豆瓣"
@@ -183,6 +183,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "冬城猎凶",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
@@ -197,33 +206,6 @@
       "category": "热播剧",
       "rating": 8.9,
       "url": "https://movie.douban.com/subject/37235098/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "冬城猎凶",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37264799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "翠鸟谋杀案",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "狂怒追缉 第一季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37291935/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +228,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "绅士们 第二季",
+      "title": "狂怒追缉 第一季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37005231/",
+      "url": "https://movie.douban.com/subject/37291935/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "翠鸟谋杀案",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37218278/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "飞到我心上",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37172262/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "飞到我心上",
+      "title": "绅士们 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37172262/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
