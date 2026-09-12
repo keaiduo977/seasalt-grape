@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-12 13:17",
+  "updated": "2026-09-12 19:59",
   "items": [
     {
       "title": "求救信号",
@@ -17,6 +17,15 @@
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36953973/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "从邦子开始的故事",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/38376440/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,15 +48,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "一直在这里",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/38481360/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "抓特务",
       "type": "电影",
       "category": "电影",
@@ -57,11 +57,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "怒之杀",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/36889088/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "罗斯",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -84,6 +102,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "盒子里的羊",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37227467/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "耳语者",
       "type": "电影",
       "category": "电影",
@@ -102,47 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "我看见两朵一样的云",
+      "title": "大濛",
       "type": "电影",
       "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/35211447/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "罗斯",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/35322132/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玩具总动员5",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36238849/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "深渊无间",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36576514/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36680492/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -152,6 +143,15 @@
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36576514/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,6 +174,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "兰香如故",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36449295/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "交锋",
       "type": "电视剧",
       "category": "热播剧",
@@ -192,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "生逢其时",
+      "title": "中头奖还是要上班",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37233336/",
+      "url": "https://movie.douban.com/subject/37214286/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,20 +228,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "醒来",
+      "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36126289/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37233336/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "狂怒追缉 第一季",
+      "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37291935/",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +255,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "飞到我心上",
+      "title": "绅士们 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37172262/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -260,15 +269,6 @@
       "category": "热播剧",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36810153/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绅士们 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37005231/",
       "summary": "",
       "source": "豆瓣"
     },
