@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-13 14:00",
+  "updated": "2026-09-13 20:05",
   "items": [
     {
       "title": "求救信号",
@@ -21,10 +21,19 @@
       "source": "豆瓣"
     },
     {
-      "title": "从邦子开始的故事",
+      "title": "魔法少女小圆：沃普尔吉斯的回天",
       "type": "电影",
       "category": "电影",
       "rating": 6.9,
+      "url": "https://movie.douban.com/subject/35316478/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "从邦子开始的故事",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
       "url": "https://movie.douban.com/subject/38376440/",
       "summary": "",
       "source": "豆瓣"
@@ -35,15 +44,6 @@
       "category": "电影",
       "rating": 6.9,
       "url": "https://movie.douban.com/subject/36513585/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "夜巡毒枭",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/38220877/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -60,17 +60,8 @@
       "title": "希望",
       "type": "电影",
       "category": "电影",
-      "rating": 5.7,
+      "rating": 5.6,
       "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "怒之杀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/36889088/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -84,11 +75,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "夜王",
+      "title": "怒之杀",
       "type": "电影",
       "category": "电影",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37375594/",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/36889088/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,29 +93,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "夜王",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37375594/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "盒子里的羊",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/37227467/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "耳语者",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/37228429/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "牢笼鬼魂",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36146114/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,11 +120,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
+      "title": "牢笼鬼魂",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36146114/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "玩具总动员5",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37501131/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36449295/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,11 +156,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "假面骑士麦斯",
+      "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/38409190/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -170,15 +170,6 @@
       "category": "热播剧",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "兰香如故",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36449295/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,20 +210,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "花儿与少年 第八季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37233336/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "花儿与少年 第八季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37817080/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "翠鸟谋杀案",
+      "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37218278/",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/36810153/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "花开锦绣",
+      "title": "重器",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36810153/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36554071/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "翠鸟谋杀案",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37218278/",
       "summary": "",
       "source": "豆瓣"
     },
