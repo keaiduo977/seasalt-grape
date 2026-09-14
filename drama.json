@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-14 16:06",
+  "updated": "2026-09-14 21:16",
   "items": [
     {
       "title": "求救信号",
@@ -21,15 +21,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "魔法少女小圆：沃普尔吉斯的回天",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/35316478/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "从邦子开始的故事",
       "type": "电影",
       "category": "电影",
@@ -44,6 +35,15 @@
       "category": "电影",
       "rating": 6.9,
       "url": "https://movie.douban.com/subject/36513585/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "夜巡毒枭",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/38220877/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "玩具总动员5",
+      "title": "揭秘日",
       "type": "电影",
       "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36238849/",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/36860212/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,20 +210,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "不擅交际的未亡人雪女与诅咒戒指",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38500120/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37233336/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "花儿与少年 第八季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,6 +237,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "不是你的恋爱",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37862873/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "花儿与少年 第八季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37817080/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "花开锦绣",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,29 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "绅士们 第二季",
+      "title": "绿灯军团",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37005231/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "重器",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36554071/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "翠鸟谋杀案",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37218278/",
+      "url": "https://movie.douban.com/subject/36225837/",
       "summary": "",
       "source": "豆瓣"
     },
