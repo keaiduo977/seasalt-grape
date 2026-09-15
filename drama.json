@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-15 14:35",
+  "updated": "2026-09-15 20:44",
   "items": [
     {
       "title": "求救信号",
@@ -24,26 +24,8 @@
       "title": "从邦子开始的故事",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/38376440/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "战时离婚指南",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/36513585/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "夜巡毒枭",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/38220877/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,6 +102,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "揭秘日",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/36860212/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "牢笼鬼魂",
       "type": "电影",
       "category": "电影",
@@ -129,11 +120,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "揭秘日",
+      "title": "玩具总动员5",
       "type": "电影",
       "category": "电影",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/36860212/",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36238849/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "寻找艾米丽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36912404/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,15 +165,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "交锋",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,11 +174,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "早春晴朗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36660844/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "冬城猎凶",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不擅交际的未亡人雪女与诅咒戒指",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38500120/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,20 +219,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "不擅交际的未亡人雪女与诅咒戒指",
+      "title": "幸福伽菜子的快乐杀手生活 第二季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/38500120/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "生逢其时",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37233336/",
+      "url": "https://movie.douban.com/subject/37296349/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,20 +246,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "花儿与少年 第八季",
+      "title": "绝望写手 第五季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
+      "rating": 9.6,
+      "url": "https://movie.douban.com/subject/37370438/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "花开锦绣",
+      "title": "生逢其时",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36810153/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37233336/",
       "summary": "",
       "source": "豆瓣"
     },
