@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-16 20:44",
+  "updated": "2026-09-17 06:59",
   "items": [
     {
       "title": "求救信号",
@@ -168,7 +168,7 @@
       "title": "幸福伽菜子的快乐杀手生活 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
+      "rating": 8.4,
       "url": "https://movie.douban.com/subject/37296349/",
       "summary": "",
       "source": "豆瓣"
@@ -215,15 +215,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37264799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不擅交际的未亡人雪女与诅咒戒指",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/38500120/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -359,6 +350,15 @@
       "category": "综艺",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/36598424/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "金的音像店",
+      "type": "纪录片",
+      "category": "纪录片",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/36181567/",
       "summary": "",
       "source": "豆瓣"
     }
