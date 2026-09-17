@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-17 06:59",
+  "updated": "2026-09-17 14:34",
   "items": [
     {
       "title": "求救信号",
@@ -17,15 +17,6 @@
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36953973/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "可能的爱情",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/36847425/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,6 +129,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "寻找艾米丽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36912404/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
@@ -177,7 +177,7 @@
       "title": "不是你的恋爱",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.1,
+      "rating": 7.2,
       "url": "https://movie.douban.com/subject/37862873/",
       "summary": "",
       "source": "豆瓣"
@@ -258,7 +258,7 @@
       "title": "直到T恤干透",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
+      "rating": 7.4,
       "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
