@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-17 14:34",
+  "updated": "2026-09-17 20:49",
   "items": [
     {
       "title": "求救信号",
@@ -21,6 +21,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "蓦然回首",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/37269723/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "核战边缘",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36996121/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "灵魂摆渡·蝴蝶梦",
       "type": "电影",
       "category": "电影",
@@ -30,11 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "从邦子开始的故事",
+      "title": "罗斯",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/38376440/",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -48,11 +66,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "罗斯",
+      "title": "逃出绝命街",
       "type": "电影",
       "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/35322132/",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/36318703/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,20 +93,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "激情邀约",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/35801126/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "盒子里的羊",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/37227467/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "激情邀约",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/35801126/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,38 +120,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "大濛",
+      "title": "八仙！",
       "type": "电影",
       "category": "电影",
       "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36680492/",
+      "url": "https://movie.douban.com/subject/36882191/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "揭秘日",
+      "title": "蜘蛛侠：崭新之日",
       "type": "电影",
       "category": "电影",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/36860212/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "牢笼鬼魂",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36146114/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "寻找艾米丽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36912404/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/36246195/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -168,7 +168,7 @@
       "title": "幸福伽菜子的快乐杀手生活 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
+      "rating": 8.5,
       "url": "https://movie.douban.com/subject/37296349/",
       "summary": "",
       "source": "豆瓣"
@@ -215,6 +215,15 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "一瓯春",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35644140/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -350,15 +359,6 @@
       "category": "综艺",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/36598424/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "金的音像店",
-      "type": "纪录片",
-      "category": "纪录片",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/36181567/",
       "summary": "",
       "source": "豆瓣"
     }
