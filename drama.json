@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-19 13:38",
+  "updated": "2026-09-19 19:52",
   "items": [
     {
       "title": "求救信号",
@@ -8,42 +8,6 @@
       "category": "电影",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "特立独行",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36953973/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不成功穿越指南",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36823889/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "核战边缘",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36996121/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "灵魂摆渡·蝴蝶梦",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/38509943/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,11 +21,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "希望",
+      "title": "奈义日记",
       "type": "电影",
       "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/36179101/",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36506919/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "富士子",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/37269792/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "百分之十(电影版)",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.9,
+      "url": "https://movie.douban.com/subject/36988706/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "年会不能停！2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/36850814/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,6 +66,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "特立独行",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36953973/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "瘴气营地的青春性事与死亡",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36801617/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "抓特务",
       "type": "电影",
       "category": "电影",
@@ -84,20 +102,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "怒之杀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/36889088/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "盒子里的羊",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/37227467/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "怒之杀",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/36889088/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -116,24 +134,6 @@
       "category": "电影",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37375594/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "八仙！",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36882191/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蜘蛛侠：崭新之日",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/36246195/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,38 +174,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "不是你的恋爱",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37862873/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "深渊无间",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36576514/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "交锋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36314809/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,11 +192,47 @@
       "source": "豆瓣"
     },
     {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36576514/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "挑情丑闻",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37030853/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "早春晴朗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36660844/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "冬城猎凶",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "怪物：丽兹·波顿的故事",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37413245/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,15 +246,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "绝望写手 第五季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.6,
-      "url": "https://movie.douban.com/subject/37370438/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "踮起脚尖",
       "type": "电视剧",
       "category": "热播剧",
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "绝望写手 第五季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.6,
+      "url": "https://movie.douban.com/subject/37370438/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.6,
       "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "直到T恤干透",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/38462800/",
       "summary": "",
       "source": "豆瓣"
     },
