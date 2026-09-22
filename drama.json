@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-22 14:17",
+  "updated": "2026-09-22 20:44",
   "items": [
     {
       "title": "年会不能停！2",
@@ -33,7 +33,7 @@
       "title": "百分之十(电影版)",
       "type": "电影",
       "category": "电影",
-      "rating": 6.9,
+      "rating": 7.0,
       "url": "https://movie.douban.com/subject/36988706/",
       "summary": "",
       "source": "豆瓣"
@@ -48,20 +48,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
       "rating": 7.0,
       "url": "https://movie.douban.com/subject/36801617/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "求救信号",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/36439868/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "夜王",
+      "title": "不成功穿越指南",
       "type": "电影",
       "category": "电影",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37375594/",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36823889/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -168,7 +168,7 @@
       "title": "黑白清道夫",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.2,
+      "rating": 6.3,
       "url": "https://movie.douban.com/subject/36544568/",
       "summary": "",
       "source": "豆瓣"
@@ -192,15 +192,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "挑情丑闻",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37030853/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "一瓯春",
       "type": "电视剧",
       "category": "热播剧",
@@ -210,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "深渊无间",
+      "title": "挑情丑闻",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36576514/",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37030853/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,6 +219,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36576514/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "冬城猎凶",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "流人 第六季",
+      "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/36689816/",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37218278/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "中头奖还是要上班",
+      "title": "流人 第六季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/37214286/",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/36689816/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "翠鸟谋杀案",
+      "title": "绝望写手 第五季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37218278/",
+      "rating": 9.6,
+      "url": "https://movie.douban.com/subject/37370438/",
       "summary": "",
       "source": "豆瓣"
     },
