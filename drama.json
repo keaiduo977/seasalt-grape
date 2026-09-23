@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-23 14:36",
+  "updated": "2026-09-23 20:57",
   "items": [
     {
       "title": "年会不能停！2",
@@ -33,7 +33,7 @@
       "title": "百分之十(电影版)",
       "type": "电影",
       "category": "电影",
-      "rating": 7.0,
+      "rating": 6.9,
       "url": "https://movie.douban.com/subject/36988706/",
       "summary": "",
       "source": "豆瓣"
@@ -57,20 +57,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "逃出绝命街",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/36318703/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "求救信号",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36439868/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,15 +102,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "盒子里的羊",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/37227467/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "激情邀约",
       "type": "电影",
       "category": "电影",
@@ -120,20 +111,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "盒子里的羊",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/37227467/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "卖冰淇淋的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/37346752/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "怒之杀",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/36889088/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不成功穿越指南",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36823889/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -168,7 +168,7 @@
       "title": "黑白清道夫",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.2,
+      "rating": 6.3,
       "url": "https://movie.douban.com/subject/36544568/",
       "summary": "",
       "source": "豆瓣"
@@ -201,38 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "挑情丑闻",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37030853/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "早春晴朗",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "深渊无间",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36576514/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "冬城猎凶",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37264799/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +219,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "幸福伽菜子的快乐杀手生活 第二季",
+      "title": "挑情丑闻",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/37296349/",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37030853/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36576514/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +246,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "绝望写手 第五季",
+      "title": "冬城猎凶",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.6,
-      "url": "https://movie.douban.com/subject/37370438/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37264799/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "幸福伽菜子的快乐杀手生活 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/37296349/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "吉尔莫女孩 第七季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.8,
+      "url": "https://movie.douban.com/subject/3291141/",
       "summary": "",
       "source": "豆瓣"
     },
