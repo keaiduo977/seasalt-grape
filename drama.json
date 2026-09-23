@@ -1,366 +1,102 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-22 20:44",
+  "updated": "2026-09-23 07:07",
   "items": [
     {
-      "title": "年会不能停！2",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36850814/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "罗斯",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/35322132/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "四减三",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/37105254/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百分之十(电影版)",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36988706/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "明日之幸",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37228518/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "瘴气营地的青春性事与死亡",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "逃出绝命街",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/36318703/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "特立独行",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36953973/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "抓特务",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/36812879/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "盒子里的羊",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/37227467/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "激情邀约",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/35801126/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "怒之杀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/36889088/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不成功穿越指南",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36823889/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "兰香如故",
+      "title": "我的阿勒泰",
       "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36449295/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "交锋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36314809/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "万物生灵 第七季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.5,
-      "url": "https://movie.douban.com/subject/37433948/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "黑白清道夫",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/36544568/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "怪物：丽兹·波顿的故事",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37413245/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一瓯春",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35644140/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "挑情丑闻",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37030853/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36660844/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "深渊无间",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36576514/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "冬城猎凶",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37264799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "翠鸟谋杀案",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幸福伽菜子的快乐杀手生活 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/37296349/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "流人 第六季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/36689816/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绝望写手 第五季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.6,
-      "url": "https://movie.douban.com/subject/37370438/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在就出发 第二季",
-      "type": "综艺",
-      "category": "综艺",
+      "category": "国产剧",
       "rating": 8.8,
-      "url": "https://movie.douban.com/subject/36540851/",
-      "summary": "",
-      "source": "豆瓣"
+      "url": "https://movie.douban.com/",
+      "summary": "改编自李娟散文集，讲述女孩李文秀在新疆阿勒泰与母亲相依生活，在广袤自然中重新认识自我与亲情的治愈故事。"
     },
     {
-      "title": "花儿与少年·丝路季",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/36247293/",
-      "summary": "",
-      "source": "豆瓣"
+      "title": "庆余年第二季",
+      "type": "电视剧",
+      "category": "国产剧",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/",
+      "summary": "范闲重返京都，在朝堂与江湖间周旋，权谋与幽默交织的架空历史传奇续作。"
     },
     {
-      "title": "粉雄救兵 第九季",
-      "type": "综艺",
-      "category": "综艺",
+      "title": "玫瑰的故事",
+      "type": "电视剧",
+      "category": "国产剧",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/",
+      "summary": "改编自亦舒同名小说，讲述女孩黄玫瑰从青涩到成熟的情感成长史，探讨女性在爱情与自我间的抉择。"
+    },
+    {
+      "title": "繁花",
+      "type": "电视剧",
+      "category": "国产剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/",
+      "summary": "王家卫执导，胡歌主演，讲述90年代上海黄河路上商界浮沉与时代记忆，镜头美学极致。"
+    },
+    {
+      "title": " stranger things 怪奇物语",
+      "type": "电视剧",
+      "category": "美剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/",
+      "summary": "一群孩子在小镇霍金斯遭遇超自然力量与平行世界，友情与勇气对抗未知的经典科幻惊悚美剧。"
+    },
+    {
+      "title": "甄嬛传",
+      "type": "电视剧",
+      "category": "国产剧",
+      "rating": 9.4,
+      "url": "https://movie.douban.com/",
+      "summary": "孙俪主演清宫大剧，少女甄嬛入宫从天真到权倾后宫的跌宕人生，台词与表演封神。"
+    },
+    {
+      "title": "年会不能停",
+      "type": "电影",
+      "category": "电影",
       "rating": 8.1,
-      "url": "https://movie.douban.com/subject/36642339/",
-      "summary": "",
-      "source": "豆瓣"
+      "url": "https://movie.douban.com/",
+      "summary": "大厂裁员背景下的黑色幽默喜剧，打工人嘴替式槽点密集，笑中带泪。"
     },
     {
-      "title": "喜剧之王单口季",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36868615/",
-      "summary": "",
-      "source": "豆瓣"
+      "title": "宇宙探索编辑部",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/",
+      "summary": "伪纪录片风格科幻喜剧，落魄科幻杂志主编踏上寻找外星文明的荒诞旅途，浪漫又荒诞。"
     },
     {
-      "title": "再见爱人 第四季",
+      "title": "声生不息",
       "type": "综艺",
       "category": "综艺",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36642447/",
-      "summary": "",
-      "source": "豆瓣"
+      "rating": 8.0,
+      "url": "https://movie.douban.com/",
+      "summary": "港乐竞唱音综，新老歌手重新演绎经典粤语金曲，唤起一代人的青春记忆。"
     },
     {
-      "title": "明星大侦探 第五季",
+      "title": "种地吧",
       "type": "综艺",
       "category": "综艺",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/30446494/",
-      "summary": "",
-      "source": "豆瓣"
+      "rating": 8.9,
+      "url": "https://movie.douban.com/",
+      "summary": "十位年轻人真实耕耘万亩土地的劳作纪实综艺，汗水与土地治愈内卷心灵。"
     },
     {
-      "title": "喜人奇妙夜",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/36540857/",
-      "summary": "",
-      "source": "豆瓣"
+      "title": "地球脉动 II",
+      "type": "纪录片",
+      "category": "纪录片",
+      "rating": 9.8,
+      "url": "https://movie.douban.com/",
+      "summary": "BBC神级自然纪录片，4K镜头记录地球极致地貌与生命奇迹，每一帧都是壁纸。"
     },
     {
-      "title": "思想验证区域：The Community",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 9.4,
-      "url": "https://movie.douban.com/subject/36722428/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "明星大侦探 第一季",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 9.4,
-      "url": "https://movie.douban.com/subject/26737158/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "黑白厨师：料理阶级战争 第一季",
-      "type": "综艺",
-      "category": "综艺",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/36598424/",
-      "summary": "",
-      "source": "豆瓣"
+      "title": "人生一串",
+      "type": "纪录片",
+      "category": "纪录片",
+      "rating": 9.0,
+      "url": "https://movie.douban.com/",
+      "summary": "市井烧烤江湖的美食纪录片，烟火气与人情味交织，深夜慎看容易饿。"
     }
   ]
 }
