@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-09-29 16:17",
+  "updated": "2026-09-29 21:44",
   "items": [
     {
       "title": "年会不能停！2",
@@ -21,29 +21,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "我们的救赎",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36660162/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "银河特急 Milky✩Subway 各站停车前往剧场",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/37897127/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "500英里",
       "type": "电影",
       "category": "电影",
       "rating": 7.9,
       "url": "https://movie.douban.com/subject/36772727/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "剧场版 紧急审讯室 THE FINAL",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36185555/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "菲律宾女孩",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/35745636/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,15 +93,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "峡湾",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/37168181/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "希望",
       "type": "电影",
       "category": "电影",
@@ -111,11 +102,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "特立独行",
+      "title": "峡湾",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36953973/",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/37168181/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -125,6 +116,15 @@
       "category": "电影",
       "rating": 7.0,
       "url": "https://movie.douban.com/subject/36808520/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "特立独行",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36953973/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,29 +156,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "交锋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36314809/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "无可替代",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36117379/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,20 +183,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "交锋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36314809/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,11 +210,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "流人 第六季",
+      "title": "花儿与少年 第八季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.2,
-      "url": "https://movie.douban.com/subject/36689816/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37817080/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "余红旧事",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37560173/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "早春晴朗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,29 +246,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "流人 第六季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/36689816/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "深渊无间",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/36576514/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "花儿与少年 第八季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幸福伽菜子的快乐杀手生活 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37296349/",
       "summary": "",
       "source": "豆瓣"
     },
