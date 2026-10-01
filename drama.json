@@ -1,22 +1,22 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-01 16:49",
+  "updated": "2026-10-01 22:12",
   "items": [
-    {
-      "title": "年会不能停！2",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36850814/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
       "rating": 6.8,
       "url": "https://movie.douban.com/subject/36801617/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "年会不能停！2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36850814/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -33,7 +33,7 @@
       "title": "我们的救赎",
       "type": "电影",
       "category": "电影",
-      "rating": 6.5,
+      "rating": 6.6,
       "url": "https://movie.douban.com/subject/36660162/",
       "summary": "",
       "source": "豆瓣"
@@ -42,17 +42,8 @@
       "title": "银河特急 Milky✩Subway 各站停车前往剧场",
       "type": "电影",
       "category": "电影",
-      "rating": 8.1,
+      "rating": 8.0,
       "url": "https://movie.douban.com/subject/37897127/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "罗斯",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -62,6 +53,15 @@
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/36937765/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "罗斯",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,20 +93,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "卖冰淇淋的人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/37346752/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "魔方小姐",
       "type": "电影",
       "category": "电影",
       "rating": 6.8,
       "url": "https://movie.douban.com/subject/36808520/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "卖冰淇淋的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/37346752/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "抓特务",
+      "title": "阳光女子合唱团",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36812879/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37193250/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,20 +156,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "无可替代",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36117379/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "余红旧事",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37560173/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "无可替代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36117379/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,20 +237,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "冬城猎凶",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/37264799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "流人 第六季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 9.2,
       "url": "https://movie.douban.com/subject/36689816/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "冬城猎凶",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.1,
+      "url": "https://movie.douban.com/subject/37264799/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "绝望写手 第五季",
+      "title": "幸福伽菜子的快乐杀手生活 第二季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.7,
-      "url": "https://movie.douban.com/subject/37370438/",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37296349/",
       "summary": "",
       "source": "豆瓣"
     },
