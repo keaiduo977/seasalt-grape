@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-03 14:30",
+  "updated": "2026-10-03 20:26",
   "items": [
     {
       "title": "神探之痕迹‎",
@@ -21,11 +21,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "坂本日常 真人版",
+      "title": "起义",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37233625/",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37425363/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "温柔的怪物",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37269580/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "大学炸弹客",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/38184963/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -35,15 +53,6 @@
       "category": "电影",
       "rating": 6.8,
       "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "年会不能停！2",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36850814/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,20 +75,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "年会不能停！2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36850814/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "爱情假说",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37365064/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "求救信号",
       "type": "电影",
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "逃出绝命街",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36318703/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,11 +120,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "卖冰淇淋的人",
+      "title": "给阿嬷的情书",
       "type": "电影",
       "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/37346752/",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/37116446/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,29 +138,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "阳光女子合唱团",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37193250/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "特立独行",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36953973/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36449295/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "余红旧事",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37560173/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "风向中：跟随国道的旅行",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/38590953/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "消失的裂痕",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37210479/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,11 +183,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "余红旧事",
+      "title": "魅影神捕",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37560173/",
+      "url": "https://movie.douban.com/subject/36481657/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,15 +219,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "花儿与少年 第八季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37817080/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
@@ -215,15 +233,6 @@
       "category": "热播剧",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/36314809/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一瓯春",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/35644140/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "深渊无间",
+      "title": "绝望写手 第五季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36576514/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幸福伽菜子的快乐杀手生活 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/37296349/",
+      "rating": 9.7,
+      "url": "https://movie.douban.com/subject/37370438/",
       "summary": "",
       "source": "豆瓣"
     },
