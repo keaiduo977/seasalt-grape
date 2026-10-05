@@ -1,25 +1,7 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-04 20:45",
+  "updated": "2026-10-05 08:04",
   "items": [
-    {
-      "title": "神探之痕迹‎",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/37247814/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "野兽之心",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36828393/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "忘却之岛",
       "type": "电影",
@@ -33,7 +15,7 @@
       "title": "起义",
       "type": "电影",
       "category": "电影",
-      "rating": 6.3,
+      "rating": 6.2,
       "url": "https://movie.douban.com/subject/37425363/",
       "summary": "",
       "source": "豆瓣"
@@ -138,6 +120,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "不存在的罪人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37124892/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
@@ -213,7 +213,7 @@
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.6,
+      "rating": 8.5,
       "url": "https://movie.douban.com/subject/37218278/",
       "summary": "",
       "source": "豆瓣"
