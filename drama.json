@@ -1,31 +1,31 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-05 08:04",
+  "updated": "2026-10-05 19:01",
   "items": [
     {
-      "title": "忘却之岛",
+      "title": "生化危机：爆发夜",
       "type": "电影",
       "category": "电影",
-      "rating": 7.6,
-      "url": "https://movie.douban.com/subject/37317906/",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37068446/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "起义",
+      "title": "什么意思夫妇",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37425363/",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/37667015/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "温柔的怪物",
+      "title": "活色生香",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37269580/",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37899051/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,15 +39,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "瘴气营地的青春性事与死亡",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "罗斯",
       "type": "电影",
       "category": "电影",
@@ -57,11 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "年会不能停！2",
+      "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/36850814/",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,29 +66,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "年会不能停！2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36850814/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "爱情假说",
       "type": "电影",
       "category": "电影",
       "rating": 6.6,
       "url": "https://movie.douban.com/subject/37365064/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "挖掘者",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36783248/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36439868/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,6 +93,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "求救信号",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36439868/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "魔方小姐",
       "type": "电影",
       "category": "电影",
@@ -120,20 +111,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "不存在的罪人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/37124892/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "希望",
       "type": "电影",
       "category": "电影",
       "rating": 5.7,
       "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "峡湾",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/37168181/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "卖冰淇淋的人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/37346752/",
       "summary": "",
       "source": "豆瓣"
     },
