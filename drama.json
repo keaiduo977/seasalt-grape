@@ -1,34 +1,7 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-05 19:01",
+  "updated": "2026-10-06 08:25",
   "items": [
-    {
-      "title": "生化危机：爆发夜",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37068446/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "什么意思夫妇",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/37667015/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "活色生香",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37899051/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "一个部门的诞生",
       "type": "电影",
@@ -51,7 +24,7 @@
       "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
@@ -138,6 +111,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "阳光女子合唱团",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37193250/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "逃出绝命街",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36318703/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "抓特务",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36812879/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,20 +183,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "无可替代",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36117379/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "无可替代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36117379/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,29 +246,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "深渊无间",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36576514/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "绿灯军团",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/36225837/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "冬城猎凶",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/37264799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "绝望写手 第五季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.7,
-      "url": "https://movie.douban.com/subject/37370438/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一瓯春",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.4,
-      "url": "https://movie.douban.com/subject/35644140/",
       "summary": "",
       "source": "豆瓣"
     },
