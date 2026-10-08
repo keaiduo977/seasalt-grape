@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-08 17:07",
+  "updated": "2026-10-08 22:43",
   "items": [
     {
       "title": "功夫女足",
@@ -48,20 +48,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "潜伏6",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37525017/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "罗斯",
       "type": "电影",
       "category": "电影",
       "rating": 8.5,
       "url": "https://movie.douban.com/subject/35322132/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "瘴气营地的青春性事与死亡",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,11 +75,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "潜伏6",
+      "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37525017/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,15 +156,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "风向中：跟随国道的旅行",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/38590953/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "我不是大师",
       "type": "电视剧",
       "category": "热播剧",
@@ -192,20 +183,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "无可替代",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36117379/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "喜剧之王",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36868927/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "无可替代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36117379/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,6 +219,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "魔女嘉莉",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37083974/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "流人 第六季",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,20 +237,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "政盗鲁邦",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38611331/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "交锋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/36314809/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "早春晴朗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/36660844/",
       "summary": "",
       "source": "豆瓣"
     },
