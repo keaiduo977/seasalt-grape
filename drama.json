@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-13 17:17",
+  "updated": "2026-10-13 22:09",
   "items": [
     {
       "title": "潜伏6",
@@ -66,6 +66,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.6,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "爱情假说",
       "type": "电影",
       "category": "电影",
@@ -102,20 +111,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "年会不能停！2",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/36850814/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "蜘蛛侠：崭新之日",
       "type": "电影",
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/36246195/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "年会不能停！2",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/36850814/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +138,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "魔方小姐",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36808520/",
+      "title": "兰香如故",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36449295/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,11 +156,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "兰香如故",
+      "title": "体能之巅：百人大挑战：墨西哥篇",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36449295/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/38226301/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,29 +201,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "玉簟秋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37070518/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "现在不是出轨的问题",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在就出发 第四季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37816990/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "魅影神捕",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36481657/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,20 +228,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "魅影神捕",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36481657/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在就出发 第四季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37816990/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "翠鸟谋杀案",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.4,
       "url": "https://movie.douban.com/subject/37218278/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百日谎言",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37069670/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "喜剧之王",
+      "title": "百日谎言",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36868927/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37070518/",
+      "url": "https://movie.douban.com/subject/37069670/",
       "summary": "",
       "source": "豆瓣"
     },
