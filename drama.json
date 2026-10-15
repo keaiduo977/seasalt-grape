@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-15 14:36",
+  "updated": "2026-10-15 20:49",
   "items": [
     {
       "title": "希望",
@@ -24,7 +24,7 @@
       "title": "人为何要写情书",
       "type": "电影",
       "category": "电影",
-      "rating": 6.5,
+      "rating": 6.6,
       "url": "https://movie.douban.com/subject/37170532/",
       "summary": "",
       "source": "豆瓣"
@@ -33,8 +33,17 @@
       "title": "火柴盒大电影",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
+      "rating": 6.1,
       "url": "https://movie.douban.com/subject/36885557/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "23000条生命",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37077539/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,6 +102,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "逃出布迪秀",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37446297/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "给阿嬷的情书",
       "type": "电影",
       "category": "电影",
@@ -120,24 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "年会不能停！2",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/36850814/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "阳光女子合唱团",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37193250/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "余红旧事",
       "type": "电视剧",
       "category": "热播剧",
@@ -147,11 +147,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "兰香如故",
+      "title": "幻视任务",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36449295/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -159,7 +159,7 @@
       "title": "百日谎言",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.0,
+      "rating": 8.1,
       "url": "https://movie.douban.com/subject/37069670/",
       "summary": "",
       "source": "豆瓣"
@@ -183,6 +183,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "兰香如故",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36449295/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "美人余",
       "type": "电视剧",
       "category": "热播剧",
@@ -201,24 +210,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37070518/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
@@ -228,20 +219,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "魔女嘉莉",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37083974/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "魅影神捕",
+      "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36481657/",
+      "url": "https://movie.douban.com/subject/37070518/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "翠鸟谋杀案",
+      "title": "魅影神捕",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37218278/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36481657/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -269,6 +251,24 @@
       "category": "热播剧",
       "rating": 8.4,
       "url": "https://movie.douban.com/subject/37746098/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "魔女嘉莉",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37083974/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "翠鸟谋杀案",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37218278/",
       "summary": "",
       "source": "豆瓣"
     },
