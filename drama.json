@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-15 06:50",
+  "updated": "2026-10-15 14:36",
   "items": [
     {
       "title": "希望",
@@ -33,7 +33,7 @@
       "title": "火柴盒大电影",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
+      "rating": 6.2,
       "url": "https://movie.douban.com/subject/36885557/",
       "summary": "",
       "source": "豆瓣"
@@ -177,7 +177,7 @@
       "title": "恋爱充电中",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.1,
+      "rating": 7.2,
       "url": "https://movie.douban.com/subject/37317490/",
       "summary": "",
       "source": "豆瓣"
@@ -231,7 +231,7 @@
       "title": "魔女嘉莉",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.9,
+      "rating": 7.8,
       "url": "https://movie.douban.com/subject/37083974/",
       "summary": "",
       "source": "豆瓣"
