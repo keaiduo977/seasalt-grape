@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-17 13:24",
+  "updated": "2026-10-17 19:57",
   "items": [
     {
       "title": "希望",
@@ -21,6 +21,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "每时每刻",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36159749/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "理智与情感",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37247236/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "人为何要写情书",
       "type": "电影",
       "category": "电影",
@@ -30,29 +48,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "火柴盒大电影",
+      "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/36885557/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "23000条生命",
+      "title": "罗斯",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37077539/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "功夫女足",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/36452545/",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,11 +75,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "罗斯",
+      "title": "功夫女足",
       "type": "电影",
       "category": "电影",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/35322132/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/36452545/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,15 +102,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "逃出布迪秀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37446297/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
@@ -120,6 +120,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "火柴盒大电影",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/36885557/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "给阿嬷的情书",
       "type": "电影",
       "category": "电影",
@@ -129,11 +138,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36439868/",
+      "title": "嫁金钗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37191789/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "醉梦",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37042229/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,38 +165,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "百日谎言",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37069670/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36449295/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "美人余",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36962068/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,11 +183,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "Doctor X：白色黑手党时代",
+      "title": "幻视任务",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37235560/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,6 +201,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "可以爱吗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.2,
+      "url": "https://movie.douban.com/subject/38375675/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "Doctor X：白色黑手党时代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37235560/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,38 +228,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在不是出轨的问题",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37501131/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "魅影神捕",
+      "title": "美人余",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36481657/",
+      "url": "https://movie.douban.com/subject/36962068/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "恋爱博士",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37746098/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "凡人修仙传 年番4",
+      "title": "把黑夜点燃",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37457082/",
+      "url": "https://movie.douban.com/subject/37307385/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -260,6 +251,15 @@
       "category": "热播剧",
       "rating": 9.0,
       "url": "https://movie.douban.com/subject/38530785/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37501131/",
       "summary": "",
       "source": "豆瓣"
     },
