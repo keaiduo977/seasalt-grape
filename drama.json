@@ -1,12 +1,12 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-16 20:22",
+  "updated": "2026-10-17 06:26",
   "items": [
     {
       "title": "希望",
       "type": "电影",
       "category": "电影",
-      "rating": 5.6,
+      "rating": 5.5,
       "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
@@ -240,7 +240,7 @@
       "title": "恋爱博士",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
+      "rating": 8.3,
       "url": "https://movie.douban.com/subject/37746098/",
       "summary": "",
       "source": "豆瓣"
@@ -258,7 +258,7 @@
       "title": "你却爱着一个他",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.1,
+      "rating": 9.0,
       "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
