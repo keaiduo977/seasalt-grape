@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-19 16:44",
+  "updated": "2026-10-19 21:55",
   "items": [
     {
       "title": "希望",
@@ -12,20 +12,47 @@
       "source": "豆瓣"
     },
     {
+      "title": "鲸口脱险",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/36806762/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "祈念守护人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37315516/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "一个夜晚与三个夏天",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36449264/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "杯雪·一战成名",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/37516455/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/37446297/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "尼娜与萝扎",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/36473007/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,33 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "火柴盒大电影",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/36885557/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "给阿嬷的情书",
-      "type": "电影",
-      "category": "电影",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/37116446/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "求救信号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36439868/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "嫁金钗",
       "type": "电视剧",
       "category": "热播剧",
@@ -156,20 +156,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "余红旧事",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37560173/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37296949/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "余红旧事",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37560173/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,11 +192,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "可以爱吗",
+      "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.1,
-      "url": "https://movie.douban.com/subject/38375675/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37070518/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,29 +210,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37070518/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "美人余",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36962068/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "你却爱着一个他",
+      "title": "幻视任务",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.0,
-      "url": "https://movie.douban.com/subject/38530785/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +246,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "魔女嘉莉",
+      "title": "你却爱着一个他",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37083974/",
+      "rating": 9.0,
+      "url": "https://movie.douban.com/subject/38530785/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在不是出轨的问题",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37501131/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "翠鸟谋杀案",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37218278/",
       "summary": "",
       "source": "豆瓣"
     },
