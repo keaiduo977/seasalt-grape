@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-18 19:56",
+  "updated": "2026-10-19 07:11",
   "items": [
     {
       "title": "希望",
@@ -26,24 +26,6 @@
       "category": "电影",
       "rating": 6.3,
       "url": "https://movie.douban.com/subject/36473007/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "每时每刻",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/36159749/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "理智与情感",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/37247236/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -134,6 +116,24 @@
       "category": "电影",
       "rating": 6.1,
       "url": "https://movie.douban.com/subject/36885557/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "给阿嬷的情书",
+      "type": "电影",
+      "category": "电影",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/37116446/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "求救信号",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36439868/",
       "summary": "",
       "source": "豆瓣"
     },
