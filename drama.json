@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-20 14:36",
+  "updated": "2026-10-20 21:06",
   "items": [
     {
       "title": "希望",
@@ -8,15 +8,6 @@
       "category": "电影",
       "rating": 5.5,
       "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "祈念守护人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37315516/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -30,10 +21,28 @@
       "source": "豆瓣"
     },
     {
+      "title": "祈念守护人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37315516/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "尼娜与萝扎",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/36473007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
+      "rating": 7.3,
       "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
@@ -66,20 +75,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "功夫女足",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/36452545/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "一个部门的诞生",
       "type": "电影",
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/36937765/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "功夫女足",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/36452545/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +138,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "给阿嬷的情书",
-      "type": "电影",
-      "category": "电影",
-      "rating": 9.3,
-      "url": "https://movie.douban.com/subject/37116446/",
+      "title": "醉梦",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37042229/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -143,15 +152,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37191789/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "醉梦",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37042229/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,20 +192,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "把黑夜点燃",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37307385/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "赛博朋克：边缘行者 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37421775/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37070518/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我不是大师",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37297001/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,11 +228,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "把黑夜点燃",
+      "title": "我不是大师",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37307385/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37297001/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "恋爱博士",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37746098/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -233,24 +251,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "恋爱博士",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37746098/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "你却爱着一个他",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.0,
-      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
