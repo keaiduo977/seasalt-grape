@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-19 21:55",
+  "updated": "2026-10-20 06:58",
   "items": [
     {
       "title": "希望",
@@ -12,29 +12,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "鲸口脱险",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/36806762/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "祈念守护人",
       "type": "电影",
       "category": "电影",
       "rating": 6.1,
       "url": "https://movie.douban.com/subject/37315516/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "一个夜晚与三个夏天",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36449264/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -134,6 +116,24 @@
       "category": "电影",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/36367195/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "火柴盒大电影",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/36885557/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "给阿嬷的情书",
+      "type": "电影",
+      "category": "电影",
+      "rating": 9.3,
+      "url": "https://movie.douban.com/subject/37116446/",
       "summary": "",
       "source": "豆瓣"
     },
