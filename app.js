@@ -108,7 +108,7 @@ const Nav = {
     $$('.tab').forEach(t=>t.classList.toggle('active', t.dataset.page===name));
     window.scrollTo(0,0);
     // 懒加载（const 声明不在 window 上，用直接引用）
-    const loaders = {hot:Hot, supp:Supp, recipe:Recipe, skin:Skin, sport:Sport, drama:Drama, read:Read, study:Study, sched:Sched, frag:Frag, diary:Diary, anni:Anni, set:Setting};
+    const loaders = {hot:Hot, supp:Supp, recipe:Recipe, skin:Skin, sport:Sport, drama:Drama, read:Read, stock:Stock, study:Study, sched:Sched, frag:Frag, diary:Diary, anni:Anni, set:Setting};
     const m = loaders[name];
     if(m && m.load) m.load();
   }
@@ -1790,6 +1790,114 @@ const Alarm = {
       Alarm._osc=osc;
       Alarm._bellInt=setTimeout(()=>{ if($('#alarmFull').classList.contains('show')) Alarm._playBell(); }, 2200);
     }catch(e){}
+  }
+};
+
+/* ============================================
+   8.5 股票 · AI 每日科技 & 汽车盘面整理
+   ============================================ */
+const Stock = {
+  async load(){ await Stock.refresh(false); },
+  async refresh(force){
+    const isUser = force === true;
+    const btn = $('#stockRefresh');
+    if(btn){ btn.disabled = true; btn.textContent = '🌸 生成中…'; }
+    try{
+      // 按日期缓存：当天已生成且无强制刷新则直接渲染
+      const cache = await DB.get('aiCache','stockDaily') || {id:'stockDaily', data:null, date:''};
+      if(!force && cache.data && cache.date === today()){
+        Stock.render(cache.data);
+        if(btn){ btn.disabled = false; btn.textContent = '🔄 刷新'; }
+        return;
+      }
+      const date = today();
+      const sys = `你是专业的财经观察助手。请基于公开信息与通识，为女生整理一份「科技行业」与「汽车行业」的每日盘面观察简报。
+要求：
+1. 语言简洁、专业、口语化，适合快速阅读。
+2. 重要：你无法获取实时行情数据，因此涨跌幅、成交量请用定性描述（如"小幅收涨/震荡走弱/放量上行"），如确需给出数值请明确标注"（参考估算）"且不要编造精确点位。
+3. 每个行业给出：板块整体表现、成交量变化、涨跌主要原因分析（政策面 / 行业消息 / 资金流向，各一两句）、2-3 个重点关注方向或个股线索（方向性描述，不要给具体买卖建议）。
+4. 单独列出近期 1-2 个值得关注的事件或趋势（如财报季、机构评级变动、行业政策、技术突破等）。
+5. 只输出如下 JSON，不要任何多余文字：
+{
+  "date":"${date}",
+  "sectors":[
+    {"name":"科技行业","summary":"板块整体一句话描述","change":"定性涨跌幅如 小幅收涨（参考估算）","volume":"成交量变化描述","reasons":["政策面…","行业消息…","资金流向…"],"focus":["关注方向1","关注方向2","关注方向3"]},
+    {"name":"汽车行业","summary":"…","change":"…","volume":"…","reasons":["…","…","…"],"focus":["…","…","…"]}
+  ],
+  "events":["事件/趋势1","事件/趋势2"]
+}`;
+      const user = `今天是 ${date}，请生成今天的科技与汽车板块观察简报（JSON）。`;
+      let txt = await AI.chat(sys, user, {kind:'stock', maxTokens:1600});
+      let data = null;
+      try{
+        const j = JSON.parse(AI._cleanJSON(txt));
+        if(j && Array.isArray(j.sectors)) data = j;
+      }catch(e){ data = null; }
+      if(!data){
+        data = Stock._fallback();
+      }
+      // 缓存当天结果
+      await DB.put('aiCache', {id:'stockDaily', data, date});
+      Stock.render(data);
+      if(isUser) toast('已更新今日简报 📈');
+    }catch(e){
+      Stock.render(Stock._fallback());
+    }finally{
+      if(btn){ btn.disabled = false; btn.textContent = '🔄 刷新'; }
+    }
+  },
+  _changeClass(c){
+    const s = String(c||'');
+    if(/涨|升|强|反弹|上行|利好|增/.test(s) && !/跌|弱|降/.test(s)) return 'up';
+    if(/跌|弱|降|回撤|下挫|利空/.test(s)) return 'down';
+    return 'flat';
+  },
+  render(d){
+    if(!d){ return; }
+    $('#stockUpdated').textContent = '更新于 ' + (d.date || today());
+    const secBox = $('#stockSectors');
+    const evBox = $('#stockEvents');
+    if(!d.sectors || !d.sectors.length){
+      secBox.innerHTML = '<div class="empty"><div class="emoji">📈</div><p>暂无可生成的数据</p></div>';
+    } else {
+      secBox.innerHTML = d.sectors.map(s=>{
+        const cls = Stock._changeClass(s.change);
+        return `<div class="stock-sector">
+          <div class="stock-sector-head">
+            <span class="stock-sector-name">${esc(s.name||'板块')}</span>
+            <span class="stock-chip ${cls}">${esc(s.change||'—')}</span>
+          </div>
+          <div class="stock-summary">${esc(s.summary||'')}</div>
+          <div class="stock-row"><span class="k">成交量</span><span>${esc(s.volume||'—')}</span></div>
+          <div class="stock-row"><span class="k">涨跌原因</span></div>
+          ${(s.reasons||[]).map(r=>`<div class="stock-rsn">${esc(r)}</div>`).join('')}
+          ${(s.focus&&s.focus.length)?`<div class="stock-focus"><b>🔍 关注：</b>${s.focus.map(f=>esc(f)).join('；')}</div>`:''}
+        </div>`;
+      }).join('');
+    }
+    if(!d.events || !d.events.length){
+      evBox.innerHTML = '<div class="muted" style="padding:8px 0">暂无重点事件</div>';
+    } else {
+      evBox.innerHTML = d.events.map((e,i)=>`<div class="stock-event"><span class="num">${i+1}</span><span class="ev">${esc(e)}</span></div>`).join('');
+    }
+  },
+  _fallback(){
+    const hasKey = !!AI.getKey();
+    if(!hasKey){
+      return {
+        date: today(),
+        sectors: [],
+        events: ['🔑 尚未配置 AI Key，无法生成每日智能整理。请到「设置 → API Key」填入 DeepSeek Key 后下拉刷新本页。', '配置完成后，每天点「🔄 刷新」即可获取科技与汽车板块的盘面观察。']
+      };
+    }
+    return {
+      date: today(),
+      sectors: [
+        {name:'科技行业', summary:'（本次生成未能解析，请点「🔄 刷新」重试）', change:'—', volume:'—', reasons:[], focus:[]},
+        {name:'汽车行业', summary:'（本次生成未能解析，请点「🔄 刷新」重试）', change:'—', volume:'—', reasons:[], focus:[]}
+      ],
+      events: ['点击下方「🔄 刷新」重新生成今日的科技与汽车板块简报。']
+    };
   }
 };
 

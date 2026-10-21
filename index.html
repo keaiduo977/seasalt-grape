@@ -328,6 +328,26 @@ a{color:var(--purple);text-decoration:none}
 .frag-card .tx{padding:10px;font-size:12px;color:var(--text)}
 .frag-card .dt{font-size:10px;color:var(--text-light);padding:0 10px 10px}
 .frag-card-actions{position:absolute;top:6px;right:6px;display:flex;gap:4px;z-index:2}
+/* 股票板块 */
+.stock-disclaimer{background:linear-gradient(135deg,#FFF6E9,#FFF);border:1px solid #F3D9A8;color:#9A6B2F;
+  font-size:11px;padding:8px 10px;border-radius:10px;line-height:1.4;margin-top:8px}
+.stock-sector{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:var(--shadow)}
+.stock-sector-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.stock-sector-name{font-weight:700;color:var(--purple-deep);font-size:15px}
+.stock-chip{font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px}
+.stock-chip.up{background:#E8F3EA;color:#2E7D4F}
+.stock-chip.down{background:#FBEAEA;color:#C0392B}
+.stock-chip.flat{background:#EFEAF5;color:#6B4E8E}
+.stock-row{display:flex;gap:8px;font-size:13px;margin:6px 0;line-height:1.5}
+.stock-row .k{color:var(--text-light);flex-shrink:0;min-width:56px}
+.stock-summary{font-size:13px;color:var(--text);line-height:1.6;margin:6px 0 8px}
+.stock-rsn{margin:5px 0;padding-left:14px;position:relative;font-size:12px;color:var(--text);line-height:1.5}
+.stock-rsn::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--purple)}
+.stock-focus{background:var(--salt-light);border-radius:10px;padding:8px 10px;margin-top:8px;font-size:12px;line-height:1.6}
+.stock-focus b{color:var(--purple-deep)}
+.stock-event{display:flex;gap:10px;background:#fff;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:var(--shadow)}
+.stock-event .num{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--purple-deep);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.stock-event .ev{font-size:13px;color:var(--text);line-height:1.6}
 
 /* 恋爱灵感 */
 .love-item{display:flex;gap:12px;padding:14px;background:linear-gradient(135deg,#FFF0F5,#fff);border-radius:14px;margin-bottom:10px;box-shadow:var(--shadow)}
@@ -643,6 +663,25 @@ a{color:var(--purple);text-decoration:none}
   </div>
 </section>
 
+<!-- ===== 股票行情 ===== -->
+<section class="page" id="page-stock">
+  <div class="section">
+    <div class="section-title">
+      <h2>📈 科技 &amp; 汽车股票</h2>
+      <button class="btn btn-sm btn-ghost" id="stockRefresh" onclick="Stock.refresh()">🔄 刷新</button>
+    </div>
+    <div class="stock-disclaimer">🤖 AI 生成 · 非实时行情 · 仅供参考，不构成投资建议</div>
+    <div class="between" style="margin-top:6px">
+      <span class="muted" id="stockUpdated" style="font-size:11px">—</span>
+    </div>
+    <div id="stockSectors"></div>
+    <div class="section-title mt12">
+      <h2>🔭 近期关注事件 / 趋势</h2>
+    </div>
+    <div id="stockEvents"></div>
+  </div>
+</section>
+
 <!-- ===== 学习打卡 ===== -->
 <section class="page" id="page-study">
   <div class="section">
@@ -815,6 +854,7 @@ a{color:var(--purple);text-decoration:none}
   <button class="tab" data-page="sport" onclick="Nav.go('sport')"><span class="ic">🏃</span>运动</button>
   <button class="tab" data-page="drama" onclick="Nav.go('drama')"><span class="ic">🎬</span>剧集</button>
   <button class="tab" data-page="read" onclick="Nav.go('read')"><span class="ic">📚</span>阅读</button>
+  <button class="tab" data-page="stock" onclick="Nav.go('stock')"><span class="ic">📈</span>股票</button>
   <button class="tab" data-page="study" onclick="Nav.go('study')"><span class="ic">📝</span>学习</button>
   <button class="tab" data-page="sched" onclick="Nav.go('sched')"><span class="ic">💼</span>日程</button>
   <button class="tab" data-page="frag" onclick="Nav.go('frag')"><span class="ic">🌷</span>碎片</button>
