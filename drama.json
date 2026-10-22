@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-21 21:06",
+  "updated": "2026-10-22 06:56",
   "items": [
     {
       "title": "希望",
@@ -24,7 +24,7 @@
       "title": "眩晕",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/38424785/",
       "summary": "",
       "source": "豆瓣"
@@ -168,7 +168,7 @@
       "title": "尘落",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
+      "rating": 8.2,
       "url": "https://movie.douban.com/subject/37862311/",
       "summary": "",
       "source": "豆瓣"
