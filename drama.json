@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-24 13:47",
+  "updated": "2026-10-24 20:03",
   "items": [
     {
       "title": "希望",
@@ -57,11 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "潜伏6",
+      "title": "黑球",
       "type": "电影",
       "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37525017/",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37215318/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -71,6 +71,15 @@
       "category": "电影",
       "rating": 8.5,
       "url": "https://movie.douban.com/subject/35322132/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "潜伏6",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37525017/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,11 +111,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "爱情假说",
+      "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37365064/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,20 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "瘴气营地的青春性事与死亡",
+      "title": "爱情假说",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "黑球",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/37215318/",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37365064/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,11 +147,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "醉梦",
+      "title": "嫁金钗",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37042229/",
+      "url": "https://movie.douban.com/subject/37191789/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -159,7 +159,7 @@
       "title": "新手上路",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.8,
+      "rating": 6.9,
       "url": "https://movie.douban.com/subject/37485048/",
       "summary": "",
       "source": "豆瓣"
@@ -174,11 +174,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "嫁金钗",
+      "title": "醉梦",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37191789/",
+      "url": "https://movie.douban.com/subject/37042229/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,20 +192,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "尚公主",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35861007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "余红旧事",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37560173/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,20 +219,38 @@
       "source": "豆瓣"
     },
     {
-      "title": "赛博朋克：边缘行者 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37421775/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "Doctor X：白色黑手党时代",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.4,
       "url": "https://movie.douban.com/subject/37235560/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "幻视任务",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/36137784/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "美人余",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/36962068/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "赛博朋克：边缘行者 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/37421775/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -251,24 +269,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37307385/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "美人余",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36962068/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我不是大师",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37297001/",
       "summary": "",
       "source": "豆瓣"
     },
