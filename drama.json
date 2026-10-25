@@ -1,22 +1,22 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-25 14:03",
+  "updated": "2026-10-25 20:15",
   "items": [
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
     {
       "title": "杯雪·一战成名",
       "type": "电影",
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/37516455/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -33,7 +33,7 @@
       "title": "眩晕",
       "type": "电影",
       "category": "电影",
-      "rating": 6.7,
+      "rating": 6.8,
       "url": "https://movie.douban.com/subject/38424785/",
       "summary": "",
       "source": "豆瓣"
@@ -66,6 +66,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "空枪",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37508847/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "罗斯",
       "type": "电影",
       "category": "电影",
@@ -84,20 +93,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "人性本兽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36749187/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "一个部门的诞生",
       "type": "电影",
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/36937765/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "人性本兽",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.9,
+      "url": "https://movie.douban.com/subject/36749187/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -116,15 +125,6 @@
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蜘蛛侠：崭新之日",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/36246195/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,20 +156,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "新手上路",
+      "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.9,
-      "url": "https://movie.douban.com/subject/37485048/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "尘落",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37862311/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37296949/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,20 +174,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "蒸蒸日上",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/35861007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "Doctor X：白色黑手党时代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37235560/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,11 +210,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "Doctor X：白色黑手党时代",
+      "title": "后会友期",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37235560/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,15 +237,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "赛博朋克：边缘行者 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/37421775/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
@@ -269,6 +251,24 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37307385/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "恋爱博士",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37746098/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我不是大师",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37297001/",
       "summary": "",
       "source": "豆瓣"
     },
