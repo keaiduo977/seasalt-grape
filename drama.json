@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-26 16:24",
+  "updated": "2026-10-26 22:09",
   "items": [
     {
       "title": "杯雪·一战成名",
@@ -12,11 +12,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "希望",
+      "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -48,11 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "逃出布迪秀",
+      "title": "希望",
       "type": "电影",
       "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37446297/",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,20 +120,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "突如其来",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "瘴气营地的青春性事与死亡",
       "type": "电影",
       "category": "电影",
       "rating": 6.7,
       "url": "https://movie.douban.com/subject/36801617/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "爱情假说",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37365064/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -152,6 +152,15 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37191789/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "大追踪〜警视厅SSBC强行犯系〜 第二季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/37937557/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,11 +192,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "Doctor X：白色黑手党时代",
+      "title": "后会友期",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.4,
-      "url": "https://movie.douban.com/subject/37235560/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,6 +210,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "Doctor X：白色黑手党时代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/37235560/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
@@ -210,29 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "后会友期",
+      "title": "你却爱着一个他",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37100984/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "美人余",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36962068/",
+      "rating": 9.2,
+      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,11 +255,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "恋爱博士",
+      "title": "幻视任务",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37746098/",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
