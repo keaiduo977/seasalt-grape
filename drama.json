@@ -1,7 +1,16 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-28 16:23",
+  "updated": "2026-10-28 22:05",
   "items": [
+    {
+      "title": "黑球",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37215318/",
+      "summary": "",
+      "source": "豆瓣"
+    },
     {
       "title": "杯雪·一战成名",
       "type": "电影",
@@ -12,11 +21,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "逃出布迪秀",
+      "title": "死神 千年血战篇 -祸进谭-",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/37446297/",
+      "rating": 8.4,
+      "url": "https://movie.douban.com/subject/38532820/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,20 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "黑球",
+      "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/37215318/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,11 +66,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "罗斯",
+      "title": "希望",
       "type": "电影",
       "category": "电影",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/35322132/",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不存在的罪人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/37124892/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -80,6 +89,15 @@
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/36887293/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "罗斯",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/35322132/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,29 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "人性本兽",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36749187/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "功夫女足",
       "type": "电影",
       "category": "电影",
       "rating": 5.9,
       "url": "https://movie.douban.com/subject/36452545/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "瘴气营地的青春性事与死亡",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/36801617/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,20 +165,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "终极名单 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36227197/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "醉梦",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/37042229/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "后会友期",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -197,15 +197,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/35861007/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "后会友期",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +237,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "你却爱着一个他",
+      "title": "幻视任务",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.2,
-      "url": "https://movie.douban.com/subject/38530785/",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/36137784/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的有罪之人",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/37806882/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "把黑夜点燃",
+      "title": "你却爱着一个他",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.4,
-      "url": "https://movie.douban.com/subject/37307385/",
+      "rating": 9.2,
+      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
