@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-29 16:32",
+  "updated": "2026-10-29 22:17",
   "items": [
     {
       "title": "黑球",
@@ -33,7 +33,7 @@
       "title": "不择手段",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
+      "rating": 6.0,
       "url": "https://movie.douban.com/subject/37104948/",
       "summary": "",
       "source": "豆瓣"
@@ -78,7 +78,7 @@
       "title": "不存在的罪人",
       "type": "电影",
       "category": "电影",
-      "rating": 5.8,
+      "rating": 5.7,
       "url": "https://movie.douban.com/subject/37124892/",
       "summary": "",
       "source": "豆瓣"
@@ -89,6 +89,15 @@
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/36887293/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "突如其来",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,20 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "突如其来",
+      "title": "什么意思夫妇",
       "type": "电影",
       "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "功夫女足",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/36452545/",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/37667015/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,11 +156,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "有人刚好提起我吗？",
+      "title": "后会友期",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36961929/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,11 +174,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "后会友期",
+      "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37100984/",
+      "url": "https://movie.douban.com/subject/35861007/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -188,15 +188,6 @@
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37296949/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "尚公主",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35861007/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,20 +210,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "你却爱着一个他",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.0,
+      "url": "https://movie.douban.com/subject/38530785/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/36449295/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37070518/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,6 +237,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "玉簟秋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37070518/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "我的有罪之人",
       "type": "电视剧",
       "category": "热播剧",
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "有人刚好提起我吗？",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36961929/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "我不是大师",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37297001/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "你却爱着一个他",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.1,
-      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
