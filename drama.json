@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-10-31 15:34",
+  "updated": "2026-10-31 20:52",
   "items": [
     {
       "title": "黑球",
@@ -8,42 +8,6 @@
       "category": "电影",
       "rating": 8.6,
       "url": "https://movie.douban.com/subject/37215318/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "杯雪·一战成名",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37516455/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "死神 千年血战篇 -祸进谭-",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/38532820/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不择手段",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37104948/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "实习生",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36944373/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,6 +21,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "无处安放我的双眼",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/38208000/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "柳条人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.6,
+      "url": "https://movie.douban.com/subject/36618556/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "死神 千年血战篇 -祸进谭-",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/38532820/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "空枪",
       "type": "电影",
       "category": "电影",
@@ -66,11 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "希望",
+      "title": "杯雪·一战成名",
       "type": "电影",
       "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37516455/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -84,11 +75,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "登峰传奇：丹增诺盖",
+      "title": "敦煌英雄",
       "type": "电影",
       "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/36887293/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/35244246/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,11 +102,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "登峰传奇：丹增诺盖",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/36887293/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "罗斯",
       "type": "电影",
       "category": "电影",
       "rating": 8.5,
       "url": "https://movie.douban.com/subject/35322132/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "实习生",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/36944373/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,38 +138,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "潜伏6",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.6,
-      "url": "https://movie.douban.com/subject/37525017/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "什么意思夫妇",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/37667015/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36675942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "嫁金钗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37191789/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,11 +156,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "尚公主",
+      "title": "嫁金钗",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35861007/",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37191789/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "蒸蒸日上",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37296949/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,11 +183,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "蒸蒸日上",
+      "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35861007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "末路兼职",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37210712/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,24 +237,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37070518/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "我的有罪之人",
       "type": "电视剧",
       "category": "热播剧",
@@ -255,11 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "伟大的长征",
+      "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36155236/",
+      "url": "https://movie.douban.com/subject/37070518/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -269,6 +260,15 @@
       "category": "热播剧",
       "rating": 8.2,
       "url": "https://movie.douban.com/subject/36961929/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "幻视任务",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/36137784/",
       "summary": "",
       "source": "豆瓣"
     },
