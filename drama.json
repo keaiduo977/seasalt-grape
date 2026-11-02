@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-01 21:34",
+  "updated": "2026-11-02 08:43",
   "items": [
     {
       "title": "黑球",
@@ -21,28 +21,10 @@
       "source": "豆瓣"
     },
     {
-      "title": "无处安放我的双眼",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/38208000/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "柳条人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36618556/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "死神 千年血战篇 -祸进谭-",
       "type": "电影",
       "category": "电影",
-      "rating": 8.0,
+      "rating": 8.1,
       "url": "https://movie.douban.com/subject/38532820/",
       "summary": "",
       "source": "豆瓣"
@@ -138,10 +120,28 @@
       "source": "豆瓣"
     },
     {
+      "title": "一个部门的诞生",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/36937765/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "茫然女王",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/35765242/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 8.0,
       "url": "https://movie.douban.com/subject/36675942/",
       "summary": "",
       "source": "豆瓣"
@@ -204,7 +204,7 @@
       "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.7,
       "url": "https://movie.douban.com/subject/37070518/",
       "summary": "",
       "source": "豆瓣"
@@ -267,7 +267,7 @@
       "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 8.5,
       "url": "https://movie.douban.com/subject/36155236/",
       "summary": "",
       "source": "豆瓣"
