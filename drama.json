@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-02 08:43",
+  "updated": "2026-11-02 19:55",
   "items": [
     {
       "title": "黑球",
@@ -21,10 +21,28 @@
       "source": "豆瓣"
     },
     {
+      "title": "野马九号",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/35641228/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "血色机库",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/37293105/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "死神 千年血战篇 -祸进谭-",
       "type": "电影",
       "category": "电影",
-      "rating": 8.1,
+      "rating": 8.0,
       "url": "https://movie.douban.com/subject/38532820/",
       "summary": "",
       "source": "豆瓣"
@@ -120,24 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "一个部门的诞生",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/36937765/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "茫然女王",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/35765242/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
@@ -174,6 +174,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "尚公主",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35861007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "伟大的长征",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.5,
+      "url": "https://movie.douban.com/subject/36155236/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "玉簟秋",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37070518/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "末路兼职",
       "type": "电视剧",
       "category": "热播剧",
@@ -192,20 +219,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "尚公主",
+      "title": "余红旧事",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35861007/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37070518/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37560173/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,24 +237,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "余红旧事",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37560173/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我的有罪之人",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37806882/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "兰香如故",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,11 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "你却爱着一个他",
+      "title": "我的有罪之人",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/38530785/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37806882/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -258,17 +258,17 @@
       "title": "有人刚好提起我吗？",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.2,
+      "rating": 8.3,
       "url": "https://movie.douban.com/subject/36961929/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "伟大的长征",
+      "title": "你却爱着一个他",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.5,
-      "url": "https://movie.douban.com/subject/36155236/",
+      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
