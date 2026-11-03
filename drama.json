@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-03 17:28",
+  "updated": "2026-11-03 22:45",
   "items": [
     {
       "title": "黑球",
@@ -39,20 +39,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "不择手段",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37104948/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "空枪",
       "type": "电影",
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/37508847/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "杯雪·一战成名",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37516455/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,11 +75,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "杯雪·一战成名",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37516455/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "突如其来",
       "type": "电影",
       "category": "电影",
       "rating": 7.7,
       "url": "https://movie.douban.com/subject/37342630/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "生化危机：爆发夜",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37068446/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,24 +138,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "理智与情感",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/37247236/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "茫然女王",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/35765242/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
@@ -165,11 +165,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "蒸蒸日上",
+      "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/36155236/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -183,20 +183,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "伟大的长征",
+      "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36155236/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37070518/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37296949/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -210,11 +201,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "醉梦",
+      "title": "玉簟秋",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37042229/",
+      "rating": 6.7,
+      "url": "https://movie.douban.com/subject/37070518/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "走马上任",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36942992/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -224,6 +224,24 @@
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37560173/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的有罪之人",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/37806882/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "醉梦",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37042229/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,29 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "我的有罪之人",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/37806882/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "有人刚好提起我吗？",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.3,
       "url": "https://movie.douban.com/subject/36961929/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "你却爱着一个他",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/38530785/",
       "summary": "",
       "source": "豆瓣"
     },
