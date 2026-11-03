@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-02 19:55",
+  "updated": "2026-11-03 08:54",
   "items": [
     {
       "title": "黑球",
@@ -21,19 +21,10 @@
       "source": "豆瓣"
     },
     {
-      "title": "野马九号",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/35641228/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "血色机库",
       "type": "电影",
       "category": "电影",
-      "rating": 6.4,
+      "rating": 6.5,
       "url": "https://movie.douban.com/subject/37293105/",
       "summary": "",
       "source": "豆瓣"
@@ -138,6 +129,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "茫然女王",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/35765242/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
@@ -186,7 +186,7 @@
       "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.5,
+      "rating": 8.6,
       "url": "https://movie.douban.com/subject/36155236/",
       "summary": "",
       "source": "豆瓣"
