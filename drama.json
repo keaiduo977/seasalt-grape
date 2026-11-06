@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-06 17:04",
+  "updated": "2026-11-06 22:37",
   "items": [
     {
       "title": "黑球",
@@ -12,11 +12,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "空枪",
+      "title": "不存在的罪人",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37508847/",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37124892/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "门牙",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37534660/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小气鬼",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37457160/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -39,11 +57,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "不存在的罪人",
+      "title": "空枪",
       "type": "电影",
       "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37124892/",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37508847/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,20 +138,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "登峰传奇：丹增诺盖",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/36887293/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "罗斯",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.5,
-      "url": "https://movie.douban.com/subject/35322132/",
+      "title": "后会友期",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -143,15 +152,6 @@
       "category": "热播剧",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/36675942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "后会友期",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/37100984/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,6 +192,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "谷雨",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37109676/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,20 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "谷雨",
+      "title": "折月亮",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/37109676/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "玉簟秋",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37070518/",
+      "url": "https://movie.douban.com/subject/36809913/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,15 +246,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "再婚皇后",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37071110/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "Doctor X：白色黑手党时代",
       "type": "电视剧",
       "category": "热播剧",
@@ -264,11 +255,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "余红旧事",
+      "title": "再婚皇后",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37560173/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37071110/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "兰香如故",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/36449295/",
       "summary": "",
       "source": "豆瓣"
     },
