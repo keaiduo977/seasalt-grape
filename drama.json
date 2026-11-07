@@ -1,22 +1,22 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-07 16:01",
+  "updated": "2026-11-07 21:17",
   "items": [
+    {
+      "title": "可能的爱",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/36847425/",
+      "summary": "",
+      "source": "豆瓣"
+    },
     {
       "title": "黑球",
       "type": "电影",
       "category": "电影",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37215318/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "不存在的罪人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37124892/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,11 +57,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "空枪",
+      "title": "突如其来",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37508847/",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不存在的罪人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37124892/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,20 +84,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "空枪",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37508847/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "杯雪·一战成名",
       "type": "电影",
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/37516455/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "突如其来",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,24 +111,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "可能的爱",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/36847425/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "黄金时段",
       "type": "电影",
       "category": "电影",
@@ -129,11 +120,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "燃烧吧！爸爸",
+      "title": "野兽之心",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/36903929/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36828393/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "八仙！",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36882191/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -156,6 +156,33 @@
       "source": "豆瓣"
     },
     {
+      "title": "今天是太阳雨",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36689621/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的有罪之人",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.6,
+      "url": "https://movie.douban.com/subject/37806882/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "谷雨",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37109676/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "嫁金钗",
       "type": "电视剧",
       "category": "热播剧",
@@ -174,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "我的有罪之人",
+      "title": "折月亮",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/37806882/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36809913/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -188,15 +215,6 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/37210712/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "谷雨",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37109676/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,20 +246,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "折月亮",
+      "title": "午夜规则",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
-      "url": "https://movie.douban.com/subject/36809913/",
+      "url": "https://movie.douban.com/subject/39018014/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "幻视任务",
+      "title": "现在就出发 第四季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.6,
-      "url": "https://movie.douban.com/subject/36137784/",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37816990/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -251,24 +269,6 @@
       "category": "热播剧",
       "rating": 8.3,
       "url": "https://movie.douban.com/subject/37235560/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "再婚皇后",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/37071110/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "兰香如故",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/36449295/",
       "summary": "",
       "source": "豆瓣"
     },
