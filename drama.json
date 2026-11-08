@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-08 16:29",
+  "updated": "2026-11-08 21:32",
   "items": [
     {
       "title": "可能的爱",
@@ -21,6 +21,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "夜店小子",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37496381/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我们是外星人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37855217/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "门牙",
       "type": "电影",
       "category": "电影",
@@ -30,20 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "小气鬼",
+      "title": "突如其来",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37457160/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "血色机库",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/37293105/",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -53,15 +62,6 @@
       "category": "电影",
       "rating": 6.0,
       "url": "https://movie.douban.com/subject/35244246/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "突如其来",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,15 +93,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "杯雪·一战成名",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37516455/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "生化危机：爆发夜",
       "type": "电影",
       "category": "电影",
@@ -111,11 +102,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "黄金时段",
+      "title": "杯雪·一战成名",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37087760/",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37516455/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -125,6 +116,15 @@
       "category": "电影",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/36828393/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "黄金时段",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37087760/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -147,20 +147,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "小城良方",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36675942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "今天是太阳雨",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36689621/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小城良方",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36675942/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,6 +201,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "蒸蒸日上",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37296949/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "折月亮",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,15 +228,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "蒸蒸日上",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,11 +237,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "走马上任",
+      "title": "Doctor X：白色黑手党时代",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36942992/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37235560/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +255,20 @@
       "source": "豆瓣"
     },
     {
+      "title": "走马上任",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36942992/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "现在就出发 第四季",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/37816990/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "Doctor X：白色黑手党时代",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.3,
-      "url": "https://movie.douban.com/subject/37235560/",
       "summary": "",
       "source": "豆瓣"
     },
