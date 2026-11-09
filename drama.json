@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-08 21:32",
+  "updated": "2026-11-09 08:56",
   "items": [
     {
       "title": "可能的爱",
@@ -17,24 +17,6 @@
       "category": "电影",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37215318/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "夜店小子",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37496381/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "我们是外星人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37855217/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -138,6 +120,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "希望",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.5,
+      "url": "https://movie.douban.com/subject/36179101/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "燃烧吧！爸爸",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/36903929/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "后会友期",
       "type": "电视剧",
       "category": "热播剧",
@@ -222,7 +222,7 @@
       "title": "末路兼职",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.6,
       "url": "https://movie.douban.com/subject/37210712/",
       "summary": "",
       "source": "豆瓣"
