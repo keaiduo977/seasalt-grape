@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-10 17:24",
+  "updated": "2026-11-10 22:42",
   "items": [
     {
       "title": "可能的爱",
@@ -21,11 +21,29 @@
       "source": "豆瓣"
     },
     {
+      "title": "阿尔法：初次猎杀",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37067800/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "入夜不再",
       "type": "电影",
       "category": "电影",
       "rating": 6.5,
       "url": "https://movie.douban.com/subject/37363852/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小丑回魂：德里故事",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/39016966/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,15 +75,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "逃出布迪秀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37446297/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "野兽之心",
       "type": "电影",
       "category": "电影",
@@ -75,29 +84,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "空枪",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37508847/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "生化危机：爆发夜",
+      "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
       "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37068446/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "黄金时段",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37087760/",
+      "url": "https://movie.douban.com/subject/37446297/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,29 +102,38 @@
       "source": "豆瓣"
     },
     {
+      "title": "空枪",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37508847/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "黄金时段",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37087760/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "生化危机：爆发夜",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37068446/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "杯雪·一战成名",
       "type": "电影",
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/37516455/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "复活男",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.6,
-      "url": "https://movie.douban.com/subject/35863074/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "希望",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/36179101/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -168,7 +168,7 @@
       "title": "相遇骤雨中：温柔的细雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 9.0,
+      "rating": 8.9,
       "url": "https://movie.douban.com/subject/38634363/",
       "summary": "",
       "source": "豆瓣"
@@ -183,20 +183,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "小城良方",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/36675942/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "我的有罪之人",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/37806882/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "小城良方",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/36675942/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,6 +228,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "尚公主",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/35861007/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
@@ -237,11 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "尚公主",
+      "title": "午夜规则",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/35861007/",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/39018014/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -255,20 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "折月亮",
+      "title": "现在就出发 第四季",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36809913/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "午夜规则",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/39018014/",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37816990/",
       "summary": "",
       "source": "豆瓣"
     },
