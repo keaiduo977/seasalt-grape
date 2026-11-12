@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-12 17:50",
+  "updated": "2026-11-12 23:03",
   "items": [
     {
       "title": "可能的爱",
@@ -57,15 +57,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "敦煌英雄",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/35244246/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "野兽之心",
       "type": "电影",
       "category": "电影",
@@ -75,20 +66,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "不存在的罪人",
+      "title": "敦煌英雄",
       "type": "电影",
       "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37124892/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "逃出布迪秀",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37446297/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/35244246/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -102,6 +84,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "逃出布迪秀",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37446297/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不存在的罪人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37124892/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "黄金时段",
       "type": "电影",
       "category": "电影",
@@ -111,20 +111,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "空枪",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/37508847/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "生化危机：爆发夜",
       "type": "电影",
       "category": "电影",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37068446/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "空枪",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/37508847/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -161,24 +161,6 @@
       "category": "热播剧",
       "rating": 6.9,
       "url": "https://movie.douban.com/subject/38360996/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "相遇骤雨中：温柔的细雨",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.0,
-      "url": "https://movie.douban.com/subject/38634363/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "黑鸽 第二季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.1,
-      "url": "https://movie.douban.com/subject/37014063/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,6 +210,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "幻视任务",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.7,
+      "url": "https://movie.douban.com/subject/36137784/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,15 +237,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "幻视任务",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.7,
-      "url": "https://movie.douban.com/subject/36137784/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "午夜规则",
       "type": "电视剧",
       "category": "热播剧",
@@ -269,6 +251,24 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36809913/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "Doctor X：白色黑手党时代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/37235560/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "现在就出发 第四季",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.0,
+      "url": "https://movie.douban.com/subject/37816990/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -303,7 +303,7 @@
       "title": "喜剧之王单口季",
       "type": "综艺",
       "category": "综艺",
-      "rating": 8.3,
+      "rating": 8.2,
       "url": "https://movie.douban.com/subject/36868615/",
       "summary": "",
       "source": "豆瓣"
