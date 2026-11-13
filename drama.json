@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-13 17:27",
+  "updated": "2026-11-13 23:06",
   "items": [
     {
       "title": "可能的爱",
@@ -39,11 +39,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "突如其来",
+      "title": "小丑回魂：德里故事",
       "type": "电影",
       "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/39016966/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "另一个妈妈",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/37317907/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -57,11 +66,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "敦煌英雄",
+      "title": "突如其来",
       "type": "电影",
       "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/35244246/",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,6 +84,15 @@
       "source": "豆瓣"
     },
     {
+      "title": "敦煌英雄",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/35244246/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "逃出布迪秀",
       "type": "电影",
       "category": "电影",
@@ -84,20 +102,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "不存在的罪人",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37124892/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "黄金时段",
       "type": "电影",
       "category": "电影",
       "rating": 6.2,
       "url": "https://movie.douban.com/subject/37087760/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不存在的罪人",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.7,
+      "url": "https://movie.douban.com/subject/37124892/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -116,24 +134,6 @@
       "category": "电影",
       "rating": 7.2,
       "url": "https://movie.douban.com/subject/37508847/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "杯雪·一战成名",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37516455/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "复活男",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.5,
-      "url": "https://movie.douban.com/subject/35863074/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,15 +192,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "嫁金钗",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.0,
-      "url": "https://movie.douban.com/subject/37191789/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
@@ -215,6 +206,15 @@
       "category": "热播剧",
       "rating": 8.7,
       "url": "https://movie.douban.com/subject/36137784/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "嫁金钗",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.0,
+      "url": "https://movie.douban.com/subject/37191789/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,15 +246,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "折月亮",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36809913/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "Doctor X：白色黑手党时代",
       "type": "电视剧",
       "category": "热播剧",
@@ -269,6 +260,15 @@
       "category": "热播剧",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/37816990/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "末路兼职",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.6,
+      "url": "https://movie.douban.com/subject/37210712/",
       "summary": "",
       "source": "豆瓣"
     },
