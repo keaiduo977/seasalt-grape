@@ -1,12 +1,12 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-14 21:52",
+  "updated": "2026-11-15 08:42",
   "items": [
     {
       "title": "可能的爱",
       "type": "电影",
       "category": "电影",
-      "rating": 8.7,
+      "rating": 8.6,
       "url": "https://movie.douban.com/subject/36847425/",
       "summary": "",
       "source": "豆瓣"
@@ -159,7 +159,7 @@
       "title": "扯淡电影史",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.7,
+      "rating": 8.8,
       "url": "https://movie.douban.com/subject/38422419/",
       "summary": "",
       "source": "豆瓣"
@@ -168,7 +168,7 @@
       "title": "急诊室的奇迹",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.3,
+      "rating": 6.2,
       "url": "https://movie.douban.com/subject/36085515/",
       "summary": "",
       "source": "豆瓣"
@@ -177,7 +177,7 @@
       "title": "青春共体",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.7,
+      "rating": 6.8,
       "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
