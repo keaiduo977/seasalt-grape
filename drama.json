@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-17 09:58",
+  "updated": "2026-11-17 18:59",
   "items": [
     {
       "title": "可能的爱",
@@ -21,29 +21,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "狗狗的完美圣诞节",
+      "title": "疯狂舞蹈办公室",
       "type": "电影",
       "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/37811556/",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/36943431/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "老千4：别西卜之歌",
+      "title": "悲惨世界",
       "type": "电影",
       "category": "电影",
-      "rating": 6.1,
-      "url": "https://movie.douban.com/subject/37134880/",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36778103/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "阿尔法：初次猎杀",
+      "title": "末世行者",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37067800/",
+      "rating": 6.0,
+      "url": "https://movie.douban.com/subject/37107254/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -66,20 +66,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "突如其来",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "八仙！",
       "type": "电影",
       "category": "电影",
       "rating": 8.2,
       "url": "https://movie.douban.com/subject/36882191/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "突如其来",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -111,20 +111,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "生化危机：爆发夜",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/37068446/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "空枪",
       "type": "电影",
       "category": "电影",
       "rating": 7.1,
       "url": "https://movie.douban.com/subject/37508847/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "生化危机：爆发夜",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/37068446/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -150,7 +150,7 @@
       "title": "今天是太阳雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 8.0,
       "url": "https://movie.douban.com/subject/36689621/",
       "summary": "",
       "source": "豆瓣"
@@ -204,7 +204,7 @@
       "title": "谷雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.5,
       "url": "https://movie.douban.com/subject/37109676/",
       "summary": "",
       "source": "豆瓣"
