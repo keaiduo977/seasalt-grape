@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-16 19:57",
+  "updated": "2026-11-17 09:58",
   "items": [
     {
       "title": "可能的爱",
@@ -75,15 +75,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "心迷宫之三重罪",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.9,
-      "url": "https://movie.douban.com/subject/37295792/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "八仙！",
       "type": "电影",
       "category": "电影",
@@ -132,8 +123,17 @@
       "title": "空枪",
       "type": "电影",
       "category": "电影",
-      "rating": 7.2,
+      "rating": 7.1,
       "url": "https://movie.douban.com/subject/37508847/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "敦煌英雄",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/35244246/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -177,7 +177,7 @@
       "title": "青春共体",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.0,
+      "rating": 7.1,
       "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
@@ -222,7 +222,7 @@
       "title": "嫁金钗",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.0,
+      "rating": 6.8,
       "url": "https://movie.douban.com/subject/37191789/",
       "summary": "",
       "source": "豆瓣"
@@ -267,7 +267,7 @@
       "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
+      "rating": 6.5,
       "url": "https://movie.douban.com/subject/35861007/",
       "summary": "",
       "source": "豆瓣"
