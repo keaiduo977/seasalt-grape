@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-18 18:33",
+  "updated": "2026-11-19 09:43",
   "items": [
     {
       "title": "可能的爱",
@@ -35,6 +35,15 @@
       "category": "电影",
       "rating": 6.0,
       "url": "https://movie.douban.com/subject/37107254/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "狗狗的完美圣诞节",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.8,
+      "url": "https://movie.douban.com/subject/37811556/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -120,15 +129,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "敦煌英雄",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/35244246/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "不存在的罪人",
       "type": "电影",
       "category": "电影",
@@ -138,20 +138,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "我的有罪之人",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 9.1,
-      "url": "https://movie.douban.com/subject/37806882/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "今天是太阳雨",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/36689621/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "我的有罪之人",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 9.1,
+      "url": "https://movie.douban.com/subject/37806882/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -170,15 +170,6 @@
       "category": "热播剧",
       "rating": 6.0,
       "url": "https://movie.douban.com/subject/36085515/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "青春共体",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -204,8 +195,17 @@
       "title": "谷雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.4,
+      "rating": 6.3,
       "url": "https://movie.douban.com/subject/37109676/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "不栩此行",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/39054885/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,11 +228,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "Doctor X：白色黑手党时代",
+      "title": "青春共体",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/37235560/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -246,11 +246,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "现在就出发 第四季",
+      "title": "折月亮",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37816990/",
+      "rating": 4.7,
+      "url": "https://movie.douban.com/subject/36809913/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "Doctor X：白色黑手党时代",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/37235560/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -260,15 +269,6 @@
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37296949/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "折月亮",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 4.7,
-      "url": "https://movie.douban.com/subject/36809913/",
       "summary": "",
       "source": "豆瓣"
     },
