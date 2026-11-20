@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-19 18:46",
+  "updated": "2026-11-20 09:30",
   "items": [
     {
       "title": "可能的爱",
@@ -21,10 +21,19 @@
       "source": "豆瓣"
     },
     {
+      "title": "非常治疗师",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37436785/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "疯狂舞蹈办公室",
       "type": "电影",
       "category": "电影",
-      "rating": 6.5,
+      "rating": 6.4,
       "url": "https://movie.douban.com/subject/36943431/",
       "summary": "",
       "source": "豆瓣"
@@ -39,29 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "狗狗的完美圣诞节",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.8,
-      "url": "https://movie.douban.com/subject/37811556/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "另一个妈妈",
       "type": "电影",
       "category": "电影",
       "rating": 5.8,
       "url": "https://movie.douban.com/subject/37317907/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "野兽之心",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.3,
-      "url": "https://movie.douban.com/subject/36828393/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -75,11 +66,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "突如其来",
+      "title": "野兽之心",
       "type": "电影",
       "category": "电影",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37342630/",
+      "rating": 7.3,
+      "url": "https://movie.douban.com/subject/36828393/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -93,11 +84,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "黄金时段",
+      "title": "突如其来",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
-      "url": "https://movie.douban.com/subject/37087760/",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37342630/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -107,6 +98,15 @@
       "category": "电影",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37446297/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "黄金时段",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37087760/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -165,15 +165,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "急诊室的奇迹",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/36085515/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "后会友期",
       "type": "电视剧",
       "category": "热播剧",
@@ -183,11 +174,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "小城良方",
+      "title": "不栩此行",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.1,
-      "url": "https://movie.douban.com/subject/36675942/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/39054885/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,11 +192,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "不栩此行",
+      "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/39054885/",
+      "rating": 8.1,
+      "url": "https://movie.douban.com/subject/36675942/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "青春共体",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,15 +228,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "青春共体",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/30145677/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "尚公主",
       "type": "电视剧",
       "category": "热播剧",
@@ -246,11 +237,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "折月亮",
+      "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 4.7,
-      "url": "https://movie.douban.com/subject/36809913/",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37296949/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "宝珠",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38356260/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "十万狂花入梦来",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36977822/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -260,15 +269,6 @@
       "category": "热播剧",
       "rating": 8.1,
       "url": "https://movie.douban.com/subject/37235560/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蒸蒸日上",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
       "summary": "",
       "source": "豆瓣"
     },
