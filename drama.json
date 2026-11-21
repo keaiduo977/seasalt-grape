@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-20 18:12",
+  "updated": "2026-11-21 09:02",
   "items": [
     {
       "title": "可能的爱",
@@ -21,6 +21,24 @@
       "source": "豆瓣"
     },
     {
+      "title": "小羊肖恩3：怪兽来袭",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.9,
+      "url": "https://movie.douban.com/subject/37344902/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "戴帽子的猫",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.2,
+      "url": "https://movie.douban.com/subject/23774856/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
       "title": "非常治疗师",
       "type": "电影",
       "category": "电影",
@@ -30,38 +48,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "疯狂舞蹈办公室",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/36943431/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "末世行者",
-      "type": "电影",
-      "category": "电影",
-      "rating": 6.0,
-      "url": "https://movie.douban.com/subject/37107254/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "另一个妈妈",
       "type": "电影",
       "category": "电影",
       "rating": 5.8,
       "url": "https://movie.douban.com/subject/37317907/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "八仙！",
-      "type": "电影",
-      "category": "电影",
-      "rating": 8.2,
-      "url": "https://movie.douban.com/subject/36882191/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -80,6 +71,15 @@
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/37148241/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "八仙！",
+      "type": "电影",
+      "category": "电影",
+      "rating": 8.2,
+      "url": "https://movie.douban.com/subject/36882191/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -201,20 +201,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "青春共体",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/30145677/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 8.8,
       "url": "https://movie.douban.com/subject/36155236/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "青春共体",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -228,20 +228,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "尚公主",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 6.5,
-      "url": "https://movie.douban.com/subject/35861007/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "蒸蒸日上",
       "type": "电视剧",
       "category": "热播剧",
       "rating": 7.8,
       "url": "https://movie.douban.com/subject/37296949/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "尚公主",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/35861007/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -264,11 +264,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "Doctor X：白色黑手党时代",
+      "title": "多喜一家人",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37235560/",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36155994/",
       "summary": "",
       "source": "豆瓣"
     },
