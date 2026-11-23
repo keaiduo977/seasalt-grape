@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-22 23:03",
+  "updated": "2026-11-23 10:06",
   "items": [
     {
       "title": "可能的爱",
@@ -26,24 +26,6 @@
       "category": "电影",
       "rating": 7.5,
       "url": "https://movie.douban.com/subject/38520799/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "小羊肖恩3：怪兽来袭",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.9,
-      "url": "https://movie.douban.com/subject/37344902/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "戴帽子的猫",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.2,
-      "url": "https://movie.douban.com/subject/23774856/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -134,6 +116,24 @@
       "category": "电影",
       "rating": 7.3,
       "url": "https://movie.douban.com/subject/37068446/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "老千4：别西卜之歌",
+      "type": "电影",
+      "category": "电影",
+      "rating": 6.1,
+      "url": "https://movie.douban.com/subject/37134880/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "杯雪·一战成名",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37516455/",
       "summary": "",
       "source": "豆瓣"
     },
