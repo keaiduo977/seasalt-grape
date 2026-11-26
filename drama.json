@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-25 10:45",
+  "updated": "2026-11-26 01:25",
   "items": [
     {
       "title": "可能的爱",
@@ -33,7 +33,7 @@
       "title": "忘年之约",
       "type": "电影",
       "category": "电影",
-      "rating": 7.3,
+      "rating": 7.4,
       "url": "https://movie.douban.com/subject/38520799/",
       "summary": "",
       "source": "豆瓣"
@@ -42,7 +42,7 @@
       "title": "非常治疗师",
       "type": "电影",
       "category": "电影",
-      "rating": 6.2,
+      "rating": 6.3,
       "url": "https://movie.douban.com/subject/37436785/",
       "summary": "",
       "source": "豆瓣"
@@ -57,20 +57,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "懦夫",
-      "type": "电影",
-      "category": "电影",
-      "rating": 7.5,
-      "url": "https://movie.douban.com/subject/37148241/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "峡湾",
       "type": "电影",
       "category": "电影",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/37168181/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "懦夫",
+      "type": "电影",
+      "category": "电影",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/37148241/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -150,8 +150,17 @@
       "title": "我的有罪之人",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 8.8,
+      "rating": 8.7,
       "url": "https://movie.douban.com/subject/37806882/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "凡人修仙传 年番4",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.7,
+      "url": "https://movie.douban.com/subject/37457082/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -174,15 +183,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "凡人修仙传 年番4",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.7,
-      "url": "https://movie.douban.com/subject/37457082/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "小城良方",
       "type": "电视剧",
       "category": "热播剧",
@@ -201,11 +201,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "谷雨",
+      "title": "青春共体",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/37109676/",
+      "rating": 7.4,
+      "url": "https://movie.douban.com/subject/30145677/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -219,11 +219,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "青春共体",
+      "title": "谷雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/30145677/",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/37109676/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "十万狂花入梦来",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/36977822/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -251,15 +260,6 @@
       "category": "热播剧",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/37816990/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "十万狂花入梦来",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/36977822/",
       "summary": "",
       "source": "豆瓣"
     },
