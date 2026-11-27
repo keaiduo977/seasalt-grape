@@ -1,6 +1,6 @@
 {
   "source": "豆瓣",
-  "updated": "2026-11-26 10:18",
+  "updated": "2026-11-27 01:22",
   "items": [
     {
       "title": "可能的爱",
@@ -21,38 +21,29 @@
       "source": "豆瓣"
     },
     {
-      "title": "多萝西",
+      "title": "天才谋杀法",
       "type": "电影",
       "category": "电影",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/38586131/",
+      "rating": 6.4,
+      "url": "https://movie.douban.com/subject/36236921/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "忘年之约",
+      "title": "电影 假面骑士Zeztz 告别的任务",
       "type": "电影",
       "category": "电影",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/38520799/",
+      "rating": 8.3,
+      "url": "https://movie.douban.com/subject/38405371/",
       "summary": "",
       "source": "豆瓣"
     },
     {
-      "title": "非常治疗师",
+      "title": "小春，屁股摇起来！",
       "type": "电影",
       "category": "电影",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/37436785/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "另一个妈妈",
-      "type": "电影",
-      "category": "电影",
-      "rating": 5.8,
-      "url": "https://movie.douban.com/subject/37317907/",
+      "rating": 6.2,
+      "url": "https://movie.douban.com/subject/37226713/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -62,6 +53,15 @@
       "category": "电影",
       "rating": 8.0,
       "url": "https://movie.douban.com/subject/37168181/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "另一个妈妈",
+      "type": "电影",
+      "category": "电影",
+      "rating": 5.8,
+      "url": "https://movie.douban.com/subject/37317907/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -129,11 +129,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "不存在的罪人",
+      "title": "拽",
       "type": "电影",
       "category": "电影",
-      "rating": 5.7,
-      "url": "https://movie.douban.com/subject/37124892/",
+      "rating": 9.0,
+      "url": "https://movie.douban.com/subject/37283499/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -152,6 +152,24 @@
       "category": "热播剧",
       "rating": 8.6,
       "url": "https://movie.douban.com/subject/37806882/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "银翼杀手2099",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 6.5,
+      "url": "https://movie.douban.com/subject/35674172/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "好搭档2",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 7.8,
+      "url": "https://movie.douban.com/subject/37172392/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -192,24 +210,6 @@
       "source": "豆瓣"
     },
     {
-      "title": "宝珠",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 0,
-      "url": "https://movie.douban.com/subject/38356260/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "青春共体",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.4,
-      "url": "https://movie.douban.com/subject/30145677/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
       "title": "伟大的长征",
       "type": "电视剧",
       "category": "热播剧",
@@ -219,11 +219,20 @@
       "source": "豆瓣"
     },
     {
-      "title": "谷雨",
+      "title": "青春共体",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.3,
-      "url": "https://movie.douban.com/subject/37109676/",
+      "rating": 7.5,
+      "url": "https://movie.douban.com/subject/30145677/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "宝珠",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/38356260/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -237,29 +246,11 @@
       "source": "豆瓣"
     },
     {
-      "title": "嫁金钗",
+      "title": "谷雨",
       "type": "电视剧",
       "category": "热播剧",
-      "rating": 6.7,
-      "url": "https://movie.douban.com/subject/37191789/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "蒸蒸日上",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 7.8,
-      "url": "https://movie.douban.com/subject/37296949/",
-      "summary": "",
-      "source": "豆瓣"
-    },
-    {
-      "title": "现在就出发 第四季",
-      "type": "电视剧",
-      "category": "热播剧",
-      "rating": 8.0,
-      "url": "https://movie.douban.com/subject/37816990/",
+      "rating": 6.3,
+      "url": "https://movie.douban.com/subject/37109676/",
       "summary": "",
       "source": "豆瓣"
     },
@@ -269,6 +260,15 @@
       "category": "热播剧",
       "rating": 0,
       "url": "https://movie.douban.com/subject/36618936/",
+      "summary": "",
+      "source": "豆瓣"
+    },
+    {
+      "title": "愚者之夜",
+      "type": "电视剧",
+      "category": "热播剧",
+      "rating": 0,
+      "url": "https://movie.douban.com/subject/37813694/",
       "summary": "",
       "source": "豆瓣"
     },
